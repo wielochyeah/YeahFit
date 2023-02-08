@@ -1,3 +1,0 @@
-Target dependency graph (2 targets)
-YeahFit in YeahFit, no dependencies
-YeahFit in YeahFit, no dependencies

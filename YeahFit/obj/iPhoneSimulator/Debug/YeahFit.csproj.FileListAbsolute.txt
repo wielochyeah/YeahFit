@@ -20,3 +20,5 @@
 /Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
 /Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb
 /Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle 1178-3.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Challenges 1.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle small.png

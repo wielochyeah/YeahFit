@@ -85,6 +85,7 @@
     <Compile Include="WeekTableView.designer.cs">
       <DependentUpon>WeekTableView.cs</DependentUpon>
     </Compile>
+    <Compile Include="WeekTableViewSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />
@@ -167,6 +168,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Rectangle 1178-3.png" />
+    <BundleResource Include="Resources\Challenges 1.png" />
+    <BundleResource Include="Resources\Rectangle small.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

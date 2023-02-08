@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using UIKit;
 
 namespace YeahFit
@@ -14,6 +14,13 @@ namespace YeahFit
         {
             base.ViewDidLoad ();
             // Perform any additional setup after loading the view, typically from a nib.
+
+            List<string> names = new List<string>
+            {
+                "Mon", "Tue", "Wed"
+            };
+
+            
         }
 
         public override void DidReceiveMemoryWarning ()
