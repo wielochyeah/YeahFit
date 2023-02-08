@@ -1,0 +1,11 @@
+RemoveDynamicRegistrar:false
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/YeahFit.exe
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/mscorlib.dll
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Xamarin.iOS.dll
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Mono.Security.dll
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Xml.dll
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Numerics.dll
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Core.dll
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Net.Http.dll
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app:/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Drawing.Common.dll

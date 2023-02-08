@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/LaunchScreen.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>LaunchScreen.nib</LogicalName>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UITabBarController-49e-Tb-3d3.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/UITabBarController-49e-Tb-3d3.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/p7j-wW-jBv-view-Fxq-g8-gtl.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/p7j-wW-jBv-view-Fxq-g8-gtl.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/IyL-xC-n9d-view-3Nh-1k-jlM.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/IyL-xC-n9d-view-3Nh-1k-jlM.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/Info.plist">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/Info.plist</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+  </ItemGroup>
+</Project>

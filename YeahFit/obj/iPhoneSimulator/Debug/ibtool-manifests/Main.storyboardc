@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.ibtool.document.errors</key>
+	<dict/>
+	<key>com.apple.ibtool.document.notices</key>
+	<dict/>
+	<key>com.apple.ibtool.document.warnings</key>
+	<dict>
+		<key>9fb-pM-UHL</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>9fb-pM-UHL</string>
+				</array>
+				<key>message</key>
+				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>GnL-Un-jfr</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>GnL-Un-jfr</string>
+				</array>
+				<key>message</key>
+				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>LwJ-tE-Czc</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>LwJ-tE-Czc</string>
+				</array>
+				<key>message</key>
+				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>M63-lj-MiE</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>M63-lj-MiE</string>
+				</array>
+				<key>message</key>
+				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>jUu-hr-dlh</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>jUu-hr-dlh</string>
+				</array>
+				<key>message</key>
+				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>lDK-ph-nsF</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>lDK-ph-nsF</string>
+				</array>
+				<key>message</key>
+				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>vpp-Zq-f66</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>vpp-Zq-f66</string>
+				</array>
+				<key>message</key>
+				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>
