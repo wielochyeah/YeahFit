@@ -170,6 +170,14 @@
     <BundleResource Include="Resources\Rectangle 1178-3.png" />
     <BundleResource Include="Resources\Challenges 1.png" />
     <BundleResource Include="Resources\Rectangle small.png" />
+    <BundleResource Include="Resources\WeekWhite.png" />
+    <BundleResource Include="Resources\WeekWhite2.png" />
+    <BundleResource Include="Resources\WeekWhite3.png" />
+    <BundleResource Include="Resources\WeekWhite4.png" />
+    <BundleResource Include="Resources\WeekWhite5.png" />
+    <BundleResource Include="Resources\WeekBig1.png" />
+    <BundleResource Include="Resources\WeekBig2.png" />
+    <BundleResource Include="Resources\Bsp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

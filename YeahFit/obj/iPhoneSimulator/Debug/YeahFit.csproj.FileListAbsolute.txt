@@ -22,3 +22,8 @@
 /Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle 1178-3.png
 /Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Challenges 1.png
 /Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle small.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite2.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite3.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite4.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite5.png

@@ -68,21 +68,6 @@
 				<integer>9</integer>
 			</dict>
 		</array>
-		<key>Oyf-Mu-swL</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>Oyf-Mu-swL</string>
-				</array>
-				<key>message</key>
-				<string>Prototype collection view cells must have reuse identifiers</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
 		<key>jUu-hr-dlh</key>
 		<array>
 			<dict>
