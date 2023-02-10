@@ -86,6 +86,10 @@
       <DependentUpon>WeekTableView.cs</DependentUpon>
     </Compile>
     <Compile Include="WeekTableViewSource.cs" />
+    <Compile Include="WorkoutStepViewController.cs" />
+    <Compile Include="WorkoutStepViewController.designer.cs">
+      <DependentUpon>WorkoutStepViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

@@ -1080,7 +1080,7 @@
         <!--Item-->
         <scene sceneID="LW4-KP-IHh">
             <objects>
-                <viewController id="YVd-3X-7KR" sceneMemberID="viewController">
+                <viewController id="YVd-3X-7KR" customClass="WorkoutStepViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bTG-cF-fA3"/>
                         <viewControllerLayoutGuide type="bottom" id="InZ-Nl-pdy"/>
@@ -1164,6 +1164,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="2GX-rb-FtP"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="0FL-ka-3oG" id="QJW-1Q-XQt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3f-fD-Cak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
