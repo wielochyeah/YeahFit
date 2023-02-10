@@ -4,17 +4,17 @@
 	--sgen-conc \
 	'/target-framework:Xamarin.iOS,Version=v1.0' \
 	--http-message-handler=NSUrlSessionHandler \
-	--cache=/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache \
-	--root-assembly=/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.exe \
+	--cache=/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--root-assembly=/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.exe \
 	--sdkroot=/Applications/Xcode.app/Contents/Developer \
 	--targetver=16.2 \
-	--sim=/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app \
+	--sim=/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.app \
 	--executable=YeahFit \
 	--nolink \
 	--sdk=16.2 \
 	--aot-options=-O=-float32 \
 	--abi=x86_64 \
-	--symbollist=/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	--symbollist=/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
@@ -25,5 +25,5 @@
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.Vectors.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
-	--reference=/Users/nilswieloch/.nuget/packages/xamarin.essentials/1.6.1/lib/xamarinios10/Xamarin.Essentials.dll \
-	@/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/response-file.rsp \
+	--reference=/Users/maurice/.nuget/packages/xamarin.essentials/1.6.1/lib/xamarinios10/Xamarin.Essentials.dll \
+	@/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/response-file.rsp \

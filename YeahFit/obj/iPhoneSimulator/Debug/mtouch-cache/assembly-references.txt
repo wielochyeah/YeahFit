@@ -1,4 +1,4 @@
-/Users/nilswieloch/Projects6/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.exe
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.2.0.2/lib/mono/Xamarin.iOS/mscorlib.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.2.0.2/lib/mono/Xamarin.iOS/../../64bits/iOS/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/16.2.0.2/lib/mono/Xamarin.iOS/System.dll
