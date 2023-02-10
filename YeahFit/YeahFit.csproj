@@ -161,7 +161,7 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />

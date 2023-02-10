@@ -23,4 +23,4 @@
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.Vectors.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll
---reference=/Users/maurice/.nuget/packages/xamarin.essentials/1.6.1/lib/xamarinios10/Xamarin.Essentials.dll
+--reference=/Users/maurice/.nuget/packages/xamarin.essentials/1.7.4/lib/xamarinios10/Xamarin.Essentials.dll

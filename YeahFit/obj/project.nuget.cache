@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "VhDby5KZ9IKcTpSihuaLxbj8FuilXoI01kJTPBruwScX8THMAWLalcemUjCAShYPVxJEd7qVcaWIm6gXotHRFA==",
+  "dgSpecHash": "YhVccGpZbHhV4Sgw8kujDSrv1N4J+zC2WjM25oJj8dTjFrZxmljaBYHCTXf7xfjr4sV8B5kaGu1mQrWr5m5QTQ==",
   "success": true,
   "projectFilePath": "/Users/maurice/Projects/YeahFit/YeahFit/YeahFit.csproj",
   "expectedPackageFiles": [
     "/Users/maurice/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
-    "/Users/maurice/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512"
+    "/Users/maurice/.nuget/packages/xamarin.essentials/1.7.4/xamarin.essentials.1.7.4.nupkg.sha512"
   ],
   "logs": []
 }
