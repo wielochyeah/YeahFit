@@ -32,6 +32,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.28, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.4, )"

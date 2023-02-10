@@ -59,3 +59,16 @@
 /Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CopyComplete
 /Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
 /Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/BouncyCastle.Crypto.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.pdb
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.Streams.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Hash.xxHash.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/MySql.Data.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Ubiety.Dns.Core.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/ZstdNet.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Configuration.ConfigurationManager.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Security.Permissions.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Text.Encoding.CodePages.dll

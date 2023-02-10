@@ -90,6 +90,17 @@
     <Compile Include="WorkoutStepViewController.designer.cs">
       <DependentUpon>WorkoutStepViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="InitializeWorkouts.cs" />
+    <Compile Include="WorkoutViewController.cs" />
+    <Compile Include="WorkoutViewController.designer.cs" />
+    <Compile Include="WorkoutTableViewSource.cs" />
+    <Compile Include="Workout.cs" />
+    <Compile Include="WorkoutOverviewViewController.cs" />
+    <Compile Include="WorkoutOverviewViewController.designer.cs" />
+    <Compile Include="UIImageViewWorkout.cs" />
+    <Compile Include="UIImageViewWorkout.designer.cs" />
+    <Compile Include="UITableViewWorkoutCell.cs" />
+    <Compile Include="UITableViewWorkoutCell.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />
@@ -163,9 +174,13 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+    <PackageReference Include="MySql.Data">
+      <Version>8.0.28</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />

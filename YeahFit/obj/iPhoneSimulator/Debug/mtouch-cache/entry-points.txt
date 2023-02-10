@@ -985,6 +985,28 @@ Function=NetSecurityNative_Unwrap
 	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll
 Function=SystemNative_GetDomainSocketSizes
 	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Core.dll
+Function=BrotliDecoderCreateInstance
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompressStream
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompress
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDestroyInstance
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderIsFinished
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCreateInstance
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderSetParameter
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompressStream
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderHasMoreOutput
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderDestroyInstance
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompress
+	/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.IO.Compression.dll
 Function=mono_pmip
 Function=xamarin_dyn_objc_msgSend
 Function=xamarin_dyn_objc_msgSendSuper
