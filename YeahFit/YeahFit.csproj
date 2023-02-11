@@ -101,6 +101,14 @@
     <Compile Include="UIImageViewWorkout.designer.cs" />
     <Compile Include="UITableViewWorkoutCell.cs" />
     <Compile Include="UITableViewWorkoutCell.designer.cs" />
+    <Compile Include="AwardsViewController.cs" />
+    <Compile Include="AwardsViewController.designer.cs">
+      <DependentUpon>AwardsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChallengeOverviewViewController.cs" />
+    <Compile Include="ChallengeOverviewViewController.designer.cs">
+      <DependentUpon>ChallengeOverviewViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

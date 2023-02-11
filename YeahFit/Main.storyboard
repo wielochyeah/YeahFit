@@ -19,11 +19,49 @@
                     </tabBar>
                     <connections>
                         <segue destination="sOs-6f-RCv" kind="relationship" relationship="viewControllers" id="v8u-v5-znA"/>
+                        <segue destination="xNw-Yz-zML" kind="relationship" relationship="viewControllers" id="N7T-FL-DaA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-66" y="-61"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="6qX-N6-Df3">
+            <objects>
+                <viewController id="xNw-Yz-zML" customClass="AwardsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zf0-MD-JgS"/>
+                        <viewControllerLayoutGuide type="bottom" id="8FF-je-eGy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HAk-Xb-wTH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="NzV-p3-Xkq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Gv-Vg-dqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="270"/>
+        </scene>
+        <!--Challenge Overview View Controller-->
+        <scene sceneID="cra-Wp-8Lz">
+            <objects>
+                <viewController id="6Be-mJ-NzV" customClass="ChallengeOverviewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pgO-F5-dBs"/>
+                        <viewControllerLayoutGuide type="bottom" id="iGh-ek-FRf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Flw-ac-Ui2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oo-Hc-Ctn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543" y="-61"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DdU-qF-IJH">
@@ -48,20 +86,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wähle die Tage an welchen du trainieren möchtest:" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pw-d8-oj4">
-                                <rect key="frame" x="30" y="173" width="333" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wähle aus, an welchen Tagen in der Woche du trainieren möchtest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pw-d8-oj4">
+                                <rect key="frame" x="48.666666666666657" y="173" width="296" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="Aez-Px-cxR"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="Lu1-km-H8U"/>
-                                    <constraint firstAttribute="width" secondItem="7Pw-d8-oj4" secondAttribute="height" multiplier="333:85" id="Myh-UE-a9L"/>
-                                    <constraint firstAttribute="width" constant="333" id="NKM-fI-qTz"/>
+                                    <constraint firstAttribute="width" secondItem="7Pw-d8-oj4" secondAttribute="height" multiplier="333:85" constant="-37" id="Myh-UE-a9L"/>
+                                    <constraint firstAttribute="width" constant="296" id="NKM-fI-qTz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Montag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jG-js-bIH">
-                                <rect key="frame" x="48" y="266" width="161" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jG-js-bIH">
+                                <rect key="frame" x="48" y="266" width="161" height="84"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,38 +127,38 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dienstag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDC-Ig-SQt">
-                                <rect key="frame" x="48" y="320" width="161" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dienstag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDC-Ig-SQt">
+                                <rect key="frame" x="48" y="320" width="161" height="84"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mittwoch" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5W-Zq-1fM">
-                                <rect key="frame" x="48" y="374" width="161" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mittwoch" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5W-Zq-1fM">
+                                <rect key="frame" x="48" y="373" width="161" height="86"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Donnerstag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS0-ts-2M2">
-                                <rect key="frame" x="48" y="428" width="161" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donnerstag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS0-ts-2M2">
+                                <rect key="frame" x="48" y="427" width="161" height="86"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Freitag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rg-Ia-6ec">
-                                <rect key="frame" x="48" y="482" width="161" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freitag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rg-Ia-6ec">
+                                <rect key="frame" x="48" y="482" width="161" height="84"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Samstag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF4-YV-a6e">
-                                <rect key="frame" x="48" y="536" width="161" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samstag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF4-YV-a6e">
+                                <rect key="frame" x="48" y="536" width="161" height="84"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sonntag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDQ-SX-LIc">
-                                <rect key="frame" x="48" y="590" width="161" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sonntag" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDQ-SX-LIc">
+                                <rect key="frame" x="48" y="589" width="161" height="85"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -166,8 +204,8 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTq-gd-KU8">
-                                <rect key="frame" x="216" y="609" width="128" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTq-gd-KU8">
+                                <rect key="frame" x="216" y="609" width="128" height="45"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Training">
@@ -175,7 +213,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoZ-aI-8K4">
-                                <rect key="frame" x="81" y="701" width="231" height="59"/>
+                                <rect key="frame" x="81" y="700" width="231" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="jA2-Lq-9mS"/>
                                     <constraint firstAttribute="width" constant="231" id="w4J-H1-lge"/>
@@ -201,7 +239,7 @@
                             <constraint firstItem="7Pw-d8-oj4" firstAttribute="top" secondItem="zL6-GO-OnO" secondAttribute="bottom" constant="18" id="7pA-fC-TfY"/>
                             <constraint firstItem="jVT-eI-SJS" firstAttribute="top" secondItem="Nw9-mv-Xoz" secondAttribute="bottom" constant="8" id="9YB-qZ-5ei"/>
                             <constraint firstItem="7Pw-d8-oj4" firstAttribute="top" secondItem="sah-go-QOP" secondAttribute="top" constant="173" id="9iz-R7-cAe"/>
-                            <constraint firstItem="uoZ-aI-8K4" firstAttribute="top" secondItem="tDQ-SX-LIc" secondAttribute="bottom" constant="27" id="B7Y-7b-Rev"/>
+                            <constraint firstItem="uoZ-aI-8K4" firstAttribute="top" secondItem="tDQ-SX-LIc" secondAttribute="bottom" constant="26" id="B7Y-7b-Rev"/>
                             <constraint firstItem="q5W-Zq-1fM" firstAttribute="trailing" secondItem="SS0-ts-2M2" secondAttribute="trailing" id="Bq4-vx-4ZC"/>
                             <constraint firstItem="jzt-PM-L0p" firstAttribute="trailing" secondItem="BTq-gd-KU8" secondAttribute="trailing" id="CcE-eZ-HhF"/>
                             <constraint firstItem="ytd-ZP-l0f" firstAttribute="leading" secondItem="5i1-na-lEf" secondAttribute="leading" id="EBV-5z-NAt"/>
@@ -241,17 +279,17 @@
                             <constraint firstItem="tDQ-SX-LIc" firstAttribute="top" secondItem="7rg-Ia-6ec" secondAttribute="bottom" constant="23" id="jGb-AN-yvv"/>
                             <constraint firstItem="SS0-ts-2M2" firstAttribute="top" secondItem="rDC-Ig-SQt" secondAttribute="bottom" constant="23" id="kMR-bc-RZD"/>
                             <constraint firstItem="5i1-na-lEf" firstAttribute="leading" secondItem="Nw9-mv-Xoz" secondAttribute="leading" id="kcF-ix-4CQ"/>
-                            <constraint firstItem="uoZ-aI-8K4" firstAttribute="top" secondItem="oF4-YV-a6e" secondAttribute="bottom" constant="81" id="mdp-sk-SLX"/>
+                            <constraint firstItem="uoZ-aI-8K4" firstAttribute="top" secondItem="oF4-YV-a6e" secondAttribute="bottom" constant="80" id="mdp-sk-SLX"/>
                             <constraint firstItem="jzt-PM-L0p" firstAttribute="leading" secondItem="BTq-gd-KU8" secondAttribute="leading" id="oJd-uu-5RX"/>
                             <constraint firstItem="oF4-YV-a6e" firstAttribute="trailing" secondItem="tDQ-SX-LIc" secondAttribute="trailing" id="sGa-pE-WEb"/>
-                            <constraint firstItem="uoZ-aI-8K4" firstAttribute="top" secondItem="BTq-gd-KU8" secondAttribute="bottom" constant="47" id="wBj-qQ-aXX"/>
+                            <constraint firstItem="uoZ-aI-8K4" firstAttribute="top" secondItem="BTq-gd-KU8" secondAttribute="bottom" constant="46" id="wBj-qQ-aXX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aMV-yN-Jfd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4BP-nd-Gxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="0.0"/>
+            <point key="canvasLocation" x="1543" y="-1373"/>
         </scene>
         <!--Item-->
         <scene sceneID="LW4-KP-IHh">
@@ -280,8 +318,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achte auf das Video um die" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT0-u7-NNx">
-                                <rect key="frame" x="46" y="675" width="267" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achte auf das Video, um die" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT0-u7-NNx">
+                                <rect key="frame" x="46" y="675" width="272" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -346,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3f-fD-Cak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1030" y="-60"/>
+            <point key="canvasLocation" x="2987" y="-711"/>
         </scene>
         <!--Workout Overview View Controller-->
         <scene sceneID="lrD-6o-1aG">
@@ -968,7 +1006,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcf-Yx-owB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="471" y="-724"/>
+            <point key="canvasLocation" x="1543" y="-711"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="paU-aU-mUf">
@@ -1284,7 +1322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zr-vS-QEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-489" y="-787"/>
+            <point key="canvasLocation" x="764" y="-385"/>
         </scene>
     </scenes>
     <resources>
