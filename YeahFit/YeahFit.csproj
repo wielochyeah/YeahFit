@@ -154,6 +154,14 @@
     <Compile Include="UITableViewChallengeWorkoutCell.designer.cs">
       <DependentUpon>UITableViewChallengeWorkoutCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="FilterViewController.cs" />
+    <Compile Include="FilterViewController.designer.cs">
+      <DependentUpon>FilterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filter2ViewController.cs" />
+    <Compile Include="Filter2ViewController.designer.cs">
+      <DependentUpon>Filter2ViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

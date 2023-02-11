@@ -692,10 +692,10 @@
             </objects>
             <point key="canvasLocation" x="1543" y="-1373"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter View Controller-->
         <scene sceneID="oc6-Md-N4f">
             <objects>
-                <viewController id="dh0-ra-MJz" sceneMemberID="viewController">
+                <viewController id="dh0-ra-MJz" customClass="FilterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TGZ-aL-cg8"/>
                         <viewControllerLayoutGuide type="bottom" id="JRw-wU-0yE"/>
@@ -917,11 +917,10 @@
             </objects>
             <point key="canvasLocation" x="2321" y="-1373"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter2 View Controller-->
         <scene sceneID="18o-kt-n65">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fWd-XH-Cf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="0kv-Yu-e8e" sceneMemberID="viewController">
+                <viewController id="0kv-Yu-e8e" customClass="Filter2ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5cl-5f-hfu"/>
                         <viewControllerLayoutGuide type="bottom" id="1r0-IU-Hra"/>
@@ -1124,6 +1123,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="EcP-oM-Vyu"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWd-XH-Cf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2320" y="596"/>
         </scene>
@@ -1915,7 +1915,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <segue destination="dh0-ra-MJz" kind="show" id="wSE-tu-y8Z"/>
+                                    <segue destination="dh0-ra-MJz" kind="show" id="oFp-YE-1zY"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dg-jL-ZgL">
