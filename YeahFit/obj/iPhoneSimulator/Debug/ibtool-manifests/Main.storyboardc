@@ -23,6 +23,21 @@
 				<integer>9</integer>
 			</dict>
 		</array>
+		<key>3YJ-qe-fCl</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>3YJ-qe-fCl</string>
+				</array>
+				<key>message</key>
+				<string>Prototype table cells must have reuse identifiers</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
 		<key>61j-TW-tsC</key>
 		<array>
 			<dict>
@@ -152,6 +167,21 @@
 				</array>
 				<key>message</key>
 				<string>“Workout View Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>DWH-5m-HOl</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>DWH-5m-HOl</string>
+				</array>
+				<key>message</key>
+				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
 				<key>type</key>
 				<string>IBIssueTypeUnsupportedConfiguration</string>
 				<key>type-value</key>
@@ -353,6 +383,21 @@
 				<integer>9</integer>
 			</dict>
 		</array>
+		<key>c5R-sf-pPE</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>c5R-sf-pPE</string>
+				</array>
+				<key>message</key>
+				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
 		<key>cTR-Iv-Wzd</key>
 		<array>
 			<dict>
@@ -422,6 +467,21 @@
 				</array>
 				<key>message</key>
 				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>i1f-Y2-TGr</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>i1f-Y2-TGr</string>
+				</array>
+				<key>message</key>
+				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
 				<key>type</key>
 				<string>IBIssueTypeUnsupportedConfiguration</string>
 				<key>type-value</key>

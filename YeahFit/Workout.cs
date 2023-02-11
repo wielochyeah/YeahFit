@@ -33,7 +33,7 @@ namespace YeahFit
         //internal List<Step> Steps { get; set; }
 
         // Ingredients
-        //internal List<Ingredient> Ingredients { get; set; }
+        internal List<Exercise> Exercises { get; set; }
 
         // Image
         public byte[] RecipeImage;

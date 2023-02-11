@@ -136,6 +136,16 @@
       <DependentUpon>ChallengeViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="InitializeChallenges.cs" />
+    <Compile Include="ExerciseTableView.cs" />
+    <Compile Include="ExerciseTableView.designer.cs">
+      <DependentUpon>ExerciseTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITableViewExerciseCell.cs" />
+    <Compile Include="UITableViewExerciseCell.designer.cs">
+      <DependentUpon>UITableViewExerciseCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exercise.cs" />
+    <Compile Include="ExerciseTableViewSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

@@ -175,7 +175,7 @@ namespace YeahFit
         /// Reload tabeView_Recipes from other Views
         /// </summary>
         /// <param name="firstViewController"></param>
-        public static void Refresh(FirstViewController firstViewController)
+        public static void Refresh(WorkoutOverviewViewController firstViewController)
         {
             firstViewController.ViewDidAppear(true);
         }
