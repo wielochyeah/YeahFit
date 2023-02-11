@@ -365,7 +365,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="327" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bsp.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPH-NK-NTF" customClass="UIImageViewChallenge">
+                                                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPH-NK-NTF" customClass="UIImageViewChallenge">
                                                     <rect key="frame" x="-3" y="50" width="333" height="189"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="189" id="y2q-Um-zFn"/>
