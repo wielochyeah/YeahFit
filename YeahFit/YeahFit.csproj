@@ -242,6 +242,20 @@
     <BundleResource Include="Resources\WeekBig1.png" />
     <BundleResource Include="Resources\WeekBig2.png" />
     <BundleResource Include="Resources\Bsp.png" />
+    <BundleResource Include="Resources\Medal 1 reached.png" />
+    <BundleResource Include="Resources\Medal 2 reached.png" />
+    <BundleResource Include="Resources\Trophy 1 reached.png" />
+    <BundleResource Include="Resources\Trophy 2 reached.png" />
+    <BundleResource Include="Resources\Trophy 4 reached.png" />
+    <BundleResource Include="Resources\Trophy 5 reached.png" />
+    <BundleResource Include="Resources\Tropy 3 reached.png" />
+    <BundleResource Include="Resources\Medal 1 unreached.png" />
+    <BundleResource Include="Resources\Medal 2 unreached.png" />
+    <BundleResource Include="Resources\Trophy 1 unreached.png" />
+    <BundleResource Include="Resources\Trophy 2 unreached.png" />
+    <BundleResource Include="Resources\Trophy 3 unreached.png" />
+    <BundleResource Include="Resources\Trophy 4 unreached.png" />
+    <BundleResource Include="Resources\Trophy 5 unreached.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

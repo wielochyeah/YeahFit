@@ -45,6 +45,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medal 1 unreached.png" translatesAutoresizingMaskIntoConstraints="NO" id="5DU-lN-eli">
+                                <rect key="frame" x="17" y="163" width="157" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -56,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Gv-Vg-dqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="763" y="270"/>
+            <point key="canvasLocation" x="762.59541984732823" y="269.71830985915494"/>
         </scene>
         <!--Challenge Overview View Controller-->
         <scene sceneID="cra-Wp-8Lz">
@@ -1790,6 +1794,7 @@
         <image name="Bsp.png" width="642" height="622"/>
         <image name="Dessert.png" width="291" height="302"/>
         <image name="Getränke.png" width="291" height="302"/>
+        <image name="Medal 1 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="Mittagessen.png" width="291" height="302"/>
         <image name="Rectangle 1178-3.png" width="400.5" height="420"/>
         <image name="Rectangle 1178.png" width="401" height="458"/>
