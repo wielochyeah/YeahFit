@@ -5,6 +5,12 @@
       <Optimize>false</Optimize>
       <LogicalName>LaunchScreen.nib</LogicalName>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-dh0-ra-MJz.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/UIViewController-dh0-ra-MJz.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UITabBarController-49e-Tb-3d3.nib">
       <Optimize>false</Optimize>
       <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
@@ -23,6 +29,36 @@
       <LogicalName>Main.storyboardc/UIViewController-uRN-T8-z1Y.nib</LogicalName>
       <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/6Be-mJ-NzV-view-Flw-ac-Ui2.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/6Be-mJ-NzV-view-Flw-ac-Ui2.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/xNw-Yz-zML-view-HAk-Xb-wTH.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/xNw-Yz-zML-view-HAk-Xb-wTH.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-6Be-mJ-NzV.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/UIViewController-6Be-mJ-NzV.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/dh0-ra-MJz-view-HeP-DD-scV.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/dh0-ra-MJz-view-HeP-DD-scV.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-0kv-Yu-e8e.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/UIViewController-0kv-Yu-e8e.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/GVa-dh-Iuk-view-9NK-93-pPQ.nib">
       <Optimize>false</Optimize>
       <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
@@ -39,6 +75,12 @@
       <Optimize>false</Optimize>
       <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
       <LogicalName>Main.storyboardc/Info.plist</LogicalName>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/0kv-Yu-e8e-view-eh7-ta-ca1.nib">
+      <Optimize>false</Optimize>
+      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+      <LogicalName>Main.storyboardc/0kv-Yu-e8e-view-eh7-ta-ca1.nib</LogicalName>
       <OriginalItemSpec>obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-GVa-dh-Iuk.nib">

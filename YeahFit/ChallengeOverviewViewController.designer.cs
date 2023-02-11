@@ -12,9 +12,15 @@ namespace YeahFit
 	[Register ("ChallengeOverviewViewController")]
 	partial class ChallengeOverviewViewController
 	{
+		[Outlet]
+		UIKit.UITableView tableView_ChallengeOverview { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (tableView_ChallengeOverview != null) {
+				tableView_ChallengeOverview.Dispose ();
+				tableView_ChallengeOverview = null;
+			}
 		}
 	}
 }

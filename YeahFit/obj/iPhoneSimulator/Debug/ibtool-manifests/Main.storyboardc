@@ -8,6 +8,21 @@
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
 	<dict>
+		<key>3Nq-va-2fI</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>3Nq-va-2fI</string>
+				</array>
+				<key>message</key>
+				<string>“Challenge View Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
 		<key>61j-TW-tsC</key>
 		<array>
 			<dict>
@@ -122,6 +137,21 @@
 				</array>
 				<key>message</key>
 				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>CRn-hj-Kdr</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>CRn-hj-Kdr</string>
+				</array>
+				<key>message</key>
+				<string>“Workout View Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
 				<key>type</key>
 				<string>IBIssueTypeUnsupportedConfiguration</string>
 				<key>type-value</key>

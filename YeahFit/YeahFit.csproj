@@ -109,6 +109,33 @@
     <Compile Include="ChallengeOverviewViewController.designer.cs">
       <DependentUpon>ChallengeOverviewViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="UITableViewChallengeCell.cs" />
+    <Compile Include="UITableViewChallengeCell.designer.cs">
+      <DependentUpon>UITableViewChallengeCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIImageViewChallenge.cs" />
+    <Compile Include="UIImageViewChallenge.designer.cs">
+      <DependentUpon>UIImageViewChallenge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChallengeTableViewSource.cs" />
+    <Compile Include="Challenge.cs" />
+    <Compile Include="WeekSettingsViewController.cs" />
+    <Compile Include="WeekSettingsViewController.designer.cs">
+      <DependentUpon>WeekSettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkoutFilterViewController.cs" />
+    <Compile Include="WorkoutFilterViewController.designer.cs">
+      <DependentUpon>WorkoutFilterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChallengeFilterViewController.cs" />
+    <Compile Include="ChallengeFilterViewController.designer.cs">
+      <DependentUpon>ChallengeFilterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChallengeViewController.cs" />
+    <Compile Include="ChallengeViewController.designer.cs">
+      <DependentUpon>ChallengeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InitializeChallenges.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />
