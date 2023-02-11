@@ -65,7 +65,7 @@ namespace YeahFit
             UIStoryboard board = UIStoryboard.FromName("Main", null);
 
             // Show RecipeView and set index
-            WorkoutOverviewViewController ctrl = (WorkoutOverviewViewController)board.InstantiateViewController("WorkoutViewController");
+            WorkoutViewController ctrl = (WorkoutViewController)board.InstantiateViewController("WorkoutViewController");
             if (parentController != null)
             {
                 parentController.ShowViewController(ctrl, this);

@@ -10,7 +10,7 @@ namespace YeahFit
 
         public static MySqlConnection con;
         public static List<Workout> workouts = new List<Workout>();
-        //public List<Ingredient> Ingredients;
+        public List<Exercise> Exercises;
         //public List<Step> Steps;
         public static string category;
         public static string filter;
@@ -222,7 +222,7 @@ namespace YeahFit
                             duration = dauer,
                             difficulty = schwierigkeit,
                             liked = liked,
-                            //Ingredients = new List<Ingredient>(),
+                            Exercises = new List<Exercise>(),
                             //Steps = new List<Step>(),
                             RecipeImage = imgg,
                         };
@@ -355,7 +355,7 @@ namespace YeahFit
                             int id = Convert.ToInt32(reader3["RezeptID"]);
 
                             // Create new ingredient
-                            /*Ingredient ingredient = new Ingredient
+                            Exercise exercise = new Exercise
                             {
                                 IngredientName = name,
                                 IngredientAmount = ammount,
@@ -367,9 +367,9 @@ namespace YeahFit
                                 // For the correct id
                                 if (id == workouts[j].id)
                                 {
-                                    workouts[j].Ingredients.Add(ingredient);
+                                    workouts[j].Exercises.Add(exercise);
                                 }
-                            }*/
+                            }
 
                         }
                     }

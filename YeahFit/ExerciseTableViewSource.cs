@@ -7,21 +7,15 @@ namespace YeahFit
 {
 	internal class ExerciseTableViewSource : UITableViewSource
     {
-        private List<Exercise> exercises;
-        UIViewController parentController;
-        public static Exercise nowSelectedExercise;
-        Workout selectedWorkout;
-        public static Workout nowSelectedWorkout;
+        private List<Exercise> internalExercises;
 
-        public ExerciseTableViewSource(List<Exercise> exercises, UIViewController parentController, Workout selectedWorkout)
+        public ExerciseTableViewSource(List<Exercise> internalExercises)
         {
-            this.exercises = exercises;
-            this.parentController = parentController;
-            this.selectedWorkout = selectedWorkout;
+            this.internalExercises = internalExercises;
         }
 
         /// <summary>
-        /// Get the individual ingredient
+        /// Get the individual step
         /// </summary>
         /// <param name="tableView"></param>
         /// <param name="indexPath"></param>
@@ -31,17 +25,11 @@ namespace YeahFit
             // Set cells in the TableView
             var cell = (UITableViewExerciseCell)tableView.DequeueReusableCell("cell", indexPath);
 
-            // Counter to allow addCell to be added at the end
-            int iRow = indexPath.Row;
-            if (indexPath.Row == exercises.Count && exercises.Count > 0)
-            {
-                iRow = indexPath.Row - 1;
-            }
-
-            var selectedExercise = exercises[iRow];
+            var selectedExercise = internalExercises[indexPath.Row];
 
             // Update ingredient cell
-            cell.UpdateCell(selectedExercise, iRow);
+            cell.UpdateCell(selectedExercise, indexPath.Row);
+
             return cell;
         }
 
@@ -53,10 +41,10 @@ namespace YeahFit
         /// <returns></returns>
         public override nint RowsInSection(UITableView tableview, nint section)
         {
-            return exercises.Count + 1;
+            return internalExercises.Count;
         }
 
-        
+
     }
 }
 

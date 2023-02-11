@@ -23,10 +23,6 @@ namespace YeahFit
             // Set ingredient text
             lbl_ExerciseName.Text = selectedExercise.IngredientName;
             lbl_SetsTimes.Text = selectedExercise.IngredientAmount;
-
-            
-
-            
         }
     }
 }

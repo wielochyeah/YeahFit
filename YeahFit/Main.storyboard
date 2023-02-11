@@ -521,10 +521,10 @@
             </objects>
             <point key="canvasLocation" x="2320" y="596"/>
         </scene>
-        <!--Workout View Controller-->
+        <!--WorkoutViewController-->
         <scene sceneID="Xvp-q2-OEf">
             <objects>
-                <viewController id="CRn-hj-Kdr" customClass="WorkoutViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WorkoutViewController" title="WorkoutViewController" id="CRn-hj-Kdr" customClass="WorkoutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6MT-tZ-Rfw"/>
                         <viewControllerLayoutGuide type="bottom" id="TUr-a2-t8e"/>

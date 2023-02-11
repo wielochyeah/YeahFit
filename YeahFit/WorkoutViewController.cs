@@ -38,7 +38,7 @@ namespace YeahFit
             if (nowSelectedWorkout != null)
             {
                 // Set internal Ingredients and Steps lists
-                //internalIngredients = nowSelectedRecipe.Ingredients;
+                internalExercises = nowSelectedWorkout.Exercises;
                 //internalSteps = nowSelectedRecipe.Steps;
 
                 // Set general labels
