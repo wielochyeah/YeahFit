@@ -12,5 +12,212 @@ namespace YeahFit
 		public UITableViewChallengeWorkoutCell (IntPtr handle) : base (handle)
 		{
 		}
-	}
+
+        /// <summary>
+        /// Update each cell content
+        /// </summary>
+        /// <param name="selectedRecipe"></param>
+        /// <param name="indexPath"></param>
+        internal void UpdateCell(Workout selectedWorkout, int indexPath)
+        {
+            // Set recipe text
+            imageView_Workout.Image = UIImage.GetSystemImage("heart.fill");
+            lbl_WorkoutName.Text = selectedWorkout.RecipeName;
+            lbl_categoryDifficulty.Text = "";
+
+
+            //
+            // Categories
+            //
+
+            // Category: Breakfast
+            if (selectedWorkout.breakfast == true)
+            {
+                // If there were categories set before
+                if (lbl_categoryDifficulty.Text != "")
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Frühstück";
+                }
+                else
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = "Frühstück";
+                }
+            }
+
+            // Category: Lunch
+            if (selectedWorkout.lunch == true)
+            {
+                // If there were categories set before
+                if (lbl_categoryDifficulty.Text != "")
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Mittagessen";
+                }
+                else
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = "Mittagessen";
+                }
+            }
+
+            // Category: Dinner
+            if (selectedWorkout.dinner == true)
+            {
+                // If there were categories set before
+                if (lbl_categoryDifficulty.Text != "")
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Abendessen";
+                }
+                else
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = "Abendessen";
+                }
+            }
+
+            // Category: Dessert
+            if (selectedWorkout.dessert == true)
+            {
+                // If there were categories set before
+                if (lbl_categoryDifficulty.Text != "")
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Dessert";
+                }
+                else
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = "Dessert";
+                }
+            }
+
+            // Category: Snacks
+            if (selectedWorkout.snacks == true)
+            {
+                // If there were categories set before
+                if (lbl_categoryDifficulty.Text != "")
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Snack";
+                }
+                else
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = "Snack";
+                }
+            }
+
+            // Category: Drinks
+            if (selectedWorkout.drinks == true)
+            {
+                // If there were categories set before
+                if (lbl_categoryDifficulty.Text != "")
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Getränk";
+                }
+                else
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = "Getränk";
+                }
+            }
+
+            // Category: Vegetarian
+            if (selectedWorkout.vegetarian == true)
+            {
+                // If there were categories set before
+                if (lbl_categoryDifficulty.Text != "")
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Vegetarisch";
+                }
+                else
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = "Vegetarisch";
+                }
+            }
+
+            // Category: Vegan
+            if (selectedWorkout.vegan == true)
+            {
+                // If there were categories set before
+                if (lbl_categoryDifficulty.Text != "")
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Vegan";
+                }
+                else
+                {
+                    // Set category text
+                    lbl_categoryDifficulty.Text = "Vegan";
+                }
+            }
+
+            // If no category was selected
+            if (
+                selectedWorkout.breakfast == false &&
+                selectedWorkout.lunch == false &&
+                selectedWorkout.dinner == false &&
+                selectedWorkout.dessert == false &&
+                selectedWorkout.snacks == false &&
+                selectedWorkout.vegetarian == false &&
+                selectedWorkout.vegan == false &&
+                selectedWorkout.drinks == false
+                )
+            // Set category text
+            {
+                lbl_categoryDifficulty.Text = "Keine Kategorie ausgewählt";
+            }
+
+
+            //
+            // Difficulties
+            //
+
+            // Difficulty beginner
+            if (selectedWorkout.difficulty == "beginner")
+            {
+                // Set difficulty text
+                lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Anfänger";
+            }
+
+            // Difficulty advanced
+            else if (selectedWorkout.difficulty == "advanced")
+            {
+                // Set difficulty text
+                lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Fortgeschritten";
+            }
+
+            // Difficulty professional
+            else if (selectedWorkout.difficulty == "professional")
+            {
+                // Set difficulty text
+                lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Profi";
+            }
+
+
+            
+            //
+            // Recipe image
+            //
+            /*
+            // Get recipe image from byte array
+            var data = NSData.FromArray(selectedWorkout.RecipeImage);
+
+            // Convert to UIImage
+            UIImage image = UIImage.LoadFromData(data);
+
+            // Set as image
+            imageView_Workout.Image = image;
+
+            // AspectFill
+            imageView_Workout.ContentMode = UIViewContentMode.ScaleAspectFill;
+            */
+        }
+    }
 }

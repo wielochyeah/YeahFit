@@ -220,7 +220,7 @@ namespace YeahFit
                             duration = dauer,
                             difficulty = schwierigkeit,
                             liked = liked,
-                            //Ingredients = new List<Ingredient>(),
+                            Workouts = new List<Workout>(),
                             //Steps = new List<Step>(),
                             RecipeImage = imgg,
                         };

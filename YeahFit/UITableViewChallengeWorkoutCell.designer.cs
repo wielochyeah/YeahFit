@@ -12,9 +12,39 @@ namespace YeahFit
 	[Register ("UITableViewChallengeWorkoutCell")]
 	partial class UITableViewChallengeWorkoutCell
 	{
+		[Outlet]
+		YeahFit.UIImageViewChallenge imageView_Workout { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_categoryDifficulty { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_Weekday { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_WorkoutName { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (lbl_Weekday != null) {
+				lbl_Weekday.Dispose ();
+				lbl_Weekday = null;
+			}
+
+			if (lbl_categoryDifficulty != null) {
+				lbl_categoryDifficulty.Dispose ();
+				lbl_categoryDifficulty = null;
+			}
+
+			if (lbl_WorkoutName != null) {
+				lbl_WorkoutName.Dispose ();
+				lbl_WorkoutName = null;
+			}
+
+			if (imageView_Workout != null) {
+				imageView_Workout.Dispose ();
+				imageView_Workout = null;
+			}
 		}
 	}
 }
