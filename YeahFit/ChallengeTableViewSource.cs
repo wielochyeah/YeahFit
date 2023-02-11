@@ -12,7 +12,7 @@ namespace YeahFit
         UIViewController parentController;
 
         List<Challenge> challenges;
-        public static Challenge nowSelectedWorkout;
+        public static Challenge nowSelectedChallenge;
         public static Challenge selectedChallenge;
 
         public ChallengeTableViewSource(List<Challenge> challenges, UIViewController parentController, UINavigationController CurrentNavigationController)
@@ -60,12 +60,12 @@ namespace YeahFit
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
             // Get selected recipe
-            nowSelectedWorkout = challenges[indexPath.Row];
+            nowSelectedChallenge = challenges[indexPath.Row];
 
             UIStoryboard board = UIStoryboard.FromName("Main", null);
 
             // Show RecipeView and set index
-            ChallengeOverviewViewController ctrl = (ChallengeOverviewViewController)board.InstantiateViewController("ChallengeViewController");
+            ChallengeViewController ctrl = (ChallengeViewController)board.InstantiateViewController("ChallengeViewController");
             if (parentController != null)
             {
                 parentController.ShowViewController(ctrl, this);

@@ -8,7 +8,7 @@ namespace YeahFit
 	{
         public static MySqlConnection con;
         public static List<Challenge> challenges = new List<Challenge>();
-        //public List<Ingredient> Ingredients;
+        public List<Workout> Workouts;
         //public List<Step> Steps;
         public static string category;
         public static string filter;
@@ -352,22 +352,20 @@ namespace YeahFit
                             string ammount = reader3["Menge"].ToString();
                             int id = Convert.ToInt32(reader3["RezeptID"]);
 
-                            // Create new ingredient
-                            /*Ingredient ingredient = new Ingredient
+                            Workout workout = new Workout
                             {
-                                IngredientName = name,
-                                IngredientAmount = ammount,
+                                RecipeName = name,
                             };
 
                             // Set ingredients of recipe
-                            for (int j = 0; j < workouts.Count; j++)
+                            for (int j = 0; j < challenges.Count; j++)
                             {
                                 // For the correct id
-                                if (id == workouts[j].id)
+                                if (id == challenges[j].id)
                                 {
-                                    workouts[j].Ingredients.Add(ingredient);
+                                    challenges[j].Workouts.Add(workout);
                                 }
-                            }*/
+                            }
 
                         }
                     }

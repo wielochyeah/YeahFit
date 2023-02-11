@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace YeahFit
 {
 	public class Challenge
@@ -27,11 +29,9 @@ namespace YeahFit
         // Liked
         public bool liked { get; set; }
 
-        // Steps
-        //internal List<Step> Steps { get; set; }
 
         // Ingredients
-        //internal List<Ingredient> Ingredients { get; set; }
+        internal List<Workout> Workouts { get; set; }
 
         // Image
         public byte[] RecipeImage;

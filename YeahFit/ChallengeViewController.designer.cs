@@ -12,9 +12,31 @@ namespace YeahFit
 	[Register ("ChallengeViewController")]
 	partial class ChallengeViewController
 	{
+		[Outlet]
+		UIKit.UIButton btn_Apply { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_ChallengeName { get; set; }
+
+		[Outlet]
+		UIKit.UITableView tableView_Challenges { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (lbl_ChallengeName != null) {
+				lbl_ChallengeName.Dispose ();
+				lbl_ChallengeName = null;
+			}
+
+			if (tableView_Challenges != null) {
+				tableView_Challenges.Dispose ();
+				tableView_Challenges = null;
+			}
+
+			if (btn_Apply != null) {
+				btn_Apply.Dispose ();
+				btn_Apply = null;
+			}
 		}
 	}
 }

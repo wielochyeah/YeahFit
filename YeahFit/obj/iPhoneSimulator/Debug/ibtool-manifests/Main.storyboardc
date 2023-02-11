@@ -8,21 +8,6 @@
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
 	<dict>
-		<key>3Nq-va-2fI</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>3Nq-va-2fI</string>
-				</array>
-				<key>message</key>
-				<string>“Challenge View Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
 		<key>61j-TW-tsC</key>
 		<array>
 			<dict>
@@ -317,21 +302,6 @@
 				</array>
 				<key>message</key>
 				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>YVd-3X-7KR</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>YVd-3X-7KR</string>
-				</array>
-				<key>message</key>
-				<string>“Item“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
 				<key>type</key>
 				<string>IBIssueTypeUnsupportedConfiguration</string>
 				<key>type-value</key>

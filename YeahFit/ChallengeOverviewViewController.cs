@@ -143,7 +143,7 @@ namespace YeahFit
 
             // Setting recipes as its source
             tableView_ChallengeOverview.Source = new ChallengeTableViewSource(challenges, this, CurrentNavigationController);
-            tableView_ChallengeOverview.RowHeight = 425;
+            tableView_ChallengeOverview.RowHeight = 195;
 
             // Reload tableView
             tableView_ChallengeOverview.ReloadData();
@@ -161,7 +161,7 @@ namespace YeahFit
             challenges = null;
             InitializeChallenges.Initialize();
             tableView_ChallengeOverview.Source = new ChallengeTableViewSource(challenges, this, CurrentNavigationController);
-            tableView_ChallengeOverview.RowHeight = 425;
+            tableView_ChallengeOverview.RowHeight = 195;
             tableView_ChallengeOverview.ReloadData();
         }
 
@@ -175,7 +175,7 @@ namespace YeahFit
         /// Reload tabeView_Recipes from other Views
         /// </summary>
         /// <param name="firstViewController"></param>
-        public static void Refresh(FirstViewController firstViewController)
+        public static void Refresh(ChallengeOverviewViewController firstViewController)
         {
             firstViewController.ViewDidAppear(true);
         }

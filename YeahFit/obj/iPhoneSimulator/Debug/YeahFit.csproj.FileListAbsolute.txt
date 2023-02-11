@@ -162,3 +162,17 @@
 /Users/maurice/Downloads/YeahFitNeu-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CopyComplete
 /Users/maurice/Downloads/YeahFitNeu-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
 /Users/maurice/Downloads/YeahFitNeu-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 reached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 reached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 reached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 reached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 reached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 reached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Tropy 3 reached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 unreached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 unreached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 unreached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 unreached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 3 unreached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 unreached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 unreached.png
