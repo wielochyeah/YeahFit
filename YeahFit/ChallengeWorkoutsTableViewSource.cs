@@ -38,7 +38,7 @@ namespace YeahFit
             selectedWorkout = workouts[indexPath.Row];
 
             // Update recipe cell
-            //cell.UpdateCell(selectedWorkout, indexPath.Row);
+            cell.UpdateCell(selectedWorkout, indexPath.Row);
 
             return cell;
         }

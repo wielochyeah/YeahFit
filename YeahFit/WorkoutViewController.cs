@@ -21,6 +21,8 @@ namespace YeahFit
         public static bool liked;
 
         public static WorkoutOverviewViewController firstViewController;
+        public static ChallengeOverviewViewController secondViewController;
+
 
 
         public WorkoutViewController(IntPtr handle) : base(handle)
@@ -58,6 +60,9 @@ namespace YeahFit
                     lbl_difficulty.Text = "       Profi";
                 }
 
+
+                lbl_category.Text = "Test-Kategorie";
+
                 // Set duration
                 TimeSpan duration = TimeSpan.FromSeconds(nowSelectedWorkout.duration);
                 lbl_duration.Text = duration.ToString(@"hh\:mm");
@@ -91,7 +96,14 @@ namespace YeahFit
         public override void ViewDidDisappear(bool animated)
         {
             base.ViewDidDisappear(animated);
-            this.DismissViewController(true, () => { WorkoutOverviewViewController.Refresh(firstViewController); });
+            if (firstViewController != null)
+            {
+                this.DismissViewController(true, () => { WorkoutOverviewViewController.Refresh(firstViewController); });
+            }
+            else
+            {
+                this.DismissViewController(true, () => { ChallengeOverviewViewController.Refresh(secondViewController); });
+            }
         }
 
         /// <summary>
@@ -103,7 +115,15 @@ namespace YeahFit
             base.ViewDidAppear(animated);
 
             // Set internal recipe, ingredients list, steps list
-            nowSelectedWorkout = WorkoutOverviewViewController.workouts[index];
+            if (WorkoutOverviewViewController.workouts[index] != null)
+
+            {
+                nowSelectedWorkout = WorkoutOverviewViewController.workouts[index];
+            }
+            else
+            {
+                nowSelectedWorkout = ChallengeOverviewViewController.workouts[index];
+            }
             internalExercises = nowSelectedWorkout.Exercises;
 
             // Set general information

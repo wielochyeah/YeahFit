@@ -21,7 +21,6 @@ namespace YeahFit
         internal void UpdateCell(Workout selectedWorkout, int indexPath)
         {
             // Set recipe text
-            imageView_Workout.Image = UIImage.GetSystemImage("heart.fill");
             lbl_WorkoutName.Text = selectedWorkout.RecipeName;
             lbl_categoryDifficulty.Text = "";
 

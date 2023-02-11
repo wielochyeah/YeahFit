@@ -15,6 +15,7 @@ namespace YeahFit
 
         // Main list of all recipes
         public static List<Challenge> challenges;
+        public static List<Workout> workouts;
 
 
         public ChallengeOverviewViewController(IntPtr handle) : base(handle)
@@ -29,6 +30,8 @@ namespace YeahFit
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
+
+
 
             // Buttons for setting categories
             /*btn_Breakfast.TouchUpInside += (sender, e) =>
@@ -136,10 +139,13 @@ namespace YeahFit
             */
             // Loading the tableView
             ChallengeViewController.firstViewController = this;
+            WorkoutViewController.secondViewController = this;
             challenges = null;
+            workouts = null;
 
             // Get data from database
             InitializeChallenges.Initialize();
+            InitializeWorkouts.Initialize();
 
             // Setting recipes as its source
             tableView_ChallengeOverview.Source = new ChallengeTableViewSource(challenges, this, CurrentNavigationController);
