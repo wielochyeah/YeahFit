@@ -9,6 +9,10 @@ namespace YeahFit
 {
 	public partial class WorkoutStepViewController : UIViewController
 	{
+        public static int index;
+        public static Workout selectedWorkout;
+
+
         NSTimer timer;
         int seconds = 0;
 
@@ -19,6 +23,18 @@ namespace YeahFit
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            lbl_ExerciseName.Text = selectedWorkout.Exercises[index].IngredientName;
+            lbl_SetsReps.Text = selectedWorkout.Exercises[index].IngredientAmount;
+            if (selectedWorkout.Exercises[index + 1] != null)
+            {
+                lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[index + 1].IngredientName;
+            }
+            else
+            {
+                lbl_NextExercise.Text = "Letzte Übung";
+            }
+
             timer = NSTimer.CreateRepeatingScheduledTimer(TimeSpan.FromSeconds(1), delegate
             {
                 seconds++;

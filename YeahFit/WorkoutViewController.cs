@@ -193,8 +193,8 @@ namespace YeahFit
             var WorkoutStepViewController = segue.DestinationViewController as WorkoutStepViewController;
 
             // Set edit true and setting recipe, index and RecipeViewController in SecondView
-            //WorkoutStepViewController.selectedWorkout = nowSelectedWorkout;
-            //WorkoutStepViewController.index = index;
+            WorkoutStepViewController.selectedWorkout = nowSelectedWorkout;
+            WorkoutStepViewController.index = index;
             //WorkoutStepViewController.workoutViewController = this;
         }
     }
