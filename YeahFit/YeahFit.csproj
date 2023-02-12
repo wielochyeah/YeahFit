@@ -243,6 +243,8 @@
     <BundleResource Include="Resources\Trophy 3 unreached.png" />
     <BundleResource Include="Resources\Trophy 4 unreached.png" />
     <BundleResource Include="Resources\Trophy 5 unreached.png" />
+    <BundleResource Include="Resources\Workouts.png" />
+    <BundleResource Include="Resources\Workouts2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
