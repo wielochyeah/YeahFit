@@ -65,27 +65,10 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
-    <Compile Include="UITableViewRecipeCell.cs" />
-    <Compile Include="UITableViewRecipeCell.designer.cs">
-      <DependentUpon>UITableViewRecipeCell.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UIImageViewRecipe.cs" />
-    <Compile Include="UIImageViewRecipe.designer.cs">
-      <DependentUpon>UIImageViewRecipe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="YourWorkoutsViewController.cs" />
-    <Compile Include="YourWorkoutsViewController.designer.cs">
-      <DependentUpon>YourWorkoutsViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="TableViewWorkouts.cs" />
     <Compile Include="TableViewWorkouts.designer.cs">
       <DependentUpon>TableViewWorkouts.cs</DependentUpon>
     </Compile>
-    <Compile Include="WeekTableView.cs" />
-    <Compile Include="WeekTableView.designer.cs">
-      <DependentUpon>WeekTableView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WeekTableViewSource.cs" />
     <Compile Include="WorkoutStepViewController.cs" />
     <Compile Include="WorkoutStepViewController.designer.cs">
       <DependentUpon>WorkoutStepViewController.cs</DependentUpon>
@@ -123,14 +106,6 @@
     <Compile Include="WeekSettingsViewController.designer.cs">
       <DependentUpon>WeekSettingsViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkoutFilterViewController.cs" />
-    <Compile Include="WorkoutFilterViewController.designer.cs">
-      <DependentUpon>WorkoutFilterViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChallengeFilterViewController.cs" />
-    <Compile Include="ChallengeFilterViewController.designer.cs">
-      <DependentUpon>ChallengeFilterViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChallengeViewController.cs" />
     <Compile Include="ChallengeViewController.designer.cs">
       <DependentUpon>ChallengeViewController.cs</DependentUpon>
@@ -167,10 +142,6 @@
     <Compile Include="FirstViewController.cs" />
     <Compile Include="FirstViewController.designer.cs">
       <DependentUpon>FirstViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SecondViewController.cs" />
-    <Compile Include="SecondViewController.designer.cs">
-      <DependentUpon>SecondViewController.cs</DependentUpon>
     </Compile>
     <InterfaceDefinition Include="Main.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">

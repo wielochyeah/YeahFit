@@ -1425,14 +1425,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nächste Übung:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="xT0-u7-NNx">
-                                <rect key="frame" x="46" y="652" width="306" height="20"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FL-ka-3oG">
-                                <rect key="frame" x="46" y="606" width="141" height="35"/>
+                                <rect key="frame" x="46" y="592" width="141.33333333333334" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="141.33333333333348" id="0Pw-X5-5mJ"/>
                                     <constraint firstAttribute="height" constant="35" id="WKE-m2-Maw"/>
@@ -1468,6 +1462,12 @@
                                     <color key="baseBackgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nächste Übung:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="xT0-u7-NNx">
+                                <rect key="frame" x="46" y="644" width="306" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -1475,10 +1475,10 @@
                             <constraint firstItem="pzP-ar-TKI" firstAttribute="leading" secondItem="kZV-Gb-9O8" secondAttribute="leading" id="EcU-MK-ke4"/>
                             <constraint firstItem="xT0-u7-NNx" firstAttribute="leading" secondItem="ahs-bv-dc0" secondAttribute="leading" id="GkK-a3-HbH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MFX-IW-56B" secondAttribute="trailing" constant="25" id="Jed-re-VLU"/>
-                            <constraint firstItem="0FL-ka-3oG" firstAttribute="centerY" secondItem="MFX-IW-56B" secondAttribute="centerY" constant="-77.5" id="K8M-0c-lrr"/>
+                            <constraint firstItem="0FL-ka-3oG" firstAttribute="centerY" secondItem="MFX-IW-56B" secondAttribute="centerY" constant="-91.5" id="K8M-0c-lrr"/>
                             <constraint firstItem="ahs-bv-dc0" firstAttribute="baseline" secondItem="MFX-IW-56B" secondAttribute="baseline" id="Rxt-NN-7RS"/>
                             <constraint firstItem="xT0-u7-NNx" firstAttribute="leading" secondItem="0FL-ka-3oG" secondAttribute="leading" id="UQo-BR-Ezk"/>
-                            <constraint firstItem="InZ-Nl-pdy" firstAttribute="top" secondItem="0FL-ka-3oG" secondAttribute="bottom" constant="108" id="Vt6-Uk-Ck8"/>
+                            <constraint firstItem="InZ-Nl-pdy" firstAttribute="top" secondItem="0FL-ka-3oG" secondAttribute="bottom" constant="122" id="Vt6-Uk-Ck8"/>
                             <constraint firstItem="pzP-ar-TKI" firstAttribute="top" secondItem="bTG-cF-fA3" secondAttribute="bottom" constant="27" id="X8i-Zq-p5i"/>
                             <constraint firstItem="XqH-bt-L9u" firstAttribute="leading" secondItem="8nJ-vw-AHN" secondAttribute="leadingMargin" constant="-24" id="fGC-KB-U3a"/>
                             <constraint firstItem="kZV-Gb-9O8" firstAttribute="top" secondItem="pzP-ar-TKI" secondAttribute="bottom" constant="8" id="iSs-Ph-aLn"/>
@@ -1488,7 +1488,7 @@
                             <constraint firstItem="pzP-ar-TKI" firstAttribute="trailing" secondItem="MFX-IW-56B" secondAttribute="trailing" id="lyB-hD-f5E"/>
                             <constraint firstItem="XqH-bt-L9u" firstAttribute="centerX" secondItem="8nJ-vw-AHN" secondAttribute="centerX" id="mf9-ZB-Unz"/>
                             <constraint firstItem="InZ-Nl-pdy" firstAttribute="top" secondItem="MFX-IW-56B" secondAttribute="bottom" constant="27" id="ol0-Pb-PWG"/>
-                            <constraint firstItem="MFX-IW-56B" firstAttribute="top" secondItem="xT0-u7-NNx" secondAttribute="bottom" constant="8" id="vlV-7c-mB9"/>
+                            <constraint firstItem="MFX-IW-56B" firstAttribute="top" secondItem="xT0-u7-NNx" secondAttribute="bottom" constant="16" id="vlV-7c-mB9"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="2GX-rb-FtP"/>
