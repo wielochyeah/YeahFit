@@ -9,8 +9,316 @@ namespace YeahFit
 {
 	public partial class Filter2ViewController : UIViewController
 	{
-		public Filter2ViewController (IntPtr handle) : base (handle)
+        static string filter;
+        static string difficulty;
+
+        public static ChallengeOverviewViewController challengeOverviewViewController;
+
+        public Filter2ViewController (IntPtr handle) : base (handle)
 		{
 		}
-	}
+
+        /// <summary>
+        /// Initialize
+        /// </summary>
+        public override void ViewDidLoad()
+        {
+
+            // Initialize last added button
+            if (filter == "LastAdded" || filter == null)
+            {
+                filter = "LastAdded";
+
+                btn_FilterLastAdded.TintColor = UIColor.Black;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            }
+
+            // Initialize firt added button
+            else if (filter == "FirstAdded")
+            {
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.Black;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            }
+
+            // Initialize alphabetical ascending button
+            if (filter == "AlphAsc")
+            {
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.Black;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            }
+
+            // Initialize alphabetical descending button
+            else if (filter == "AlphDesc")
+            {
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.Black;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            }
+
+            // Initialize duration ascending button
+            if (filter == "DurationAsc")
+            {
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.Black;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            }
+
+            // Initialize duration descending button
+            else if (filter == "DurationDesc")
+            {
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.Black;
+            }
+
+            // Initialize difficulty buttons
+            if (difficulty == "Beginner")
+            {
+                btn_FilterDifficultyEasy.TintColor = UIColor.Black;
+                btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
+                btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+            }
+            else if (difficulty == "Advanced")
+            {
+                btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
+                btn_FilterDifficultyAdvanced.TintColor = UIColor.Black;
+                btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+            }
+            else if (difficulty == "Professional")
+            {
+                btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
+                btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
+                btn_FilterDifficultyHard.TintColor = UIColor.Black;
+            }
+
+            // Last added button click
+            btn_FilterLastAdded.TouchUpInside += (sender, e) =>
+            {
+                filter = "LastAdded";
+
+                btn_FilterLastAdded.TintColor = UIColor.Black;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            };
+
+            // First added button click
+            btn_FilterLastAdded.TouchUpInside += (sender, e) =>
+            {
+                filter = "FirstAdded";
+
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.Black;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            };
+
+            // Alphabetical ascending button click
+            btn_FilterAlphAsc.TouchUpInside += (sender, e) =>
+            {
+                filter = "AlphAsc";
+
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.Black;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            };
+
+            // Alphabetical descending button click
+            btn_FilterAlphDesc.TouchUpInside += (sender, e) =>
+            {
+                filter = "AlphDesc";
+
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.Black;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            };
+
+            // Duration ascending button click
+            btn_FilterDurationAsc.TouchUpInside += (sender, e) =>
+            {
+                filter = "DurationAsc";
+
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.Black;
+                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+            };
+
+            // Duration descending button click
+            btn_FilterDurationDesc.TouchUpInside += (sender, e) =>
+            {
+                filter = "DurationDesc";
+
+                btn_FilterLastAdded.TintColor = UIColor.LightGray;
+                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
+                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
+                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
+                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
+                btn_FilterDurationDesc.TintColor = UIColor.Black;
+            };
+
+            // Difficulty beginner button click
+            btn_FilterDifficultyEasy.TouchUpInside += (sender, e) =>
+            {
+                // If user taps on button again, it'll get deselected
+                if (difficulty != "Beginner")
+                {
+                    difficulty = "Beginner";
+                    btn_FilterDifficultyEasy.TintColor = UIColor.Black;
+                }
+                else
+                {
+                    difficulty = "";
+                    btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
+                }
+                btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
+                btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+            };
+
+            // Difficulty advanced button click
+            btn_FilterDifficultyAdvanced.TouchUpInside += (sender, e) =>
+            {
+
+                // If user taps on button again, it'll get deselected
+                if (difficulty != "Advanced")
+                {
+                    difficulty = "Advanced";
+                    btn_FilterDifficultyAdvanced.TintColor = UIColor.Black;
+                }
+                else
+                {
+                    difficulty = "";
+                    btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
+                }
+                btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
+                btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+            };
+
+            // Difficulty professional button click
+            btn_FilterDifficultyHard.TouchUpInside += (sender, e) =>
+            {
+
+                // If user taps on button again, it'll get deselected
+                if (difficulty != "Professional")
+                {
+                    difficulty = "Professional";
+                    btn_FilterDifficultyHard.TintColor = UIColor.Black;
+                }
+                else
+                {
+                    difficulty = "";
+                    btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+                }
+                btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
+                btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
+            };
+
+            // Filter confirm button click
+            // Set filters in InitializeRecipes.cs
+            btn_FilterConfirm.TouchUpInside += (sender, e) =>
+            {
+                InitializeWorkouts.favourite = false;
+                InitializeWorkouts.order = "LastAdded";
+                InitializeWorkouts.difficulty = "";
+
+                // Set filters in InitializeRecipes.cs
+                
+                if (filter == "LastAdded")
+                {
+                    InitializeWorkouts.order = "LastAdded";
+                }
+                else if (filter == "FirstAdded")
+                {
+                    InitializeWorkouts.order = "FirstAdded";
+                }
+                else if (filter == "AlphAsc")
+                {
+                    InitializeWorkouts.order = "AlphAsc";
+                }
+                else if (filter == "AlphDesc")
+                {
+                    InitializeWorkouts.order = "AlphDesc";
+                }
+                else if (filter == "DurationAsc")
+                {
+                    InitializeWorkouts.order = "DurationAsc";
+                }
+                else if (filter == "DurationDesc")
+                {
+                    InitializeWorkouts.order = "DurationDesc";
+                }
+                if (difficulty == "Beginner")
+                {
+                    InitializeWorkouts.difficulty = "beginner";
+                }
+                else if (difficulty == "Advanced")
+                {
+                    InitializeWorkouts.difficulty = "advanced";
+                }
+                else if (difficulty == "Professional")
+                {
+                    InitializeWorkouts.difficulty = "professional";
+                }
+
+                // Set seachbar text
+                InitializeWorkouts.search = searchBar_Filter.Text;
+
+
+                // Go back to FirstView
+                this.DismissViewController(true, () => { ChallengeOverviewViewController.Refresh(challengeOverviewViewController); });
+            };
+        }
+
+
+        /// <summary>
+        /// Reload TableView on FirstView if user swipes the View away
+        /// </summary>
+        /// <param name="animated"></param>
+        public override void ViewDidDisappear(bool animated)
+        {
+            base.ViewDidDisappear(animated);
+            this.DismissViewController(true, () => { ChallengeOverviewViewController.Refresh(challengeOverviewViewController); });
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
+        }
+
+    }
 }
+

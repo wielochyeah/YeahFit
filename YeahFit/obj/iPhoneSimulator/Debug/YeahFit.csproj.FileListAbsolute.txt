@@ -176,3 +176,5 @@
 /Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 3 unreached.png
 /Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 unreached.png
 /Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 unreached.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts.png
+/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts2.png
