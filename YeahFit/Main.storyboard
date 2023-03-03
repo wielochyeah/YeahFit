@@ -1469,7 +1469,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="pzP-ar-TKI" firstAttribute="leading" secondItem="8nJ-vw-AHN" secondAttribute="leadingMargin" constant="30" id="6ew-VI-bM1"/>
                             <constraint firstItem="pzP-ar-TKI" firstAttribute="leading" secondItem="kZV-Gb-9O8" secondAttribute="leading" id="EcU-MK-ke4"/>
@@ -2575,7 +2575,7 @@
         <image name="Workouts.png" width="560" height="300"/>
         <image name="Workouts2.png" width="560" height="300"/>
         <image name="clock" catalog="system" width="128" height="123"/>
-        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart" catalog="system" width="32" height="32"/>
         <image name="record.circle.fill" catalog="system" width="128" height="123"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
         <image name="star" catalog="system" width="128" height="116"/>

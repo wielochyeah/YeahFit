@@ -213,6 +213,9 @@
     <PackageReference Include="MySql.Data">
       <Version>8.0.28</Version>
     </PackageReference>
+    <PackageReference Include="SDWebImage.FLAnimatedImage">
+      <Version>4.0.0.3</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />

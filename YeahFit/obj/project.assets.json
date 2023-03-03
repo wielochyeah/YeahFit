@@ -108,6 +108,19 @@
           "lib/netstandard2.1/ZstdNet.dll": {}
         }
       },
+      "SDWebImage.FLAnimatedImage/4.0.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/SDWebImage.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/SDWebImage.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -372,6 +385,19 @@
           "lib/netstandard2.1/ZstdNet.dll": {}
         }
       },
+      "SDWebImage.FLAnimatedImage/4.0.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/SDWebImage.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/SDWebImage.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -612,6 +638,19 @@
           },
           "lib/netstandard2.1/Ubiety.Dns.Core.dll": {},
           "lib/netstandard2.1/ZstdNet.dll": {}
+        }
+      },
+      "SDWebImage.FLAnimatedImage/4.0.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/SDWebImage.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/SDWebImage.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -858,6 +897,19 @@
           },
           "lib/netstandard2.1/Ubiety.Dns.Core.dll": {},
           "lib/netstandard2.1/ZstdNet.dll": {}
+        }
+      },
+      "SDWebImage.FLAnimatedImage/4.0.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/SDWebImage.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/SDWebImage.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -1138,6 +1190,18 @@
         "lib/netstandard2.1/ZstdNet.dll",
         "mysql.data.8.0.28.nupkg.sha512",
         "mysql.data.nuspec"
+      ]
+    },
+    "SDWebImage.FLAnimatedImage/4.0.0.3": {
+      "sha512": "0u7nP6H5dALSx86Z0k7k9O0XKu0Nxt7JevKcsV6dafHuftLpBsBoQTEK8t3WD8zqxWctZL1hJmvTY1UO3u6Rfw==",
+      "type": "package",
+      "path": "sdwebimage.flanimatedimage/4.0.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/xamarinios10/SDWebImage.dll",
+        "sdwebimage.flanimatedimage.4.0.0.3.nupkg.sha512",
+        "sdwebimage.flanimatedimage.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -1515,24 +1579,25 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "MySql.Data >= 8.0.28",
+      "SDWebImage.FLAnimatedImage >= 4.0.0.3",
       "Xamarin.Essentials >= 1.7.4"
     ]
   },
   "packageFolders": {
-    "/Users/nilswieloch/.nuget/packages/": {}
+    "/Users/maurice/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/YeahFit.csproj",
+      "projectUniqueName": "/Users/maurice/Downloads/YeahFitNeu-3/YeahFit/YeahFit/YeahFit.csproj",
       "projectName": "YeahFit",
-      "projectPath": "/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/YeahFit.csproj",
-      "packagesPath": "/Users/nilswieloch/.nuget/packages/",
-      "outputPath": "/Users/nilswieloch/Projects6/YeahFit/YeahFitNeu/YeahFit/YeahFit/obj/",
+      "projectPath": "/Users/maurice/Downloads/YeahFitNeu-3/YeahFit/YeahFit/YeahFit.csproj",
+      "packagesPath": "/Users/maurice/.nuget/packages/",
+      "outputPath": "/Users/maurice/Downloads/YeahFitNeu-3/YeahFit/YeahFit/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/nilswieloch/.config/NuGet/NuGet.Config"
+        "/Users/maurice/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1552,6 +1617,10 @@
           "MySql.Data": {
             "target": "Package",
             "version": "[8.0.28, )"
+          },
+          "SDWebImage.FLAnimatedImage": {
+            "target": "Package",
+            "version": "[4.0.0.3, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
