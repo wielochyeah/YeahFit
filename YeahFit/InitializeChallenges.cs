@@ -354,7 +354,7 @@ namespace YeahFit
 
                             Workout workout = new Workout
                             {
-                                RecipeName = name,
+                                WorkoutName = name,
                             };
 
                             // Set ingredients of recipe

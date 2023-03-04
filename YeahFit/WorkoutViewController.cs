@@ -44,7 +44,7 @@ namespace YeahFit
                 //internalSteps = nowSelectedRecipe.Steps;
 
                 // Set general labels
-                lbl_WorkoutName.Text = nowSelectedWorkout.RecipeName;
+                lbl_WorkoutName.Text = nowSelectedWorkout.WorkoutName;
 
                 // Set difficulty
                 if (nowSelectedWorkout.difficulty == "beginner")
@@ -68,7 +68,7 @@ namespace YeahFit
                 lbl_duration.Text = duration.ToString(@"hh\:mm");
 
                 // Set image
-                var data = NSData.FromArray(nowSelectedWorkout.RecipeImage);
+                var data = NSData.FromArray(nowSelectedWorkout.WorkoutImage);
                 UIImage image = UIImage.LoadFromData(data);
 
                 imageView_Workout.Image = image;
@@ -127,7 +127,7 @@ namespace YeahFit
             internalExercises = nowSelectedWorkout.Exercises;
 
             // Set general information
-            lbl_WorkoutName.Text = nowSelectedWorkout.RecipeName;
+            lbl_WorkoutName.Text = nowSelectedWorkout.WorkoutName;
 
             // Set difficulty
             if (nowSelectedWorkout.difficulty == "beginner")
@@ -148,7 +148,7 @@ namespace YeahFit
             lbl_duration.Text = duration.ToString(@"hh\:mm");
 
             // Set image
-            var data = NSData.FromArray(nowSelectedWorkout.RecipeImage);
+            var data = NSData.FromArray(nowSelectedWorkout.WorkoutImage);
             UIImage image = UIImage.LoadFromData(data);
 
             imageView_Workout.Image = image;

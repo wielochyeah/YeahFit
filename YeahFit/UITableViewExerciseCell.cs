@@ -21,8 +21,24 @@ namespace YeahFit
         internal void UpdateCell(Exercise selectedExercise, int indexPath)
         {
             // Set ingredient text
-            lbl_ExerciseName.Text = selectedExercise.IngredientName;
-            lbl_SetsTimes.Text = selectedExercise.IngredientAmount;
+            lbl_ExerciseName.Text = selectedExercise.ExerciseName;
+            lbl_SetsTimes.Text = selectedExercise.ExerciseSets + "x" + selectedExercise.ExerciseReps;
+
+            //
+            // Recipe image
+            //
+
+            // Get recipe image from byte array
+            var data = NSData.FromArray(selectedExercise.ExerciseImage);
+
+            // Convert to UIImage
+            UIImage image = UIImage.LoadFromData(data);
+
+            // Set as image
+            imageView_ExerciseGif.Image = image;
+
+            // AspectFill
+            imageView_ExerciseGif.ContentMode = UIViewContentMode.ScaleAspectFill;
         }
     }
 }

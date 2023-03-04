@@ -17,6 +17,7 @@ namespace YeahFit
     {
         public static int index;
         public static Workout selectedWorkout;
+        int i = 0;
 
         MySqlConnection con;
 
@@ -35,10 +36,10 @@ namespace YeahFit
             con.Open();
 
 
-            string query = "SELECT ÜbungGif FROM Übung"; //SQL command
+           // string query = "SELECT ÜbungGif FROM Übung"; //SQL command
             var gifData = new byte[1024];
 
-            using (var command = new MySqlCommand(query, con))
+            /*using (var command = new MySqlCommand(query, con))
             {
                 using (var reader = command.ExecuteReader())
                 {
@@ -47,13 +48,16 @@ namespace YeahFit
                         gifData = (byte[])reader["ÜbungGif"];
                     }
                 }
-            }
+            }*/
+
+            gifData = selectedWorkout.Exercises[i].ExerciseImage;
 
             NSData imageData = NSData.FromArray(gifData);
 
 
             var imageView = new FLAnimatedImageView();
-            imageView.Frame = new CoreGraphics.CGRect(-227, -60, 850, 850);
+            imageView.Frame = new CoreGraphics.CGRect(-200, -60, 850, 850);
+            imageView.Frame = new CoreGraphics.CGRect(-200, -60, 850, 850);
             imageView.ContentMode = UIViewContentMode.ScaleAspectFit;
             View.AddSubview(imageView);
 
@@ -64,18 +68,6 @@ namespace YeahFit
             imageView.AnimatedImage = animatedImage;
 
 
-            lbl_ExerciseName.Text = selectedWorkout.Exercises[index].IngredientName;
-            lbl_SetsReps.Text = selectedWorkout.Exercises[index].IngredientAmount;
-            if (selectedWorkout.Exercises[index + 1] != null)
-            {
-                lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[index + 1].IngredientName;
-            }
-            else
-            {
-                lbl_NextExercise.Text = "Letzte Übung";
-            }
-
-
             timer = NSTimer.CreateRepeatingScheduledTimer(TimeSpan.FromSeconds(1), delegate
             {
                 seconds++;
@@ -83,6 +75,61 @@ namespace YeahFit
                 int remainingSeconds = seconds % 60;
                 timerLabel.Text = $"{minutes}:{remainingSeconds:00}";
             });
+
+            lbl_ExerciseName.Text = selectedWorkout.Exercises[i].ExerciseName;
+            lbl_SetsReps.Text = selectedWorkout.Exercises[i].ExerciseSets + "x" + selectedWorkout.Exercises[0].ExerciseReps;
+            if (selectedWorkout.Exercises[i + 1] != null)
+            {
+                lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[0 + 1].ExerciseName;
+            }
+            else
+            {
+                lbl_NextExercise.Text = "Letzte Übung";
+            }
+
+            btn_NextExercise.TouchUpInside += (sender, e) =>
+            {
+                i++;
+                if (selectedWorkout.Exercises[i + 1] != null)
+                {
+                    
+                    lbl_ExerciseName.Text = selectedWorkout.Exercises[i].ExerciseName;
+                    lbl_SetsReps.Text = selectedWorkout.Exercises[i].ExerciseSets + "x" + selectedWorkout.Exercises[i].ExerciseReps;
+                    if (selectedWorkout.Exercises[i + 1] != null)
+                    {
+                        lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[i + 1].ExerciseName;
+                    }
+                    else
+                    {
+                        lbl_NextExercise.Text = "Letzte Übung";
+                    }
+                    gifData = selectedWorkout.Exercises[i].ExerciseImage;
+
+                    imageData = NSData.FromArray(gifData);
+
+
+                    imageView = new FLAnimatedImageView();
+                    imageView.Frame = new CoreGraphics.CGRect(-200, -60, 850, 850);
+                    imageView.Frame = new CoreGraphics.CGRect(-200, -60, 850, 850);
+                    imageView.ContentMode = UIViewContentMode.ScaleAspectFit;
+                    View.AddSubview(imageView);
+
+                    // Load the GIF image from a byte array
+                    animatedImage = FLAnimatedImage.AnimatedImageWithGIFData(imageData);
+
+                    // Set the animatedImage property of the FLAnimatedImageView
+                    imageView.AnimatedImage = animatedImage;
+                }
+                else
+                {
+                    btn_NextExercise.SetTitle("Workout beenden", UIControlState.Normal);
+                }
+            };
+
+            btn_Break.TouchUpInside += (sender, e) =>
+            {
+
+            };
         }
 
         public override void ViewWillDisappear(bool animated)

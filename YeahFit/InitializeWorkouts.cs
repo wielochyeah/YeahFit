@@ -11,7 +11,6 @@ namespace YeahFit
         public static MySqlConnection con;
         public static List<Workout> workouts = new List<Workout>();
         public List<Exercise> Exercises;
-        //public List<Step> Steps;
         public static string category;
         public static string filter;
         public static string order = "LastAdded";
@@ -32,7 +31,7 @@ namespace YeahFit
             workouts = new List<Workout>();
 
             // Open connection
-            con = new MySqlConnection(@"Server=localhost;Database=YeahCook;User Id=root;Password=; CharSet = utf8");
+            con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
             con.Open();
 
 
@@ -42,44 +41,76 @@ namespace YeahFit
 
             // Categories
             // Breakfast
-            if (category == "breakfast")
+            if (category == "core")
             {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Frühstück = 1";
+                filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    "AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
+                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Kategorie.`KategorieName` = 'Core'";
             }
             // Lunch
-            else if (category == "lunch")
+            else if (category == "upperBody")
             {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Mittagessen = 1";
+                filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    "AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
+                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Kategorie.`KategorieName` = 'Oberkörper'";
             }
             // Dinner
-            else if (category == "dinner")
+            else if (category == "lowerBody")
             {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Abendessen = 1";
+                filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    "AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
+                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Kategorie.`KategorieName` = 'Unterkörper'";
             }
             // Dessert
-            else if (category == "dessert")
+            else if (category == "fullBody")
             {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Dessert = 1";
+                filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    "AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
+                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Kategorie.`KategorieName` = 'Ganzkörper'";
             }
             // Snacks
-            else if (category == "snacks")
+            else if (category == "push")
             {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Snacks = 1";
+                filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    "AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
+                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Kategorie.`KategorieName` = 'Push'";
             }
             // Vegetarian
-            else if (category == "vegetarian")
+            else if (category == "pull")
             {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Vegetarisch = 1";
+                filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    "AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
+                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Kategorie.`KategorieName` = 'Pull'";
             }
             // Vegan
-            else if (category == "vegan")
+            else if (category == "twentyMinutes")
             {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Vegan = 1";
+                filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    "AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
+                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Kategorie.`KategorieName` = '20min'";
             }
             // Drinks
-            else if (category == "drinks")
+            else if (category == "noEquipment")
             {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Getränk = 1";
+                filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    "AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
+                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Kategorie.`KategorieName` = 'No Equipment'";
             }
             else
             {
@@ -92,47 +123,47 @@ namespace YeahFit
             // Last added
             if (order == "LastAdded")
             {
-                orderby = " ORDER BY Rezept.RezeptID DESC";
+                orderby = " ORDER BY Workout.WorkoutID DESC";
             }
             // First added
             else if (order == "FirstAdded")
             {
-                orderby = " ORDER BY Rezept.RezeptID ASC";
+                orderby = " ORDER BY Workout.WorkoutID ASC";
             }
             // Alphabetical ascending
             else if (order == "AlphAsc")
             {
-                orderby = " ORDER BY Rezept.Name ASC";
+                orderby = " ORDER BY Workout.WorkoutName ASC";
             }
             // Alphabetical descending
             else if (order == "AlphDesc")
             {
-                orderby = " ORDER BY Rezept.Name DESC";
+                orderby = " ORDER BY Workout.WorkoutName DESC";
             }
             // Duration ascending
             else if (order == "DurationAsc")
             {
-                orderby = " ORDER BY Rezept.Dauer ASC";
+                orderby = " ORDER BY Workout.WorkoutDauer ASC";
             }
             // Duration descending
             else if (order == "DurationDesc")
             {
-                orderby = " ORDER BY Rezept.Dauer DESC";
+                orderby = " ORDER BY Workout.WorkoutDauer DESC";
             }
 
 
             // Favourite/Liked
-            if (favourite == true)
+            /*if (favourite == true)
             {
                 if (filter == "")
                 {
-                    filter = " WHERE Rezept.Liked = 1";
+                    filter = " WHERE Workout.Liked = 1";
                 }
                 else
                 {
-                    filter = filter + " AND Rezept.Liked = 1";
+                    filter = filter + " AND Workout.Liked = 1";
                 }
-            }
+            }*/
 
             // Difficulty
             // Beginner
@@ -140,11 +171,13 @@ namespace YeahFit
             {
                 if (filter == "")
                 {
-                    filter = " WHERE Rezept.Schwierigkeit = 'beginner'";
+                    filter = ", Schwierigkeit " +
+                        "WHERE Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Beginner'";
                 }
                 else
                 {
-                    filter = filter + " AND Rezept.Schwierigkeit = 'beginner'";
+                    filter = filter + " AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Beginner'";
                 }
             }
             // Advanced
@@ -152,23 +185,27 @@ namespace YeahFit
             {
                 if (filter == "")
                 {
-                    filter = " WHERE Rezept.Schwierigkeit = 'advanced'";
+                    filter = ", Schwierigkeit " +
+                        "WHERE Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
                 }
                 else
                 {
-                    filter = filter + " AND Rezept.Schwierigkeit = 'advanced'";
+                    filter = filter + " AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
                 }
             }
             // Professional
-            else if (difficulty == "professional")
+            else if (difficulty == "hard")
             {
                 if (filter == "")
                 {
-                    filter = " WHERE Rezept.Schwierigkeit = 'professional'";
+                    filter = ", Schwierigkeit " +
+                        "WHERE Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Hart'";
                 }
                 else
                 {
-                    filter = filter + " AND Rezept.Schwierigkeit = 'professional'";
+                    filter = filter + " AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Hart'";
                 }
             }
 
@@ -177,54 +214,50 @@ namespace YeahFit
             {
                 if (filter == "")
                 {
-                    filter = $" WHERE Rezept.Name LIKE '%{search}%'";
+                    filter = $" WHERE Workout.WorkoutName LIKE '%{search}%'";
                 }
                 else
                 {
-                    filter = filter + $" AND Rezept.Name LIKE '%{search}%'";
+                    filter = filter + $" AND Workout.WorkoutName LIKE '%{search}%'";
                 }
             }
 
-            // Read every recipe
+            // Read every workout
             //  + filter
             //  + orderby
-            using (MySqlCommand getmainrecipe = new MySqlCommand($"SELECT * FROM `Rezept` {filter} {orderby}", con))
+            using (MySqlCommand getmainworkout = new MySqlCommand($"SELECT * FROM `Workout` {filter} {orderby}", con))
             {
-                using (MySqlDataReader reader = getmainrecipe.ExecuteReader())
+                using (MySqlDataReader reader = getmainworkout.ExecuteReader())
                 {
 
                     while (reader.Read())
                     {
 
-                        int id = Convert.ToInt32(reader["RezeptID"].ToString());
-                        string name = reader["Name"].ToString();
-                        string beschreibung = reader["Beschreibung"].ToString();
-                        int dauer = Convert.ToInt32(reader["Dauer"].ToString());
+                        int id = Convert.ToInt32(reader["WorkoutID"].ToString());
+                        string name = reader["WorkoutName"].ToString();
+                        int duration = Convert.ToInt32(reader["WorkoutDauer"].ToString());
                         bool liked;
-                        if (reader["Liked"].ToString() == "True")
+                        /*if (reader["Liked"].ToString() == "True")
                         {
                             liked = true;
                         }
                         else
                         {
                             liked = false;
-                        }
-                        string schwierigkeit = reader["Schwierigkeit"].ToString();
+                        }*/
 
-                        byte[] imgg = (byte[])(reader["Bild"]);
+                        byte[] imgg = (byte[])(reader["WorkoutBild"]);
 
                         // Create new recipe
                         Workout workout = new Workout
                         {
                             id = id,
-                            RecipeName = name,
-                            RecipeInfo = beschreibung,
-                            duration = dauer,
-                            difficulty = schwierigkeit,
-                            liked = liked,
+                            WorkoutName = name,
+                            duration = duration,
+                            difficulty = "",
+                            //liked = liked,
                             Exercises = new List<Exercise>(),
-                            //Steps = new List<Step>(),
-                            RecipeImage = imgg,
+                            WorkoutImage = imgg,
                         };
 
                         // Add to recipes list
@@ -232,94 +265,124 @@ namespace YeahFit
                     }
                 }
 
-                // Get every category
-                using (MySqlCommand getrecipecategories = new MySqlCommand($"SELECT * FROM `RezeptKategorie`;", con))
+
+                // Get difficutly
+                using (MySqlCommand getworkoutdifficulty = new MySqlCommand($"SELECT * FROM `Workout`, `Schwierigkeit` " +
+                    $"WHERE Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID;", con))
                 {
-                    using (MySqlDataReader reader2 = getrecipecategories.ExecuteReader())
+                    using (MySqlDataReader reader2 = getworkoutdifficulty.ExecuteReader())
                     {
                         while (reader2.Read())
                         {
-                            int id = Convert.ToInt32(reader2["RezeptID"]);
+                            int id = Convert.ToInt32(reader2["WorkoutID"]);
 
-                            // Breakfast
-                            bool breakfast;
-                            if (reader2["Frühstück"].ToString() == "True")
+                            string difficulty = reader2["Schwierigkeitsbeschreibung"].ToString();
+
+                            // Set category of recipe
+                            for (int j = 0; j < workouts.Count; j++)
                             {
-                                breakfast = true;
+                                // For the correct id
+                                if (id == workouts[j].id)
+                                {
+                                    workouts[j].difficulty = difficulty;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                // Get every category
+                using (MySqlCommand getrecipecategories = new MySqlCommand($"SELECT * FROM `Workout`, `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                    $"WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    $"AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
+                    $"AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID;", con))
+                {
+                    using (MySqlDataReader reader3 = getrecipecategories.ExecuteReader())
+                    {
+                        while (reader3.Read())
+                        {
+                            int id = Convert.ToInt32(reader3["WorkoutID"]);
+
+                            // core
+                            bool core;
+                            if (reader3["KategorieID"].ToString() == "1")
+                            {
+                                core = true;
                             }
                             else
                             {
-                                breakfast = false;
+                                core = false;
                             }
-                            // Lunch
-                            bool lunch;
-                            if (reader2["Mittagessen"].ToString() == "True")
+                            // upperBody
+                            bool upperBody;
+                            if (reader3["KategorieID"].ToString() == "2")
                             {
-                                lunch = true;
-                            }
-                            else
-                            {
-                                lunch = false;
-                            }
-                            // Dinner
-                            bool dinner;
-                            if (reader2["Abendessen"].ToString() == "True")
-                            {
-                                dinner = true;
+                                upperBody = true;
                             }
                             else
                             {
-                                dinner = false;
+                                upperBody = false;
                             }
-                            // Dessert
-                            bool dessert;
-                            if (reader2["Dessert"].ToString() == "True")
+                            // lowerBody
+                            bool lowerBody;
+                            if (reader3["KategorieID"].ToString() == "3")
                             {
-                                dessert = true;
-                            }
-                            else
-                            {
-                                dessert = false;
-                            }
-                            // Snacks
-                            bool snacks;
-                            if (reader2["Snacks"].ToString() == "True")
-                            {
-                                snacks = true;
+                                lowerBody = true;
                             }
                             else
                             {
-                                snacks = false;
+                                lowerBody = false;
                             }
-                            // Vegetarian
-                            bool vegetarisch;
-                            if (reader2["Vegetarisch"].ToString() == "True")
+                            // fullBody
+                            bool fullBody;
+                            if (reader3["KategorieID"].ToString() == "4")
                             {
-                                vegetarisch = true;
-                            }
-                            else
-                            {
-                                vegetarisch = false;
-                            }
-                            // Vegan
-                            bool vegan;
-                            if (reader2["Vegan"].ToString() == "True")
-                            {
-                                vegan = true;
+                                fullBody = true;
                             }
                             else
                             {
-                                vegan = false;
+                                fullBody = false;
                             }
-                            // Drinks
-                            bool drinks;
-                            if (reader2["Getränk"].ToString() == "True")
+                            // push
+                            bool push;
+                            if (reader3["KategorieID"].ToString() == "5")
                             {
-                                drinks = true;
+                                push = true;
                             }
                             else
                             {
-                                drinks = false;
+                                push = false;
+                            }
+                            // pull
+                            bool pull;
+                            if (reader3["KategorieID"].ToString() == "6")
+                            {
+                                pull = true;
+                            }
+                            else
+                            {
+                                pull = false;
+                            }
+                            // twentyMinutes
+                            bool twentyMinutes;
+                            if (reader3["KategorieID"].ToString() == "7")
+                            {
+                                twentyMinutes = true;
+                            }
+                            else
+                            {
+                                twentyMinutes = false;
+                            }
+                            // noEquipment
+                            bool noEquipment;
+                            if (reader3["KategorieID"].ToString() == "8")
+                            {
+                                noEquipment = true;
+                            }
+                            else
+                            {
+                                noEquipment = false;
                             }
 
                             // Set category of recipe
@@ -328,14 +391,14 @@ namespace YeahFit
                                 // For the correct id
                                 if (id == workouts[j].id)
                                 {
-                                    workouts[j].breakfast = breakfast;
-                                    workouts[j].lunch = lunch;
-                                    workouts[j].dinner = dinner;
-                                    workouts[j].dessert = dessert;
-                                    workouts[j].snacks = snacks;
-                                    workouts[j].vegetarian = vegetarisch;
-                                    workouts[j].vegan = vegan;
-                                    workouts[j].drinks = drinks;
+                                    workouts[j].core = core;
+                                    workouts[j].upperBody = upperBody;
+                                    workouts[j].lowerBody = lowerBody;
+                                    workouts[j].fullBody = fullBody;
+                                    workouts[j].push = push;
+                                    workouts[j].pull = pull;
+                                    workouts[j].twentyMinutes = twentyMinutes;
+                                    workouts[j].noEquipment = noEquipment;
                                 }
                             }
 
@@ -343,22 +406,27 @@ namespace YeahFit
                     }
                 }
 
-                // Select every ingredient
-                using (MySqlCommand getingredients = new MySqlCommand($"SELECT * FROM `Zutat`;", con))
+                // Select every exercise
+                using (MySqlCommand getingredients = new MySqlCommand($"SELECT * FROM `Übung`, `Workout_Übung` WHERE Übung.ÜbungID = Workout_Übung.ÜbungID;", con))
                 {
-                    using (MySqlDataReader reader3 = getingredients.ExecuteReader())
+                    using (MySqlDataReader reader4 = getingredients.ExecuteReader())
                     {
-                        while (reader3.Read())
+                        while (reader4.Read())
                         {
-                            string name = reader3["Zutat"].ToString();
-                            string ammount = reader3["Menge"].ToString();
-                            int id = Convert.ToInt32(reader3["RezeptID"]);
+                            string name = reader4["ÜbungName"].ToString();
+                            //string sätze = reader4["Menge"].ToString();
+                            //string
+                            int id = Convert.ToInt32(reader4["WorkoutID"]);
 
-                            // Create new ingredient
+                            byte[] imgg = (byte[])(reader4["ÜbungGIF"]);
+
+                            // Create new exercise
                             Exercise exercise = new Exercise
                             {
-                                IngredientName = name,
-                                IngredientAmount = ammount,
+                                ExerciseName = name,
+                                ExerciseReps = "",
+                                ExerciseSets = "",
+                                ExerciseImage = imgg,
                             };
 
                             // Set ingredients of recipe
@@ -372,36 +440,6 @@ namespace YeahFit
                             }
 
                         }
-                    }
-                }
-
-                // Select every step
-                using (MySqlCommand getsteps = new MySqlCommand($"SELECT * FROM `Schritt`;", con))
-                {
-                    using (MySqlDataReader reader4 = getsteps.ExecuteReader())
-                    {
-                        while (reader4.Read())
-                        {
-                            string stepinfo = reader4["Schritt"].ToString();
-                            int id = Convert.ToInt32(reader4["RezeptID"]);
-
-                            // Create new steo
-                            /*Step step = new Step
-                            {
-                                StepInfo = stepinfo,
-                            };
-
-                            // Set steps of recipe
-                            for (int j = 0; j < workouts.Count; j++)
-                            {
-                                // For the correct id
-                                if (id == workouts[j].id)
-                                {
-                                    workouts[j].Steps.Add(step);
-                                }
-                            }*/
-                        }
-
                     }
                 }
 

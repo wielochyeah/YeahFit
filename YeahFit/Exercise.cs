@@ -4,8 +4,12 @@ namespace YeahFit
 	public class Exercise
 	{
 
-		 public string IngredientName { get; set; }
-		public string IngredientAmount { get; set; }
-	}
+		public string ExerciseName { get; set; }
+		public string ExerciseSets { get; set; }
+		public string ExerciseReps { get; set; }
+
+		// Image
+		public byte[] ExerciseImage { get; set; }
+    }
 }
 

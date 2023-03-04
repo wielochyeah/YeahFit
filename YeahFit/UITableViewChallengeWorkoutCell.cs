@@ -21,7 +21,7 @@ namespace YeahFit
         internal void UpdateCell(Workout selectedWorkout, int indexPath)
         {
             // Set recipe text
-            lbl_WorkoutName.Text = selectedWorkout.RecipeName;
+            lbl_WorkoutName.Text = selectedWorkout.WorkoutName;
             lbl_categoryDifficulty.Text = "";
 
 
@@ -30,7 +30,7 @@ namespace YeahFit
             //
 
             // Category: Breakfast
-            if (selectedWorkout.breakfast == true)
+            if (selectedWorkout.core == true)
             {
                 // If there were categories set before
                 if (lbl_categoryDifficulty.Text != "")
@@ -46,7 +46,7 @@ namespace YeahFit
             }
 
             // Category: Lunch
-            if (selectedWorkout.lunch == true)
+            if (selectedWorkout.upperBody == true)
             {
                 // If there were categories set before
                 if (lbl_categoryDifficulty.Text != "")
@@ -62,7 +62,7 @@ namespace YeahFit
             }
 
             // Category: Dinner
-            if (selectedWorkout.dinner == true)
+            if (selectedWorkout.lowerBody == true)
             {
                 // If there were categories set before
                 if (lbl_categoryDifficulty.Text != "")
@@ -78,7 +78,7 @@ namespace YeahFit
             }
 
             // Category: Dessert
-            if (selectedWorkout.dessert == true)
+            if (selectedWorkout.fullBody == true)
             {
                 // If there were categories set before
                 if (lbl_categoryDifficulty.Text != "")
@@ -94,7 +94,7 @@ namespace YeahFit
             }
 
             // Category: Snacks
-            if (selectedWorkout.snacks == true)
+            if (selectedWorkout.push == true)
             {
                 // If there were categories set before
                 if (lbl_categoryDifficulty.Text != "")
@@ -110,7 +110,7 @@ namespace YeahFit
             }
 
             // Category: Drinks
-            if (selectedWorkout.drinks == true)
+            if (selectedWorkout.pull == true)
             {
                 // If there were categories set before
                 if (lbl_categoryDifficulty.Text != "")
@@ -126,7 +126,7 @@ namespace YeahFit
             }
 
             // Category: Vegetarian
-            if (selectedWorkout.vegetarian == true)
+            if (selectedWorkout.twentyMinutes == true)
             {
                 // If there were categories set before
                 if (lbl_categoryDifficulty.Text != "")
@@ -142,7 +142,7 @@ namespace YeahFit
             }
 
             // Category: Vegan
-            if (selectedWorkout.vegan == true)
+            if (selectedWorkout.noEquipment == true)
             {
                 // If there were categories set before
                 if (lbl_categoryDifficulty.Text != "")
@@ -159,14 +159,14 @@ namespace YeahFit
 
             // If no category was selected
             if (
-                selectedWorkout.breakfast == false &&
-                selectedWorkout.lunch == false &&
-                selectedWorkout.dinner == false &&
-                selectedWorkout.dessert == false &&
-                selectedWorkout.snacks == false &&
-                selectedWorkout.vegetarian == false &&
-                selectedWorkout.vegan == false &&
-                selectedWorkout.drinks == false
+                selectedWorkout.core == false &&
+                selectedWorkout.upperBody == false &&
+                selectedWorkout.lowerBody == false &&
+                selectedWorkout.fullBody == false &&
+                selectedWorkout.push == false &&
+                selectedWorkout.pull == false &&
+                selectedWorkout.twentyMinutes == false &&
+                selectedWorkout.noEquipment == false
                 )
             // Set category text
             {
@@ -204,9 +204,9 @@ namespace YeahFit
             //
             // Recipe image
             //
-            /*
+            
             // Get recipe image from byte array
-            var data = NSData.FromArray(selectedWorkout.RecipeImage);
+            var data = NSData.FromArray(selectedWorkout.WorkoutImage);
 
             // Convert to UIImage
             UIImage image = UIImage.LoadFromData(data);
@@ -216,7 +216,7 @@ namespace YeahFit
 
             // AspectFill
             imageView_Workout.ContentMode = UIViewContentMode.ScaleAspectFill;
-            */
+            
         }
     }
 }
