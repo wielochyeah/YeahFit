@@ -7,9 +7,9 @@
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>YeahFit.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/maurice/Downloads/YeahFitNeu-3 Kopie/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
       <DSymName>YeahFit.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/maurice/Downloads/YeahFitNeu-3 Kopie/YeahFit/YeahFit</SourceProjectPath>
+      <SourceProjectPath>/Users/nilswieloch/YeahProjects/YeahFit/YeahFit</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

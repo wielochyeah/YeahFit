@@ -302,3 +302,65 @@
 /Users/maurice/Downloads/YeahFitNeu-3 Kopie/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CopyComplete
 /Users/maurice/Downloads/YeahFitNeu-3 Kopie/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
 /Users/maurice/Downloads/YeahFitNeu-3 Kopie/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.exe
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.pdb
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/BouncyCastle.Crypto.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.pdb
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.Streams.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Hash.xxHash.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/MySql.Data.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Ubiety.Dns.Core.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/ZstdNet.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/SDWebImage.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Configuration.ConfigurationManager.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Security.Permissions.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Text.Encoding.CodePages.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_ProcessedImageAssetsPath.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/ibtool/_ProcessedInterfaceDefinitionsPath.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_PartialAppManifest.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_BundleResourceWithLogicalName.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/_ProcessedBundleResourcesPath.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/_ProcessedContentPath.items
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle 1178-3.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Challenges 1.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle small.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite2.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite3.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite4.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite5.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekBig1.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekBig2.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Bsp.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 reached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 reached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 reached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 reached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 reached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 reached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Tropy 3 reached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 unreached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 unreached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 unreached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 unreached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 3 unreached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 unreached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 unreached.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts2.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Entitlements.plist
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.AssemblyReference.cache
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CoreCompileInputs.cache
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CopyComplete
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb

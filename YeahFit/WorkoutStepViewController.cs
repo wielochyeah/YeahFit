@@ -77,10 +77,10 @@ namespace YeahFit
             });
 
             lbl_ExerciseName.Text = selectedWorkout.Exercises[i].ExerciseName;
-            lbl_SetsReps.Text = selectedWorkout.Exercises[i].ExerciseSets + "x" + selectedWorkout.Exercises[0].ExerciseReps;
+            lbl_SetsReps.Text = selectedWorkout.Exercises[i].ExerciseSets + "x" + selectedWorkout.Exercises[i].ExerciseReps;
             if (selectedWorkout.Exercises[i + 1] != null)
             {
-                lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[0 + 1].ExerciseName;
+                lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[i + 1].ExerciseName;
             }
             else
             {
@@ -90,19 +90,12 @@ namespace YeahFit
             btn_NextExercise.TouchUpInside += (sender, e) =>
             {
                 i++;
-                if (selectedWorkout.Exercises[i + 1] != null)
+                if (selectedWorkout.Exercises.Count > i)
                 {
-                    
                     lbl_ExerciseName.Text = selectedWorkout.Exercises[i].ExerciseName;
                     lbl_SetsReps.Text = selectedWorkout.Exercises[i].ExerciseSets + "x" + selectedWorkout.Exercises[i].ExerciseReps;
-                    if (selectedWorkout.Exercises[i + 1] != null)
-                    {
-                        lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[i + 1].ExerciseName;
-                    }
-                    else
-                    {
-                        lbl_NextExercise.Text = "Letzte Übung";
-                    }
+                    
+                    
                     gifData = selectedWorkout.Exercises[i].ExerciseImage;
 
                     imageData = NSData.FromArray(gifData);
@@ -119,10 +112,16 @@ namespace YeahFit
 
                     // Set the animatedImage property of the FLAnimatedImageView
                     imageView.AnimatedImage = animatedImage;
-                }
-                else
-                {
-                    btn_NextExercise.SetTitle("Workout beenden", UIControlState.Normal);
+                    if (selectedWorkout.Exercises.Count <= i+1)
+                    {
+                        lbl_NextExercise.Text = "Letzte Übung";
+                        btn_NextExercise.SetTitle("Workout beenden", UIControlState.Normal);
+                    }
+                    else
+                    {
+
+                        lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[i+1].ExerciseName;
+                    }
                 }
             };
 
