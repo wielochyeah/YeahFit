@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Drawing;
 using System.IO;
+using CarPlay;
 using CoreFoundation;
 using CoreGraphics;
 using Foundation;
@@ -122,6 +123,10 @@ namespace YeahFit
 
                         lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[i+1].ExerciseName;
                     }
+                }
+                else
+                {
+
                 }
             };
 
