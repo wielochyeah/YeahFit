@@ -15,7 +15,7 @@ namespace YeahFit
 
         // Main list of all recipes
         public static List<Challenge> challenges;
-        public static List<Workout> workouts;
+        //public static List<Workout> workouts;
 
 
         public ChallengeOverviewViewController(IntPtr handle) : base(handle)
@@ -33,104 +33,7 @@ namespace YeahFit
 
 
 
-            // Buttons for setting categories
-            /*btn_Breakfast.TouchUpInside += (sender, e) =>
-            {
-                if (InitializeRecipes.category == "breakfast")
-                {
-                    InitializeRecipes.category = "";
-                }
-                else
-                {
-                    InitializeRecipes.category = "breakfast";
-                }
-                ViewDidAppear(true);
-            };
-            btn_Lunch.TouchUpInside += (sender, e) =>
-            {
-                if (InitializeRecipes.category == "lunch")
-                {
-                    InitializeRecipes.category = "";
-                }
-                else
-                {
-                    InitializeRecipes.category = "lunch";
-                }
-                ViewDidAppear(true);
-            };
-            btn_Dinner.TouchUpInside += (sender, e) =>
-            {
-                if (InitializeRecipes.category == "dinner")
-                {
-                    InitializeRecipes.category = "";
-                }
-                else
-                {
-                    InitializeRecipes.category = "dinner";
-                }
-                ViewDidAppear(true);
-            };
-            btn_Dessert.TouchUpInside += (sender, e) =>
-            {
-                if (InitializeRecipes.category == "dessert")
-                {
-                    InitializeRecipes.category = "";
-                }
-                else
-                {
-                    InitializeRecipes.category = "dessert";
-                }
-                ViewDidAppear(true);
-            };
-            btn_Snacks.TouchUpInside += (sender, e) =>
-            {
-                if (InitializeRecipes.category == "snacks")
-                {
-                    InitializeRecipes.category = "";
-                }
-                else
-                {
-                    InitializeRecipes.category = "snacks";
-                }
-                ViewDidAppear(true);
-            };
-            btn_Vegan.TouchUpInside += (sender, e) =>
-            {
-                if (InitializeRecipes.category == "vegan")
-                {
-                    InitializeRecipes.category = "";
-                }
-                else
-                {
-                    InitializeRecipes.category = "vegan";
-                }
-                ViewDidAppear(true);
-            };
-            btn_Vegetarian.TouchUpInside += (sender, e) =>
-            {
-                if (InitializeRecipes.category == "vegetarian")
-                {
-                    InitializeRecipes.category = "";
-                }
-                else
-                {
-                    InitializeRecipes.category = "vegetarian";
-                }
-                ViewDidAppear(true);
-            };
-            btn_Drinks.TouchUpInside += (sender, e) =>
-            {
-                if (InitializeRecipes.category == "drinks")
-                {
-                    InitializeRecipes.category = "";
-                }
-                else
-                {
-                    InitializeRecipes.category = "drinks";
-                }
-                ViewDidAppear(true);
-            };
-
+            /*
             // Button for showing the FilterView
             btn_Filter.TouchUpInside += (sender, e) =>
             {
@@ -141,7 +44,7 @@ namespace YeahFit
             ChallengeViewController.firstViewController = this;
             WorkoutViewController.secondViewController = this;
             challenges = null;
-            workouts = null;
+            //workouts = null;
 
             // Get data from database
             InitializeChallenges.Initialize();

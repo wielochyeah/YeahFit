@@ -6,19 +6,10 @@ namespace YeahFit
 	public class Challenge
 	{
         // General
-        public string RecipeName { get; set; }
-        public string RecipeInfo { get; set; }
+        public string ChallengeName { get; set; }
 
-        // Categories
-        public bool breakfast { get; set; }
-        public bool lunch { get; set; }
-        public bool dinner { get; set; }
-        public bool dessert { get; set; }
-        public bool snacks { get; set; }
-        public bool vegetarian { get; set; }
-        public bool vegan { get; set; }
-        public bool drinks { get; set; }
-        public int duration { get; set; }
+        // Workouts
+        internal List<Workout> Workouts { get; set; }
 
         // ID
         public int id { get; set; }
@@ -29,12 +20,8 @@ namespace YeahFit
         // Liked
         public bool liked { get; set; }
 
-
-        // Ingredients
-        internal List<Workout> Workouts { get; set; }
-
         // Image
-        public byte[] RecipeImage;
+        public byte[] ChallengeImage;
     }
 }
 

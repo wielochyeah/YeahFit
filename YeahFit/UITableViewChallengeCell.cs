@@ -28,158 +28,8 @@ namespace YeahFit
         {
             // Set recipe text
             imageView_ChallengeOverview.Image = UIImage.GetSystemImage("heart.fill");
-            lbl_ChallengeName.Text = selectedChallenge.RecipeName;
+            lbl_ChallengeName.Text = selectedChallenge.ChallengeName;
             lbl_ChallengeDaysPerWeek.Text = "";
-
-
-            //
-            // Categories
-            //
-
-            // Category: Breakfast
-            if (selectedChallenge.breakfast == true)
-            {
-                // If there were categories set before
-                if (lbl_ChallengeDaysPerWeek.Text != "")
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Frühstück";
-                }
-                else
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = "Frühstück";
-                }
-            }
-
-            // Category: Lunch
-            if (selectedChallenge.lunch == true)
-            {
-                // If there were categories set before
-                if (lbl_ChallengeDaysPerWeek.Text != "")
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Mittagessen";
-                }
-                else
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = "Mittagessen";
-                }
-            }
-
-            // Category: Dinner
-            if (selectedChallenge.dinner == true)
-            {
-                // If there were categories set before
-                if (lbl_ChallengeDaysPerWeek.Text != "")
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Abendessen";
-                }
-                else
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = "Abendessen";
-                }
-            }
-
-            // Category: Dessert
-            if (selectedChallenge.dessert == true)
-            {
-                // If there were categories set before
-                if (lbl_ChallengeDaysPerWeek.Text != "")
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Dessert";
-                }
-                else
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = "Dessert";
-                }
-            }
-
-            // Category: Snacks
-            if (selectedChallenge.snacks == true)
-            {
-                // If there were categories set before
-                if (lbl_ChallengeDaysPerWeek.Text != "")
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Snack";
-                }
-                else
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = "Snack";
-                }
-            }
-
-            // Category: Drinks
-            if (selectedChallenge.drinks == true)
-            {
-                // If there were categories set before
-                if (lbl_ChallengeDaysPerWeek.Text != "")
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Getränk";
-                }
-                else
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = "Getränk";
-                }
-            }
-
-            // Category: Vegetarian
-            if (selectedChallenge.vegetarian == true)
-            {
-                // If there were categories set before
-                if (lbl_ChallengeDaysPerWeek.Text != "")
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Vegetarisch";
-                }
-                else
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = "Vegetarisch";
-                }
-            }
-
-            // Category: Vegan
-            if (selectedChallenge.vegan == true)
-            {
-                // If there were categories set before
-                if (lbl_ChallengeDaysPerWeek.Text != "")
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Vegan";
-                }
-                else
-                {
-                    // Set category text
-                    lbl_ChallengeDaysPerWeek.Text = "Vegan";
-                }
-            }
-
-            // If no category was selected
-            if (
-                selectedChallenge.breakfast == false &&
-                selectedChallenge.lunch == false &&
-                selectedChallenge.dinner == false &&
-                selectedChallenge.dessert == false &&
-                selectedChallenge.snacks == false &&
-                selectedChallenge.vegetarian == false &&
-                selectedChallenge.vegan == false &&
-                selectedChallenge.drinks == false
-                )
-            // Set category text
-            {
-                lbl_ChallengeDaysPerWeek.Text = "Keine Kategorie ausgewählt";
-            }
-
 
             //
             // Difficulties
@@ -232,7 +82,7 @@ namespace YeahFit
             //
 
             // Get recipe image from byte array
-            var data = NSData.FromArray(selectedChallenge.RecipeImage);
+            var data = NSData.FromArray(selectedChallenge.ChallengeImage);
 
             // Convert to UIImage
             UIImage image = UIImage.LoadFromData(data);

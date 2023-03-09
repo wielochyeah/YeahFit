@@ -8,9 +8,8 @@ namespace YeahFit
 	{
         public static MySqlConnection con;
         public static List<Challenge> challenges = new List<Challenge>();
+        public static List<Workout> workouts = new List<Workout>();
         public List<Workout> Workouts;
-        //public List<Step> Steps;
-        public static string category;
         public static string filter;
         public static string order = "LastAdded";
         public static string orderby;
@@ -22,100 +21,44 @@ namespace YeahFit
         {
         }
 
-        // <summary>
-        /// Initialize
+        /// <summary>
+        /// This method initializes the list of challenges with different filtering and ordering options.
         /// </summary>
         public static void Initialize()
         {
+            // Create an empty list of challenges.
             challenges = new List<Challenge>();
 
-            // Open connection
-            con = new MySqlConnection(@"Server=localhost;Database=YeahCook;User Id=root;Password=; CharSet = utf8");
+            // Open a connection to the YeahFit database on the local server with the root user and empty password.
+            con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
             con.Open();
 
 
             //
-            // Filter
+            // Filter the challegnes based on the selected category.
             //
-
-            // Categories
-            // Breakfast
-            if (category == "breakfast")
-            {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Frühstück = 1";
-            }
-            // Lunch
-            else if (category == "lunch")
-            {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Mittagessen = 1";
-            }
-            // Dinner
-            else if (category == "dinner")
-            {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Abendessen = 1";
-            }
-            // Dessert
-            else if (category == "dessert")
-            {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Dessert = 1";
-            }
-            // Snacks
-            else if (category == "snacks")
-            {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Snacks = 1";
-            }
-            // Vegetarian
-            else if (category == "vegetarian")
-            {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Vegetarisch = 1";
-            }
-            // Vegan
-            else if (category == "vegan")
-            {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Vegan = 1";
-            }
-            // Drinks
-            else if (category == "drinks")
-            {
-                filter = ", `RezeptKategorie` WHERE Rezept.RezeptID = RezeptKategorie.RezeptID AND RezeptKategorie.Getränk = 1";
-            }
-            else
-            {
-                filter = "";
-            }
-
 
             // Order by
 
             // Last added
             if (order == "LastAdded")
             {
-                orderby = " ORDER BY Rezept.RezeptID DESC";
+                orderby = " ORDER BY Challenge.ChallengeID DESC";
             }
             // First added
             else if (order == "FirstAdded")
             {
-                orderby = " ORDER BY Rezept.RezeptID ASC";
+                orderby = " ORDER BY Challenge.ChallengeID ASC";
             }
             // Alphabetical ascending
             else if (order == "AlphAsc")
             {
-                orderby = " ORDER BY Rezept.Name ASC";
+                orderby = " ORDER BY Challenge.ChallengeName ASC";
             }
             // Alphabetical descending
             else if (order == "AlphDesc")
             {
-                orderby = " ORDER BY Rezept.Name DESC";
-            }
-            // Duration ascending
-            else if (order == "DurationAsc")
-            {
-                orderby = " ORDER BY Rezept.Dauer ASC";
-            }
-            // Duration descending
-            else if (order == "DurationDesc")
-            {
-                orderby = " ORDER BY Rezept.Dauer DESC";
+                orderby = " ORDER BY Challenge.ChallengeName DESC";
             }
 
 
@@ -124,11 +67,11 @@ namespace YeahFit
             {
                 if (filter == "")
                 {
-                    filter = " WHERE Rezept.Liked = 1";
+                    filter = " WHERE Challenge.Liked = 1";
                 }
                 else
                 {
-                    filter = filter + " AND Rezept.Liked = 1";
+                    filter = filter + " AND Challenge.Liked = 1";
                 }
             }
 
@@ -138,7 +81,9 @@ namespace YeahFit
             {
                 if (filter == "")
                 {
-                    filter = " WHERE Rezept.Schwierigkeit = 'beginner'";
+                    filter = ", Schwierigkeit " +
+                        "WHERE Challenge.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Beginner'";
                 }
                 else
                 {
@@ -150,23 +95,27 @@ namespace YeahFit
             {
                 if (filter == "")
                 {
-                    filter = " WHERE Rezept.Schwierigkeit = 'advanced'";
+                    filter = ", Schwierigkeit " +
+                        "WHERE Challenge.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
                 }
                 else
                 {
-                    filter = filter + " AND Rezept.Schwierigkeit = 'advanced'";
+                    filter = filter + " AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
                 }
             }
-            // Professional
-            else if (difficulty == "professional")
+            // Hard
+            else if (difficulty == "hard")
             {
                 if (filter == "")
                 {
-                    filter = " WHERE Rezept.Schwierigkeit = 'professional'";
+                    filter = ", Schwierigkeit " +
+                        "WHERE Challenge.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Hart'";
                 }
                 else
                 {
-                    filter = filter + " AND Rezept.Schwierigkeit = 'professional'";
+                    filter = filter + " AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Hart'";
                 }
             }
 
@@ -175,29 +124,27 @@ namespace YeahFit
             {
                 if (filter == "")
                 {
-                    filter = $" WHERE Rezept.Name LIKE '%{search}%'";
+                    filter = $" WHERE Challenge.ChallengeName LIKE '%{search}%'";
                 }
                 else
                 {
-                    filter = filter + $" AND Rezept.Name LIKE '%{search}%'";
+                    filter = filter + $" AND Challenge.WorkoutName LIKE '%{search}%'";
                 }
             }
 
-            // Read every recipe
+            // Read every challenge
             //  + filter
             //  + orderby
-            using (MySqlCommand getmainrecipe = new MySqlCommand($"SELECT * FROM `Rezept` {filter} {orderby}", con))
+            using (MySqlCommand getmainchallenge = new MySqlCommand($"SELECT * FROM `Challenge` {filter} {orderby}", con))
             {
-                using (MySqlDataReader reader = getmainrecipe.ExecuteReader())
+                using (MySqlDataReader reader = getmainchallenge.ExecuteReader())
                 {
 
                     while (reader.Read())
                     {
 
-                        int id = Convert.ToInt32(reader["RezeptID"].ToString());
-                        string name = reader["Name"].ToString();
-                        string beschreibung = reader["Beschreibung"].ToString();
-                        int dauer = Convert.ToInt32(reader["Dauer"].ToString());
+                        int id = Convert.ToInt32(reader["ChallengeID"].ToString());
+                        string name = reader["ChallengeName"].ToString();
                         bool liked;
                         if (reader["Liked"].ToString() == "True")
                         {
@@ -207,133 +154,44 @@ namespace YeahFit
                         {
                             liked = false;
                         }
-                        string schwierigkeit = reader["Schwierigkeit"].ToString();
 
                         byte[] imgg = (byte[])(reader["Bild"]);
 
-                        // Create new recipe
+                        // Create new challenge
                         Challenge challenge = new Challenge
                         {
                             id = id,
-                            RecipeName = name,
-                            RecipeInfo = beschreibung,
-                            duration = dauer,
-                            difficulty = schwierigkeit,
+                            ChallengeName = name,
+                            difficulty = "",
                             liked = liked,
                             Workouts = new List<Workout>(),
-                            //Steps = new List<Step>(),
-                            RecipeImage = imgg,
+                            ChallengeImage = imgg,
                         };
 
-                        // Add to recipes list
+                        // Add to challenges list
                         challenges.Add(challenge);
                     }
                 }
 
-                // Get every category
-                using (MySqlCommand getrecipecategories = new MySqlCommand($"SELECT * FROM `RezeptKategorie`;", con))
+                // Get difficutly
+                using (MySqlCommand getchallengedifficulty = new MySqlCommand($"SELECT * FROM `Challenge`, `Schwierigkeit` " +
+                    $"WHERE Challenge.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID;", con))
                 {
-                    using (MySqlDataReader reader2 = getrecipecategories.ExecuteReader())
+                    using (MySqlDataReader reader2 = getchallengedifficulty.ExecuteReader())
                     {
                         while (reader2.Read())
                         {
-                            int id = Convert.ToInt32(reader2["RezeptID"]);
+                            int id = Convert.ToInt32(reader2["ChallengeID"]);
 
-                            // Breakfast
-                            bool breakfast;
-                            if (reader2["Frühstück"].ToString() == "True")
-                            {
-                                breakfast = true;
-                            }
-                            else
-                            {
-                                breakfast = false;
-                            }
-                            // Lunch
-                            bool lunch;
-                            if (reader2["Mittagessen"].ToString() == "True")
-                            {
-                                lunch = true;
-                            }
-                            else
-                            {
-                                lunch = false;
-                            }
-                            // Dinner
-                            bool dinner;
-                            if (reader2["Abendessen"].ToString() == "True")
-                            {
-                                dinner = true;
-                            }
-                            else
-                            {
-                                dinner = false;
-                            }
-                            // Dessert
-                            bool dessert;
-                            if (reader2["Dessert"].ToString() == "True")
-                            {
-                                dessert = true;
-                            }
-                            else
-                            {
-                                dessert = false;
-                            }
-                            // Snacks
-                            bool snacks;
-                            if (reader2["Snacks"].ToString() == "True")
-                            {
-                                snacks = true;
-                            }
-                            else
-                            {
-                                snacks = false;
-                            }
-                            // Vegetarian
-                            bool vegetarisch;
-                            if (reader2["Vegetarisch"].ToString() == "True")
-                            {
-                                vegetarisch = true;
-                            }
-                            else
-                            {
-                                vegetarisch = false;
-                            }
-                            // Vegan
-                            bool vegan;
-                            if (reader2["Vegan"].ToString() == "True")
-                            {
-                                vegan = true;
-                            }
-                            else
-                            {
-                                vegan = false;
-                            }
-                            // Drinks
-                            bool drinks;
-                            if (reader2["Getränk"].ToString() == "True")
-                            {
-                                drinks = true;
-                            }
-                            else
-                            {
-                                drinks = false;
-                            }
+                            string difficulty = reader2["Schwierigkeitsbeschreibung"].ToString();
 
-                            // Set category of recipe
+                            // Set category of challenge
                             for (int j = 0; j < challenges.Count; j++)
                             {
                                 // For the correct id
                                 if (id == challenges[j].id)
                                 {
-                                    challenges[j].breakfast = breakfast;
-                                    challenges[j].lunch = lunch;
-                                    challenges[j].dinner = dinner;
-                                    challenges[j].dessert = dessert;
-                                    challenges[j].snacks = snacks;
-                                    challenges[j].vegetarian = vegetarisch;
-                                    challenges[j].vegan = vegan;
-                                    challenges[j].drinks = drinks;
+                                    challenges[j].difficulty = difficulty;
                                 }
                             }
 
@@ -341,29 +199,49 @@ namespace YeahFit
                     }
                 }
 
-                // Select every ingredient
-                using (MySqlCommand getingredients = new MySqlCommand($"SELECT * FROM `Zutat`;", con))
+
+                // Select every workout
+                using (MySqlCommand getworkouts = new MySqlCommand($"SELECT * FROM `Workout`;", con))
                 {
-                    using (MySqlDataReader reader3 = getingredients.ExecuteReader())
+                    using (MySqlDataReader reader3 = getworkouts.ExecuteReader())
                     {
                         while (reader3.Read())
                         {
-                            string name = reader3["Zutat"].ToString();
-                            string ammount = reader3["Menge"].ToString();
-                            int id = Convert.ToInt32(reader3["RezeptID"]);
+                            int workoutId = Convert.ToInt32(reader3["WorkoutID"].ToString());
+                            string workoutName = reader3["WorkoutName"].ToString();
+                            int workoutDuration = Convert.ToInt32(reader3["WorkoutDauer"].ToString());
+                            bool workoutLiked;
+                            /*if (reader["Liked"].ToString() == "True")
+                            {
+                                liked = true;
+                            }
+                            else
+                            {
+                                liked = false;
+                            }*/
 
+                            byte[] workoutImgg = (byte[])(reader3["WorkoutBild"]);
+
+                            // Create new workout
                             Workout workout = new Workout
                             {
-                                WorkoutName = name,
+                                id = workoutId,
+                                WorkoutName = workoutName,
+                                duration = workoutDuration,
+                                difficulty = "",
+                                //liked = workoutLiked,
+                                Exercises = new List<Exercise>(),
+                                WorkoutImage = workoutImgg,
                             };
 
                             // Set ingredients of recipe
                             for (int j = 0; j < challenges.Count; j++)
                             {
                                 // For the correct id
-                                if (id == challenges[j].id)
+                                if (workoutId == challenges[j].id)
                                 {
                                     challenges[j].Workouts.Add(workout);
+                                    workouts.Add(workout);
                                 }
                             }
 
@@ -371,33 +249,52 @@ namespace YeahFit
                     }
                 }
 
-                // Select every step
-                using (MySqlCommand getsteps = new MySqlCommand($"SELECT * FROM `Schritt`;", con))
+
+                // Select every exercise
+                using (MySqlCommand getexercises = new MySqlCommand($"SELECT * FROM `Übung`, `Workout_Übung` WHERE Übung.ÜbungID = Workout_Übung.ÜbungID;", con))
                 {
-                    using (MySqlDataReader reader4 = getsteps.ExecuteReader())
+                    // Execute the SQL query and get the result set
+                    using (MySqlDataReader reader4 = getexercises.ExecuteReader())
                     {
+                        // Iterate through each row of the result set
                         while (reader4.Read())
                         {
-                            string stepinfo = reader4["Schritt"].ToString();
-                            int id = Convert.ToInt32(reader4["RezeptID"]);
+                            // Extract the exercise name from the current row
+                            string exerciseName = reader4["ÜbungName"].ToString();
 
-                            // Create new steo
-                            /*Step step = new Step
+                            //string sätze = reader4["Menge"].ToString();
+                            //string
+
+                            // Extract the exercise ID from the current row and convert it to an int
+                            int id = Convert.ToInt32(reader4["WorkoutID"]);
+
+                            // Extract the exercise image from the current row
+                            byte[] exerciseImgg = (byte[])(reader4["ÜbungGIF"]);
+
+                            // Create a new Exercise object with the extracted information
+                            Exercise exercise = new Exercise
                             {
-                                StepInfo = stepinfo,
+                                ExerciseName = exerciseName,
+                                ExerciseReps = "",
+                                ExerciseSets = "",
+                                ExerciseImage = exerciseImgg,
                             };
 
-                            // Set steps of recipe
-                            for (int j = 0; j < workouts.Count; j++)
+                            // Iterate through each workout in the list of workouts
+                            for (int i = 0; i < challenges.Count; i++)
                             {
-                                // For the correct id
-                                if (id == workouts[j].id)
+                                for (int j = 0; j < workouts.Count; j++)
                                 {
-                                    workouts[j].Steps.Add(step);
+                                    // Check if the current workout has the same ID as the current exercise
+                                    if (id == workouts[j].id)
+                                    {
+                                        // Add the exercise to the current workout's list of exercises
+                                        challenges[i].Workouts[j].Exercises.Add(exercise);
+                                    }
                                 }
-                            }*/
-                        }
+                            }
 
+                        }
                     }
                 }
 

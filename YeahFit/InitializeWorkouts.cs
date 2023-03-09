@@ -23,24 +23,26 @@ namespace YeahFit
 		{
 		}
 
-        // <summary>
-        /// Initialize
+        /// <summary>
+        /// This method initializes the list of workouts with different filtering and ordering options.
         /// </summary>
         public static void Initialize()
         {
+            // Create an empty list of workouts.
             workouts = new List<Workout>();
 
-            // Open connection
+            // Open a connection to the YeahFit database on the local server with the root user and empty password.
             con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
             con.Open();
 
 
             //
-            // Filter
+            // Filter the workouts based on the selected category.
+            // Generate a filter string based on the user's category selection
             //
 
             // Categories
-            // Breakfast
+            // Core
             if (category == "core")
             {
                 filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
@@ -49,7 +51,7 @@ namespace YeahFit
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Kategorie.`KategorieName` = 'Core'";
             }
-            // Lunch
+            // UpperBody
             else if (category == "upperBody")
             {
                 filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
@@ -58,7 +60,7 @@ namespace YeahFit
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Kategorie.`KategorieName` = 'Oberkörper'";
             }
-            // Dinner
+            // LowerBody
             else if (category == "lowerBody")
             {
                 filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
@@ -67,7 +69,7 @@ namespace YeahFit
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Kategorie.`KategorieName` = 'Unterkörper'";
             }
-            // Dessert
+            // FullBody
             else if (category == "fullBody")
             {
                 filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
@@ -76,7 +78,7 @@ namespace YeahFit
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Kategorie.`KategorieName` = 'Ganzkörper'";
             }
-            // Snacks
+            // Push
             else if (category == "push")
             {
                 filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
@@ -85,7 +87,7 @@ namespace YeahFit
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Kategorie.`KategorieName` = 'Push'";
             }
-            // Vegetarian
+            // Pull
             else if (category == "pull")
             {
                 filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
@@ -94,7 +96,7 @@ namespace YeahFit
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Kategorie.`KategorieName` = 'Pull'";
             }
-            // Vegan
+            // TwentyMinutes
             else if (category == "twentyMinutes")
             {
                 filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
@@ -103,7 +105,7 @@ namespace YeahFit
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Kategorie.`KategorieName` = '20min'";
             }
-            // Drinks
+            // NoEquipment
             else if (category == "noEquipment")
             {
                 filter = ", `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
@@ -194,7 +196,7 @@ namespace YeahFit
                     filter = filter + " AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
                 }
             }
-            // Professional
+            // Hard
             else if (difficulty == "hard")
             {
                 if (filter == "")
@@ -248,7 +250,7 @@ namespace YeahFit
 
                         byte[] imgg = (byte[])(reader["WorkoutBild"]);
 
-                        // Create new recipe
+                        // Create new workout
                         Workout workout = new Workout
                         {
                             id = id,
@@ -260,7 +262,7 @@ namespace YeahFit
                             WorkoutImage = imgg,
                         };
 
-                        // Add to recipes list
+                        // Add to workouts list
                         workouts.Add(workout);
                     }
                 }
@@ -278,7 +280,7 @@ namespace YeahFit
 
                             string difficulty = reader2["Schwierigkeitsbeschreibung"].ToString();
 
-                            // Set category of recipe
+                            // Set category of workout
                             for (int j = 0; j < workouts.Count; j++)
                             {
                                 // For the correct id
@@ -293,12 +295,12 @@ namespace YeahFit
                 }
 
                 // Get every category
-                using (MySqlCommand getrecipecategories = new MySqlCommand($"SELECT * FROM `Workout`, `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
+                using (MySqlCommand getworkoutcategories = new MySqlCommand($"SELECT * FROM `Workout`, `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
                     $"WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
                     $"AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
                     $"AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID;", con))
                 {
-                    using (MySqlDataReader reader3 = getrecipecategories.ExecuteReader())
+                    using (MySqlDataReader reader3 = getworkoutcategories.ExecuteReader())
                     {
                         while (reader3.Read())
                         {
@@ -407,20 +409,27 @@ namespace YeahFit
                 }
 
                 // Select every exercise
-                using (MySqlCommand getingredients = new MySqlCommand($"SELECT * FROM `Übung`, `Workout_Übung` WHERE Übung.ÜbungID = Workout_Übung.ÜbungID;", con))
+                using (MySqlCommand getexercises = new MySqlCommand($"SELECT * FROM `Übung`, `Workout_Übung` WHERE Übung.ÜbungID = Workout_Übung.ÜbungID;", con))
                 {
-                    using (MySqlDataReader reader4 = getingredients.ExecuteReader())
+                    // Execute the SQL query and get the result set
+                    using (MySqlDataReader reader4 = getexercises.ExecuteReader())
                     {
+                        // Iterate through each row of the result set
                         while (reader4.Read())
                         {
+                            // Extract the exercise name from the current row
                             string name = reader4["ÜbungName"].ToString();
+
                             //string sätze = reader4["Menge"].ToString();
                             //string
+
+                            // Extract the exercise ID from the current row and convert it to an int
                             int id = Convert.ToInt32(reader4["WorkoutID"]);
 
+                            // Extract the exercise image from the current row
                             byte[] imgg = (byte[])(reader4["ÜbungGIF"]);
 
-                            // Create new exercise
+                            // Create a new Exercise object with the extracted information
                             Exercise exercise = new Exercise
                             {
                                 ExerciseName = name,
@@ -429,12 +438,13 @@ namespace YeahFit
                                 ExerciseImage = imgg,
                             };
 
-                            // Set ingredients of recipe
+                            // Iterate through each workout in the list of workouts
                             for (int j = 0; j < workouts.Count; j++)
                             {
-                                // For the correct id
+                                // Check if the current workout has the same ID as the current exercise
                                 if (id == workouts[j].id)
                                 {
+                                    // Add the exercise to the current workout's list of exercises
                                     workouts[j].Exercises.Add(exercise);
                                 }
                             }
@@ -449,8 +459,8 @@ namespace YeahFit
                 // Set FirstView's recipe to the recipes from database
                 WorkoutOverviewViewController.workouts = null;
                 WorkoutOverviewViewController.workouts = workouts;
-                ChallengeOverviewViewController.workouts = null;
-                ChallengeOverviewViewController.workouts = workouts;
+                //ChallengeOverviewViewController.workouts = null;
+                //ChallengeOverviewViewController.workouts = workouts;
             }
         }
     }

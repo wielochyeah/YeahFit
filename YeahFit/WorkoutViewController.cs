@@ -122,7 +122,7 @@ namespace YeahFit
             }
             else
             {
-                nowSelectedWorkout = ChallengeOverviewViewController.workouts[index];
+                //nowSelectedWorkout = ChallengeOverviewViewController.workouts[index];
             }
             internalExercises = nowSelectedWorkout.Exercises;
 

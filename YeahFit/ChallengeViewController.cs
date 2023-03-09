@@ -42,7 +42,7 @@ namespace YeahFit
                 //internalSteps = nowSelectedRecipe.Steps;
 
                 // Set general labels
-                lbl_ChallengeName.Text = nowSelectedChallenge.RecipeName;
+                lbl_ChallengeName.Text = nowSelectedChallenge.ChallengeName;
 
 
                 // Set button colors for showing ingredients or steps
@@ -86,7 +86,7 @@ namespace YeahFit
             internalWorkouts = nowSelectedChallenge.Workouts;
 
             // Set general information
-            lbl_ChallengeName.Text = nowSelectedChallenge.RecipeName;
+            lbl_ChallengeName.Text = nowSelectedChallenge.ChallengeName;
             
 
             // Set source for ingredient tableView
