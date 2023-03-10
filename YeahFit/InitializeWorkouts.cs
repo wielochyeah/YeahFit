@@ -338,8 +338,8 @@ namespace YeahFit
                             Exercise exercise = new Exercise
                             {
                                 ExerciseName = name,
-                                ExerciseReps = "",
-                                ExerciseSets = "",
+                                ExerciseReps = reps,
+                                ExerciseSets = sets,
                                 ExerciseImage = imgg,
                             };
 

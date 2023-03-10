@@ -166,10 +166,10 @@ namespace YeahFit
                 //
 
                 // Difficulty beginner
-                if (selectedWorkout.difficulty == "Anfänger")
+                if (selectedWorkout.difficulty == "Beginner")
                 {
                     // Set difficulty text
-                    lbl_difficulty.Text = "Anfänger";
+                    lbl_difficulty.Text = "Beginner";
                 }
 
                 // Difficulty advanced

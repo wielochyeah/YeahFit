@@ -47,9 +47,9 @@ namespace YeahFit
                 lbl_WorkoutName.Text = nowSelectedWorkout.WorkoutName;
 
                 // Set difficulty
-                if (nowSelectedWorkout.difficulty == "Anfänger")
+                if (nowSelectedWorkout.difficulty == "Beginner")
                 {
-                    lbl_difficulty.Text = "Anfänger";
+                    lbl_difficulty.Text = "Beginner";
                 }
                 else if (nowSelectedWorkout.difficulty == "Fortgeschritten")
                 {
@@ -60,6 +60,8 @@ namespace YeahFit
                     lbl_difficulty.Text = "Hart";
                 }
 
+
+                lbl_category.Text = "";
 
                 if (nowSelectedWorkout.core == true)
                 {
@@ -257,7 +259,7 @@ namespace YeahFit
             // Set difficulty
             if (nowSelectedWorkout.difficulty == "beginner")
             {
-                lbl_difficulty.Text = "Anfänger";
+                lbl_difficulty.Text = "Beginner";
             }
             else if (nowSelectedWorkout.difficulty == "advanced")
             {

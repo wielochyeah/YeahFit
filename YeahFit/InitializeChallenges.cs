@@ -275,8 +275,8 @@ namespace YeahFit
                             Exercise exercise = new Exercise
                             {
                                 ExerciseName = exerciseName,
-                                ExerciseReps = "",
-                                ExerciseSets = "",
+                                ExerciseReps = reps,
+                                ExerciseSets = sets,
                                 ExerciseImage = exerciseImgg,
                             };
 
