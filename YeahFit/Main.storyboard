@@ -1837,7 +1837,7 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spaghetti.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BAF-63-hgx" customClass="UIImageViewWorkout">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAF-63-hgx" customClass="UIImageViewWorkout">
                                                     <rect key="frame" x="52" y="47" width="312" height="176"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -2577,7 +2577,6 @@
         <image name="Rectangle 1178-3.png" width="400.5" height="420"/>
         <image name="Rectangle 1178.png" width="401" height="458"/>
         <image name="Snacks.png" width="291" height="302"/>
-        <image name="Spaghetti.jpg" width="1440" height="810"/>
         <image name="Trophy 1 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="Trophy 2 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="Trophy 4 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
