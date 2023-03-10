@@ -22,6 +22,9 @@ namespace YeahFit
         public int duration { get; set; }
 
         // ID
+        public int day { get; set; }
+
+        // ID
         public int id { get; set; }
 
         // Difficulty

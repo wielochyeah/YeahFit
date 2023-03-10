@@ -24,6 +24,35 @@ namespace YeahFit
             lbl_WorkoutName.Text = selectedWorkout.WorkoutName;
             lbl_categoryDifficulty.Text = "";
 
+            if (selectedWorkout.day == 1)
+            {
+                lbl_Weekday.Text = "Montags";
+            }
+            else if (selectedWorkout.day == 2)
+            {
+                lbl_Weekday.Text = "Dienstags";
+            }
+            else if (selectedWorkout.day == 3)
+            {
+                lbl_Weekday.Text = "Mittwochs";
+            }
+            else if (selectedWorkout.day == 4)
+            {
+                lbl_Weekday.Text = "Donnerstags";
+            }
+            else if (selectedWorkout.day == 5)
+            {
+                lbl_Weekday.Text = "Freitags";
+            }
+            else if (selectedWorkout.day == 6)
+            {
+                lbl_Weekday.Text = "Samstags";
+            }
+            else if (selectedWorkout.day == 7)
+            {
+                lbl_Weekday.Text = "Sonntags";
+            }
+
 
             //
             // Categories

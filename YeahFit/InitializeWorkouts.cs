@@ -240,14 +240,14 @@ namespace YeahFit
                         string name = reader["WorkoutName"].ToString();
                         int duration = Convert.ToInt32(reader["WorkoutDauer"].ToString());
                         bool liked;
-                        /*if (reader["Liked"].ToString() == "True")
+                        if (reader["Liked"].ToString() == "1")
                         {
                             liked = true;
                         }
                         else
                         {
                             liked = false;
-                        }*/
+                        }
 
                         byte[] imgg = (byte[])(reader["WorkoutBild"]);
 
@@ -258,9 +258,10 @@ namespace YeahFit
                             WorkoutName = name,
                             duration = duration,
                             difficulty = "",
-                            //liked = liked,
+                            liked = liked,
                             Exercises = new List<Exercise>(),
                             WorkoutImage = imgg,
+                            day = 0,
                         };
 
                         // Add to workouts list

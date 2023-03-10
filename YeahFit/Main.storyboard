@@ -366,7 +366,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPH-NK-NTF" customClass="UIImageViewChallenge">
-                                                    <rect key="frame" x="-3" y="50" width="333" height="189"/>
+                                                    <rect key="frame" x="0.0" y="50" width="327" height="189"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="189" id="y2q-Um-zFn"/>
                                                     </constraints>
@@ -400,7 +400,7 @@
                                             <constraints>
                                                 <constraint firstItem="pPH-NK-NTF" firstAttribute="bottom" secondItem="1tf-gH-aYy" secondAttribute="bottomMargin" id="0eI-6a-glE"/>
                                                 <constraint firstItem="pPH-NK-NTF" firstAttribute="centerX" secondItem="1tf-gH-aYy" secondAttribute="centerX" id="BsG-gd-GHb"/>
-                                                <constraint firstItem="pPH-NK-NTF" firstAttribute="leading" secondItem="1tf-gH-aYy" secondAttribute="leadingMargin" constant="-23" id="EZd-LE-9iE"/>
+                                                <constraint firstItem="pPH-NK-NTF" firstAttribute="leading" secondItem="1tf-gH-aYy" secondAttribute="leadingMargin" constant="-20" id="EZd-LE-9iE"/>
                                                 <constraint firstItem="I7t-cH-66s" firstAttribute="leading" secondItem="1tf-gH-aYy" secondAttribute="leadingMargin" id="F8e-3D-Ckc"/>
                                                 <constraint firstItem="ZII-Pv-fii" firstAttribute="leading" secondItem="1tf-gH-aYy" secondAttribute="leadingMargin" constant="-20" id="Gdp-A7-1lL"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="I7t-cH-66s" secondAttribute="bottom" constant="22" id="JnD-QN-GKB"/>

@@ -214,15 +214,18 @@ namespace YeahFit
 
                             string workoutName = reader3["WorkoutName"].ToString();
                             int workoutDuration = Convert.ToInt32(reader3["WorkoutDauer"].ToString());
+
+                            int workoutDay = Convert.ToInt32(reader3["Wochentag"].ToString());
+
                             bool workoutLiked;
-                            /*if (reader["Liked"].ToString() == "True")
+                            if (reader3["Liked"].ToString() == "1")
                             {
-                                liked = true;
+                                workoutLiked = true;
                             }
                             else
                             {
-                                liked = false;
-                            }*/
+                                workoutLiked = false;
+                            }
 
                             byte[] workoutImgg = (byte[])(reader3["WorkoutBild"]);
 
@@ -233,9 +236,10 @@ namespace YeahFit
                                 WorkoutName = workoutName,
                                 duration = workoutDuration,
                                 difficulty = "",
-                                //liked = workoutLiked,
+                                liked = workoutLiked,
                                 Exercises = new List<Exercise>(),
                                 WorkoutImage = workoutImgg,
+                                day = workoutDay,
                             };
 
                             // Set ingredients of recipe
