@@ -155,7 +155,7 @@ namespace YeahFit
 
 
             // Favourite/Liked
-            /*if (favourite == true)
+            if (favourite == true)
             {
                 if (filter == "")
                 {
@@ -165,7 +165,7 @@ namespace YeahFit
                 {
                     filter = filter + " AND Workout.Liked = 1";
                 }
-            }*/
+            }
 
             // Difficulty
             // Beginner
@@ -420,8 +420,8 @@ namespace YeahFit
                             // Extract the exercise name from the current row
                             string name = reader4["ÜbungName"].ToString();
 
-                            //string sätze = reader4["Menge"].ToString();
-                            //string
+                            string sets = reader4["Sätze"].ToString();
+                            string reps = reader4["Wiederholungen"].ToString();
 
                             // Extract the exercise ID from the current row and convert it to an int
                             int id = Convert.ToInt32(reader4["WorkoutID"]);
