@@ -157,12 +157,12 @@ namespace YeahFit
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
-            /*WorkoutViewController.firstViewController = this;
+            WorkoutViewController.firstViewController = this;
             workouts = null;
             InitializeWorkouts.Initialize();
             tableView_Workouts.Source = new WorkoutTableViewSource(workouts, this, CurrentNavigationController);
             tableView_Workouts.RowHeight = 425;
-            tableView_Workouts.ReloadData();*/
+            tableView_Workouts.ReloadData();
         }
 
         public override void DidReceiveMemoryWarning()
