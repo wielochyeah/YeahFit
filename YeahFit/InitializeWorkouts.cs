@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using MySql.Data.MySqlClient;
 
 namespace YeahFit
@@ -289,124 +290,28 @@ namespace YeahFit
                                     workouts[j].difficulty = difficulty;
                                 }
                             }
-
                         }
                     }
                 }
+
+                Console.WriteLine(workouts[6].id);
+                Console.WriteLine(workouts[6].WorkoutName);
 
                 // Get every category
-                using (MySqlCommand getworkoutcategories = new MySqlCommand($"SELECT * FROM `Workout`, `Workout_Kategorie`, `Kategorie`, `Schwierigkeit` " +
-                    $"WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
-                    $"AND Workout_Kategorie.`KategorieID` = Kategorie.`KategorieID` " +
-                    $"AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID;", con))
-                {
-                    using (MySqlDataReader reader3 = getworkoutcategories.ExecuteReader())
-                    {
-                        while (reader3.Read())
-                        {
-                            int id = Convert.ToInt32(reader3["WorkoutID"]);
+                workouts[0].noEquipment = true;
+                workouts[0].lowerBody = true;
+                workouts[1].noEquipment = true;
+                workouts[1].upperBody = true;
+                workouts[2].noEquipment = true;
+                workouts[2].fullBody = true;
+                workouts[3].lowerBody = true;
+                workouts[3].core = true;
+                workouts[4].pull = true;
+                workouts[4].upperBody = true;
+                workouts[5].push = true;
+                workouts[5].upperBody = true;
+                workouts[6].fullBody = true;
 
-                            // core
-                            bool core;
-                            if (reader3["KategorieID"].ToString() == "1")
-                            {
-                                core = true;
-                            }
-                            else
-                            {
-                                core = false;
-                            }
-                            // upperBody
-                            bool upperBody;
-                            if (reader3["KategorieID"].ToString() == "2")
-                            {
-                                upperBody = true;
-                            }
-                            else
-                            {
-                                upperBody = false;
-                            }
-                            // lowerBody
-                            bool lowerBody;
-                            if (reader3["KategorieID"].ToString() == "3")
-                            {
-                                lowerBody = true;
-                            }
-                            else
-                            {
-                                lowerBody = false;
-                            }
-                            // fullBody
-                            bool fullBody;
-                            if (reader3["KategorieID"].ToString() == "4")
-                            {
-                                fullBody = true;
-                            }
-                            else
-                            {
-                                fullBody = false;
-                            }
-                            // push
-                            bool push;
-                            if (reader3["KategorieID"].ToString() == "5")
-                            {
-                                push = true;
-                            }
-                            else
-                            {
-                                push = false;
-                            }
-                            // pull
-                            bool pull;
-                            if (reader3["KategorieID"].ToString() == "6")
-                            {
-                                pull = true;
-                            }
-                            else
-                            {
-                                pull = false;
-                            }
-                            // twentyMinutes
-                            bool twentyMinutes;
-                            if (reader3["KategorieID"].ToString() == "7")
-                            {
-                                twentyMinutes = true;
-                            }
-                            else
-                            {
-                                twentyMinutes = false;
-                            }
-                            // noEquipment
-                            bool noEquipment;
-                            if (reader3["KategorieID"].ToString() == "8")
-                            {
-                                noEquipment = true;
-                            }
-                            else
-                            {
-                                noEquipment = false;
-                            }
-
-                            // Set category of recipe
-                            for (int j = 0; j < workouts.Count; j++)
-                            {
-                                // For the correct id
-                                if (id == workouts[j].id)
-                                {
-                                    workouts[j].core = core;
-                                    workouts[j].upperBody = upperBody;
-                                    workouts[j].lowerBody = lowerBody;
-                                    workouts[j].fullBody = fullBody;
-                                    workouts[j].push = push;
-                                    workouts[j].pull = pull;
-                                    workouts[j].twentyMinutes = twentyMinutes;
-                                    workouts[j].noEquipment = noEquipment;
-                                }
-                            }
-
-                        }
-                    }
-                }
 
                 // Select every exercise
                 using (MySqlCommand getexercises = new MySqlCommand($"SELECT * FROM `Übung`, `Workout_Übung` WHERE Übung.ÜbungID = Workout_Übung.ÜbungID;", con))

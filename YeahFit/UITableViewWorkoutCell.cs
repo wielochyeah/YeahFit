@@ -31,11 +31,8 @@ namespace YeahFit
                 lbl_WorkoutName.Text = selectedWorkout.WorkoutName;
                 lbl_WorkoutCategory.Text = "";
 
-                
-                //
-                // Categories
-                //
 
+                
                 // Category: Breakfast
                 if (selectedWorkout.core == true)
                 {
@@ -43,12 +40,12 @@ namespace YeahFit
                     if (lbl_WorkoutCategory.Text != "")
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Frühstück";
+                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Core";
                     }
                     else
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = "Frühstück";
+                        lbl_WorkoutCategory.Text = "Core";
                     }
                 }
 
@@ -59,12 +56,12 @@ namespace YeahFit
                     if (lbl_WorkoutCategory.Text != "")
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Mittagessen";
+                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Oberkörper";
                     }
                     else
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = "Mittagessen";
+                        lbl_WorkoutCategory.Text = "Oberkörper";
                     }
                 }
 
@@ -75,12 +72,12 @@ namespace YeahFit
                     if (lbl_WorkoutCategory.Text != "")
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Abendessen";
+                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Unterkörper";
                     }
                     else
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = "Abendessen";
+                        lbl_WorkoutCategory.Text = "Unterkörper";
                     }
                 }
 
@@ -91,12 +88,12 @@ namespace YeahFit
                     if (lbl_WorkoutCategory.Text != "")
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Dessert";
+                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Ganzkörper";
                     }
                     else
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = "Dessert";
+                        lbl_WorkoutCategory.Text = "Ganzkörper";
                     }
                 }
 
@@ -107,12 +104,12 @@ namespace YeahFit
                     if (lbl_WorkoutCategory.Text != "")
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Snack";
+                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Push";
                     }
                     else
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = "Snack";
+                        lbl_WorkoutCategory.Text = "Push";
                     }
                 }
 
@@ -123,12 +120,12 @@ namespace YeahFit
                     if (lbl_WorkoutCategory.Text != "")
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Getränk";
+                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Pull";
                     }
                     else
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = "Getränk";
+                        lbl_WorkoutCategory.Text = "Pull";
                     }
                 }
 
@@ -139,12 +136,12 @@ namespace YeahFit
                     if (lbl_WorkoutCategory.Text != "")
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Vegetarisch";
+                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", 20 Minuten";
                     }
                     else
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = "Vegetarisch";
+                        lbl_WorkoutCategory.Text = "20 Minuten";
                     }
                 }
 
@@ -155,55 +152,38 @@ namespace YeahFit
                     if (lbl_WorkoutCategory.Text != "")
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Vegan";
+                        lbl_WorkoutCategory.Text = lbl_WorkoutCategory.Text + ", Ohne Geräte";
                     }
                     else
                     {
                         // Set category text
-                        lbl_WorkoutCategory.Text = "Vegan";
+                        lbl_WorkoutCategory.Text = "Ohne Geräte";
                     }
                 }
-
-                // If no category was selected
-                if (
-                    selectedWorkout.core == false &&
-                    selectedWorkout.upperBody == false &&
-                    selectedWorkout.lowerBody == false &&
-                    selectedWorkout.fullBody == false &&
-                    selectedWorkout.push == false &&
-                    selectedWorkout.pull == false &&
-                    selectedWorkout.twentyMinutes == false &&
-                    selectedWorkout.noEquipment == false
-                    )
-                // Set category text
-                {
-                    lbl_WorkoutCategory.Text = "Keine Kategorie ausgewählt";
-                }
-
 
                 //
                 // Difficulties
                 //
 
                 // Difficulty beginner
-                if (selectedWorkout.difficulty == "beginner")
+                if (selectedWorkout.difficulty == "Anfänger")
                 {
                     // Set difficulty text
                     lbl_difficulty.Text = "Anfänger";
                 }
 
                 // Difficulty advanced
-                else if (selectedWorkout.difficulty == "advanced")
+                else if (selectedWorkout.difficulty == "Fortgeschritten")
                 {
                     // Set difficulty text
                     lbl_difficulty.Text = "Fortgeschritten";
                 }
 
                 // Difficulty professional
-                else if (selectedWorkout.difficulty == "professional")
+                else if (selectedWorkout.difficulty == "Hart")
                 {
                     // Set difficulty text
-                    lbl_difficulty.Text = "Profi";
+                    lbl_difficulty.Text = "Hart";
                 }
 
 

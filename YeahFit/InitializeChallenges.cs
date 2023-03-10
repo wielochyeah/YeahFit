@@ -155,7 +155,7 @@ namespace YeahFit
                             liked = false;
                         }
 
-                        byte[] imgg = (byte[])(reader["Bild"]);
+                        byte[] imgg = (byte[])(reader["ChallengeBild"]);
 
                         // Create new challenge
                         Challenge challenge = new Challenge

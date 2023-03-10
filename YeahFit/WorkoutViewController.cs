@@ -47,21 +47,146 @@ namespace YeahFit
                 lbl_WorkoutName.Text = nowSelectedWorkout.WorkoutName;
 
                 // Set difficulty
-                if (nowSelectedWorkout.difficulty == "beginner")
+                if (nowSelectedWorkout.difficulty == "Anfänger")
                 {
-                    lbl_difficulty.Text = "   Anfänger";
+                    lbl_difficulty.Text = "Anfänger";
                 }
-                else if (nowSelectedWorkout.difficulty == "advanced")
+                else if (nowSelectedWorkout.difficulty == "Fortgeschritten")
                 {
                     lbl_difficulty.Text = "Fortgeschritten";
                 }
-                else if (nowSelectedWorkout.difficulty == "professional")
+                else if (nowSelectedWorkout.difficulty == "Hart")
                 {
-                    lbl_difficulty.Text = "       Profi";
+                    lbl_difficulty.Text = "Hart";
                 }
 
 
-                lbl_category.Text = "Test-Kategorie";
+                if (nowSelectedWorkout.core == true)
+                {
+                    // If there were categories set before
+                    if (lbl_category.Text != "")
+                    {
+                        // Set category text
+                        lbl_category.Text = lbl_category.Text + ", Core";
+                    }
+                    else
+                    {
+                        // Set category text
+                        lbl_category.Text = "Core";
+                    }
+                }
+
+                // Category: Lunch
+                if (nowSelectedWorkout.upperBody == true)
+                {
+                    // If there were categories set before
+                    if (lbl_category.Text != "")
+                    {
+                        // Set category text
+                        lbl_category.Text = lbl_category.Text + ", Oberkörper";
+                    }
+                    else
+                    {
+                        // Set category text
+                        lbl_category.Text = "Oberkörper";
+                    }
+                }
+
+                // Category: Dinner
+                if (nowSelectedWorkout.lowerBody == true)
+                {
+                    // If there were categories set before
+                    if (lbl_category.Text != "")
+                    {
+                        // Set category text
+                        lbl_category.Text = lbl_category.Text + ", Unterkörper";
+                    }
+                    else
+                    {
+                        // Set category text
+                        lbl_category.Text = "Unterkörper";
+                    }
+                }
+
+                // Category: Dessert
+                if (nowSelectedWorkout.fullBody == true)
+                {
+                    // If there were categories set before
+                    if (lbl_category.Text != "")
+                    {
+                        // Set category text
+                        lbl_category.Text = lbl_category.Text + ", Ganzkörper";
+                    }
+                    else
+                    {
+                        // Set category text
+                        lbl_category.Text = "Ganzkörper";
+                    }
+                }
+
+                // Category: Snacks
+                if (nowSelectedWorkout.push == true)
+                {
+                    // If there were categories set before
+                    if (lbl_category.Text != "")
+                    {
+                        // Set category text
+                        lbl_category.Text = lbl_category.Text + ", Push";
+                    }
+                    else
+                    {
+                        // Set category text
+                        lbl_category.Text = "Push";
+                    }
+                }
+
+                // Category: Drinks
+                if (nowSelectedWorkout.pull == true)
+                {
+                    // If there were categories set before
+                    if (lbl_category.Text != "")
+                    {
+                        // Set category text
+                        lbl_category.Text = lbl_category.Text + ", Pull";
+                    }
+                    else
+                    {
+                        // Set category text
+                        lbl_category.Text = "Pull";
+                    }
+                }
+
+                // Category: Vegetarian
+                if (nowSelectedWorkout.twentyMinutes == true)
+                {
+                    // If there were categories set before
+                    if (lbl_category.Text != "")
+                    {
+                        // Set category text
+                        lbl_category.Text = lbl_category.Text + ", 20 Minuten";
+                    }
+                    else
+                    {
+                        // Set category text
+                        lbl_category.Text = "20 Minuten";
+                    }
+                }
+
+                // Category: Vegan
+                if (nowSelectedWorkout.noEquipment == true)
+                {
+                    // If there were categories set before
+                    if (lbl_category.Text != "")
+                    {
+                        // Set category text
+                        lbl_category.Text = lbl_category.Text + ", Ohne Geräte";
+                    }
+                    else
+                    {
+                        // Set category text
+                        lbl_category.Text = "Ohne Geräte";
+                    }
+                }
 
                 // Set duration
                 TimeSpan duration = TimeSpan.FromSeconds(nowSelectedWorkout.duration);
