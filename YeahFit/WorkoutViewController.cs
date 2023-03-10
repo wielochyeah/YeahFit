@@ -272,7 +272,7 @@ namespace YeahFit
 
             // Set duration
             TimeSpan duration = TimeSpan.FromSeconds(nowSelectedWorkout.duration);
-            lbl_duration.Text = duration.ToString(@"hh\:mm");
+            lbl_duration.Text = duration.ToString(@"hh\:mm") + " Stunden";
 
             // Set image
             var data = NSData.FromArray(nowSelectedWorkout.WorkoutImage);

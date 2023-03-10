@@ -26,8 +26,9 @@ namespace YeahFit
         /// </summary>
         public static void Initialize()
         {
-            // Create an empty list of challenges.
+            // Create an empty list of challenges and workouts.
             challenges = new List<Challenge>();
+            workouts = new List<Workout>();
 
             // Open a connection to the YeahFit database on the local server with the root user and empty password.
             con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
@@ -201,13 +202,16 @@ namespace YeahFit
 
 
                 // Select every workout
-                using (MySqlCommand getworkouts = new MySqlCommand($"SELECT * FROM `Workout`;", con))
+                using (MySqlCommand getworkouts = new MySqlCommand($"SELECT * FROM `Workout`, `Challenge_Workout` " +
+                    $"WHERE Workout.WorkoutID = Challenge_Workout.WorkoutID;", con))
                 {
                     using (MySqlDataReader reader3 = getworkouts.ExecuteReader())
                     {
                         while (reader3.Read())
                         {
                             int workoutId = Convert.ToInt32(reader3["WorkoutID"].ToString());
+                            int challengeId = Convert.ToInt32(reader3["ChallengeID"].ToString());
+
                             string workoutName = reader3["WorkoutName"].ToString();
                             int workoutDuration = Convert.ToInt32(reader3["WorkoutDauer"].ToString());
                             bool workoutLiked;
@@ -238,7 +242,7 @@ namespace YeahFit
                             for (int j = 0; j < challenges.Count; j++)
                             {
                                 // For the correct id
-                                if (workoutId == challenges[j].id)
+                                if (challengeId == challenges[j].id)
                                 {
                                     challenges[j].Workouts.Add(workout);
                                     workouts.Add(workout);
@@ -251,7 +255,10 @@ namespace YeahFit
 
 
                 // Select every exercise
-                using (MySqlCommand getexercises = new MySqlCommand($"SELECT * FROM `Übung`, `Workout_Übung` WHERE Übung.ÜbungID = Workout_Übung.ÜbungID;", con))
+                using (MySqlCommand getexercises = new MySqlCommand($"SELECT * FROM `Challenge`, `Challenge_Workout`, `Übung`, `Workout_Übung` " +
+                    $"WHERE Übung.ÜbungID = Workout_Übung.ÜbungID " +
+                    $"AND Challenge.ChallengeID = Challenge_Workout.ChallengeID " +
+                    $"AND Challenge_Workout.WorkoutID = Workout_Übung.WorkoutID;", con))
                 {
                     // Execute the SQL query and get the result set
                     using (MySqlDataReader reader4 = getexercises.ExecuteReader())
@@ -265,8 +272,9 @@ namespace YeahFit
                             string sets = reader4["Sätze"].ToString();
                             string reps = reader4["Wiederholungen"].ToString();
 
-                            // Extract the exercise ID from the current row and convert it to an int
+                            // Extract the IDs from the current row and convert it to an int
                             int id = Convert.ToInt32(reader4["WorkoutID"]);
+                            int challengeId = Convert.ToInt32(reader4["ChallengeID"]);
 
                             // Extract the exercise image from the current row
                             byte[] exerciseImgg = (byte[])(reader4["ÜbungGIF"]);
@@ -286,7 +294,7 @@ namespace YeahFit
                                 for (int j = 0; j < workouts.Count; j++)
                                 {
                                     // Check if the current workout has the same ID as the current exercise
-                                    if (id == workouts[j].id)
+                                    if (id == workouts[j].id && challengeId == challenges[i].id)
                                     {
                                         // Add the exercise to the current workout's list of exercises
                                         challenges[i].Workouts[j].Exercises.Add(exercise);

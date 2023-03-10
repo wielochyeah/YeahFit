@@ -36,12 +36,12 @@ namespace YeahFit
                 if (lbl_categoryDifficulty.Text != "")
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Frühstück";
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Core";
                 }
                 else
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = "Frühstück";
+                    lbl_categoryDifficulty.Text = "Core";
                 }
             }
 
@@ -52,12 +52,12 @@ namespace YeahFit
                 if (lbl_categoryDifficulty.Text != "")
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Mittagessen";
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Oberkörper";
                 }
                 else
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = "Mittagessen";
+                    lbl_categoryDifficulty.Text = "Oberkörper";
                 }
             }
 
@@ -68,12 +68,12 @@ namespace YeahFit
                 if (lbl_categoryDifficulty.Text != "")
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Abendessen";
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Unterkörper";
                 }
                 else
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = "Abendessen";
+                    lbl_categoryDifficulty.Text = "AbendUnterkörperessen";
                 }
             }
 
@@ -84,12 +84,12 @@ namespace YeahFit
                 if (lbl_categoryDifficulty.Text != "")
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Dessert";
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Oberkörper";
                 }
                 else
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = "Dessert";
+                    lbl_categoryDifficulty.Text = "Oberkörper";
                 }
             }
 
@@ -100,12 +100,12 @@ namespace YeahFit
                 if (lbl_categoryDifficulty.Text != "")
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Snack";
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Push";
                 }
                 else
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = "Snack";
+                    lbl_categoryDifficulty.Text = "Push";
                 }
             }
 
@@ -116,12 +116,12 @@ namespace YeahFit
                 if (lbl_categoryDifficulty.Text != "")
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Getränk";
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Pull";
                 }
                 else
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = "Getränk";
+                    lbl_categoryDifficulty.Text = "Pull";
                 }
             }
 
@@ -132,12 +132,12 @@ namespace YeahFit
                 if (lbl_categoryDifficulty.Text != "")
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Vegetarisch";
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", 20 Minuten";
                 }
                 else
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = "Vegetarisch";
+                    lbl_categoryDifficulty.Text = "20 Minuten";
                 }
             }
 
@@ -148,29 +148,13 @@ namespace YeahFit
                 if (lbl_categoryDifficulty.Text != "")
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Vegan";
+                    lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Ohne Geräte";
                 }
                 else
                 {
                     // Set category text
-                    lbl_categoryDifficulty.Text = "Vegan";
+                    lbl_categoryDifficulty.Text = "Ohne Geräte";
                 }
-            }
-
-            // If no category was selected
-            if (
-                selectedWorkout.core == false &&
-                selectedWorkout.upperBody == false &&
-                selectedWorkout.lowerBody == false &&
-                selectedWorkout.fullBody == false &&
-                selectedWorkout.push == false &&
-                selectedWorkout.pull == false &&
-                selectedWorkout.twentyMinutes == false &&
-                selectedWorkout.noEquipment == false
-                )
-            // Set category text
-            {
-                lbl_categoryDifficulty.Text = "Keine Kategorie ausgewählt";
             }
 
 
@@ -182,7 +166,7 @@ namespace YeahFit
             if (selectedWorkout.difficulty == "beginner")
             {
                 // Set difficulty text
-                lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Anfänger";
+                lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Beginner";
             }
 
             // Difficulty advanced
@@ -193,10 +177,10 @@ namespace YeahFit
             }
 
             // Difficulty professional
-            else if (selectedWorkout.difficulty == "professional")
+            else if (selectedWorkout.difficulty == "hard")
             {
                 // Set difficulty text
-                lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Profi";
+                lbl_categoryDifficulty.Text = lbl_categoryDifficulty.Text + ", Hart";
             }
 
 
