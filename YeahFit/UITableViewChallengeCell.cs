@@ -36,24 +36,24 @@ namespace YeahFit
             //
 
             // Difficulty beginner
-            if (selectedChallenge.difficulty == "beginner")
+            if (selectedChallenge.difficulty == "Beginner")
             {
                 // Set difficulty text
-                lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Anfänger";
+                lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + selectedChallenge.daysPerWeek + " Tage pro Woche, Anfänger";
             }
 
             // Difficulty advanced
-            else if (selectedChallenge.difficulty == "advanced")
+            else if (selectedChallenge.difficulty == "Fortgeschritten")
             {
                 // Set difficulty text
-                lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Fortgeschritten";
+                lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + selectedChallenge.daysPerWeek + " Tage pro Woche, Fortgeschritten";
             }
 
             // Difficulty professional
-            else if (selectedChallenge.difficulty == "professional")
+            else if (selectedChallenge.difficulty == "Hart")
             {
                 // Set difficulty text
-                lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + ", Profi";
+                lbl_ChallengeDaysPerWeek.Text = lbl_ChallengeDaysPerWeek.Text + selectedChallenge.daysPerWeek + " Tage pro Woche, Profi";
             }
 
 

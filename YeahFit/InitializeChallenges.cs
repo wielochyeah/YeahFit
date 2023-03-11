@@ -147,6 +147,7 @@ namespace YeahFit
                         int id = Convert.ToInt32(reader["ChallengeID"].ToString());
                         string name = reader["ChallengeName"].ToString();
                         bool liked;
+                        int daysPerWeek = Convert.ToInt32(reader["DaysPerWeek"]);
                         if (reader["Liked"].ToString() == "True")
                         {
                             liked = true;
@@ -165,6 +166,7 @@ namespace YeahFit
                             ChallengeName = name,
                             difficulty = "",
                             liked = liked,
+                            daysPerWeek = daysPerWeek,
                             Workouts = new List<Workout>(),
                             ChallengeImage = imgg,
                         };

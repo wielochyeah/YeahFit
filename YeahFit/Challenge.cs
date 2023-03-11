@@ -14,6 +14,9 @@ namespace YeahFit
         // ID
         public int id { get; set; }
 
+        // ID
+        public int daysPerWeek { get; set; }
+
         // Difficulty
         public string difficulty { get; set; }
 
