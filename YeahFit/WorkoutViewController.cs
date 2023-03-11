@@ -35,6 +35,7 @@ namespace YeahFit
         /// </summary>
 		public override void ViewDidLoad()
         {
+            WorkoutStepViewController.workoutViewController = this;
             if (challenge == false)
             {
                 nowSelectedWorkout = WorkoutTableViewSource.nowSelectedWorkout;
@@ -248,6 +249,7 @@ namespace YeahFit
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
+<<<<<<< Updated upstream
 
             if (challenge == false)
             {
@@ -258,6 +260,9 @@ namespace YeahFit
                 nowSelectedWorkout = ChallengeWorkoutsTableViewSource.nowSelectedWorkout;
             }
 
+=======
+            WorkoutStepViewController.workoutViewController = this;
+>>>>>>> Stashed changes
             // Set internal recipe, ingredients list, steps list
             if (WorkoutOverviewViewController.workouts[index] != null)
 
@@ -314,7 +319,7 @@ namespace YeahFit
         /// </summary>
         /// <param name="recipeViewController"></param>
         /// <param name="image"></param>
-        public static void Refresh(WorkoutViewController workoutViewController, byte[] image)
+        public static void Refresh(WorkoutViewController workoutViewController)
         {
             workoutViewController.ViewDidAppear(true);
         }

@@ -11,6 +11,7 @@ using Foundation;
 using MySql.Data.MySqlClient;
 using SDWebImage;
 using UIKit;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace YeahFit
 {
@@ -19,6 +20,8 @@ namespace YeahFit
         public static int index;
         public static Workout selectedWorkout;
         int i = 0;
+
+        public static WorkoutViewController workoutViewController;
 
         MySqlConnection con;
 
@@ -36,25 +39,9 @@ namespace YeahFit
             con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
             con.Open();
 
-
-           // string query = "SELECT ÜbungGif FROM Übung"; //SQL command
             var gifData = new byte[1024];
-
-            /*using (var command = new MySqlCommand(query, con))
-            {
-                using (var reader = command.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        gifData = (byte[])reader["ÜbungGif"];
-                    }
-                }
-            }*/
-
             gifData = selectedWorkout.Exercises[i].ExerciseImage;
-
             NSData imageData = NSData.FromArray(gifData);
-
 
             var imageView = new FLAnimatedImageView();
             imageView.Frame = new CoreGraphics.CGRect(-200, -60, 850, 850);
@@ -67,7 +54,6 @@ namespace YeahFit
 
             // Set the animatedImage property of the FLAnimatedImageView
             imageView.AnimatedImage = animatedImage;
-
 
             timer = NSTimer.CreateRepeatingScheduledTimer(TimeSpan.FromSeconds(1), delegate
             {
@@ -96,12 +82,8 @@ namespace YeahFit
                     lbl_ExerciseName.Text = selectedWorkout.Exercises[i].ExerciseName;
                     lbl_SetsReps.Text = selectedWorkout.Exercises[i].ExerciseSets + "x" + selectedWorkout.Exercises[i].ExerciseReps;
                     
-                    
                     gifData = selectedWorkout.Exercises[i].ExerciseImage;
-
                     imageData = NSData.FromArray(gifData);
-
-
                     imageView = new FLAnimatedImageView();
                     imageView.Frame = new CoreGraphics.CGRect(-200, -60, 850, 850);
                     imageView.Frame = new CoreGraphics.CGRect(-200, -60, 850, 850);
@@ -113,20 +95,22 @@ namespace YeahFit
 
                     // Set the animatedImage property of the FLAnimatedImageView
                     imageView.AnimatedImage = animatedImage;
+
                     if (selectedWorkout.Exercises.Count <= i+1)
                     {
                         lbl_NextExercise.Text = "Letzte Übung";
                         btn_NextExercise.SetTitle("Workout beenden", UIControlState.Normal);
+                        
                     }
                     else
                     {
-
                         lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[i+1].ExerciseName;
+                        ResetTimer();
                     }
                 }
                 else
                 {
-
+                    this.DismissViewController(true, () => { WorkoutViewController.Refresh(workoutViewController); });
                 }
             };
 
