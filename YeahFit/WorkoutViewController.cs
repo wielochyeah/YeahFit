@@ -200,7 +200,7 @@ namespace YeahFit
 
                 // Set duration
                 TimeSpan duration = TimeSpan.FromSeconds(nowSelectedWorkout.duration);
-                lbl_duration.Text = duration.ToString(@"hh\:mm");
+                lbl_duration.Text = duration.ToString(@"hh\:mm") + " Stunden";
 
                 // Set image
                 var data = NSData.FromArray(nowSelectedWorkout.WorkoutImage);
@@ -249,11 +249,20 @@ namespace YeahFit
         {
             base.ViewDidAppear(animated);
 
+            if (challenge == false)
+            {
+                nowSelectedWorkout = WorkoutTableViewSource.nowSelectedWorkout;
+            }
+            else
+            {
+                nowSelectedWorkout = ChallengeWorkoutsTableViewSource.nowSelectedWorkout;
+            }
+
             // Set internal recipe, ingredients list, steps list
             if (WorkoutOverviewViewController.workouts[index] != null)
 
             {
-                nowSelectedWorkout = WorkoutOverviewViewController.workouts[index];
+                //nowSelectedWorkout = WorkoutOverviewViewController.workouts[index];
             }
             else
             {

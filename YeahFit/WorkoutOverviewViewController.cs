@@ -135,6 +135,7 @@ namespace YeahFit
             };
             */
             // Loading the tableView
+            FilterViewController.workoutOverviewViewController = this;
             WorkoutViewController.firstViewController = this;
             workouts = null;
             WorkoutViewController.challenge = false;
@@ -171,6 +172,12 @@ namespace YeahFit
         {
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
+        }
+
+        public override void ViewDidDisappear(bool animated)
+        {
+            base.ViewDidDisappear(animated);
+            this.DismissViewController(true, () => { FilterViewController.workoutOverviewViewController = this; });
         }
 
         /// <summary>
