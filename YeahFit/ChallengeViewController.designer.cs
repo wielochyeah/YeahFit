@@ -16,6 +16,12 @@ namespace YeahFit
 		UIKit.UIButton btn_Apply { get; set; }
 
 		[Outlet]
+		UIKit.UIButton btn_LikeChallenge { get; set; }
+
+		[Outlet]
+		UIKit.UIImageView imageView_LikeChallenge { get; set; }
+
+		[Outlet]
 		UIKit.UILabel lbl_ChallengeName { get; set; }
 
 		[Outlet]
@@ -23,6 +29,21 @@ namespace YeahFit
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (imageView_LikeChallenge != null) {
+				imageView_LikeChallenge.Dispose ();
+				imageView_LikeChallenge = null;
+			}
+
+			if (btn_LikeChallenge != null) {
+				btn_LikeChallenge.Dispose ();
+				btn_LikeChallenge = null;
+			}
+
+			if (btn_Apply != null) {
+				btn_Apply.Dispose ();
+				btn_Apply = null;
+			}
+
 			if (lbl_ChallengeName != null) {
 				lbl_ChallengeName.Dispose ();
 				lbl_ChallengeName = null;
@@ -31,11 +52,6 @@ namespace YeahFit
 			if (tableView_Challenges != null) {
 				tableView_Challenges.Dispose ();
 				tableView_Challenges = null;
-			}
-
-			if (btn_Apply != null) {
-				btn_Apply.Dispose ();
-				btn_Apply = null;
 			}
 		}
 	}

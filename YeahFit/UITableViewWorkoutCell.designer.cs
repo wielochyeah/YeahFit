@@ -56,6 +56,11 @@ namespace YeahFit
 				imageView_LikeWorkout = null;
 			}
 
+			if (imageView_Workout != null) {
+				imageView_Workout.Dispose ();
+				imageView_Workout = null;
+			}
+
 			if (lbl_category != null) {
 				lbl_category.Dispose ();
 				lbl_category = null;
@@ -74,11 +79,6 @@ namespace YeahFit
 			if (lbl_WorkoutCategory != null) {
 				lbl_WorkoutCategory.Dispose ();
 				lbl_WorkoutCategory = null;
-			}
-
-			if (imageView_Workout != null) {
-				imageView_Workout.Dispose ();
-				imageView_Workout = null;
 			}
 
 			if (lbl_WorkoutName != null) {

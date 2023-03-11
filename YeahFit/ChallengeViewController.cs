@@ -10,7 +10,7 @@ namespace YeahFit
 {
 	public partial class ChallengeViewController : UIViewController
 	{
-        public static MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=YeahCook;User Id=root;Password=; CharSet = utf8");
+        public static MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
 
         public UINavigationController CurrentNavigationController;
         static Challenge nowSelectedChallenge;
@@ -35,6 +35,52 @@ namespace YeahFit
             WorkoutViewController.challenge = true;
 
             nowSelectedChallenge = ChallengeTableViewSource.nowSelectedChallenge;
+
+            // Button click for liking the recipe
+            btn_LikeChallenge.TouchUpInside += (sender, e) =>
+            {
+                // Set liked
+                liked = nowSelectedChallenge.liked;
+
+                // Like the recipe
+                if (liked == false)
+                {
+                    nowSelectedChallenge.liked = true;
+
+                    // open database connection
+                    con.Open();
+
+                    // Set Liked in database true
+                    MySqlCommand like = new MySqlCommand($"UPDATE Workout SET Liked = 1 WHERE WorkoutID = {nowSelectedChallenge.id};", con);
+                    like.ExecuteNonQuery();
+
+                    // Close connection
+                    con.Close();
+
+                    // Set filled heart image
+                    imageView_LikeChallenge.Image = UIImage.GetSystemImage("heart.fill");
+                }
+
+                // Unlike the recipe
+                else if (liked == true)
+                {
+                    nowSelectedChallenge.liked = false;
+
+                    // open database connection
+                    con.Open();
+
+                    // Set Liked in database false
+                    MySqlCommand like = new MySqlCommand($"UPDATE Workout SET Liked = 0 WHERE WorkoutID = {nowSelectedChallenge.id};", con);
+                    like.ExecuteNonQuery();
+
+                    // Close connection
+                    con.Close();
+
+                    // Set heart image
+                    imageView_LikeChallenge.Image = UIImage.GetSystemImage("heart");
+                }
+
+            };
 
             // If there's a recipe, load
             if (nowSelectedChallenge != null)

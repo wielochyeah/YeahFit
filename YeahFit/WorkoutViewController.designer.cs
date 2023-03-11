@@ -13,7 +13,13 @@ namespace YeahFit
 	partial class WorkoutViewController
 	{
 		[Outlet]
+		UIKit.UIButton btn_LikeWorkout { get; set; }
+
+		[Outlet]
 		UIKit.UIButton btn_StartWorkout { get; set; }
+
+		[Outlet]
+		UIKit.UIImageView imageView_LikeWorkout { get; set; }
 
 		[Outlet]
 		YeahFit.UIImageViewWorkout imageView_Workout { get; set; }
@@ -35,29 +41,19 @@ namespace YeahFit
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (imageView_LikeWorkout != null) {
+				imageView_LikeWorkout.Dispose ();
+				imageView_LikeWorkout = null;
+			}
+
+			if (btn_LikeWorkout != null) {
+				btn_LikeWorkout.Dispose ();
+				btn_LikeWorkout = null;
+			}
+
 			if (btn_StartWorkout != null) {
 				btn_StartWorkout.Dispose ();
 				btn_StartWorkout = null;
-			}
-
-			if (tableView_Exercises != null) {
-				tableView_Exercises.Dispose ();
-				tableView_Exercises = null;
-			}
-
-			if (lbl_WorkoutName != null) {
-				lbl_WorkoutName.Dispose ();
-				lbl_WorkoutName = null;
-			}
-
-			if (lbl_duration != null) {
-				lbl_duration.Dispose ();
-				lbl_duration = null;
-			}
-
-			if (lbl_difficulty != null) {
-				lbl_difficulty.Dispose ();
-				lbl_difficulty = null;
 			}
 
 			if (imageView_Workout != null) {
@@ -68,6 +64,26 @@ namespace YeahFit
 			if (lbl_category != null) {
 				lbl_category.Dispose ();
 				lbl_category = null;
+			}
+
+			if (lbl_difficulty != null) {
+				lbl_difficulty.Dispose ();
+				lbl_difficulty = null;
+			}
+
+			if (lbl_duration != null) {
+				lbl_duration.Dispose ();
+				lbl_duration = null;
+			}
+
+			if (lbl_WorkoutName != null) {
+				lbl_WorkoutName.Dispose ();
+				lbl_WorkoutName = null;
+			}
+
+			if (tableView_Exercises != null) {
+				tableView_Exercises.Dispose ();
+				tableView_Exercises = null;
 			}
 		}
 	}

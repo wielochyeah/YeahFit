@@ -10,7 +10,7 @@ namespace YeahFit
 {
 	public partial class WorkoutViewController : UIViewController
 	{
-        public static MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=YeahCook;User Id=root;Password=; CharSet = utf8");
+        public static MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
 
         static Workout nowSelectedWorkout;
         public static Workout selectedWorkout;
@@ -51,6 +51,52 @@ namespace YeahFit
                 // Set internal Ingredients and Steps lists
                 internalExercises = nowSelectedWorkout.Exercises;
                 //internalSteps = nowSelectedRecipe.Steps;
+
+                // Button click for liking the recipe
+                btn_LikeWorkout.TouchUpInside += (sender, e) =>
+                {
+                    // Set liked
+                    liked = nowSelectedWorkout.liked;
+
+                    // Like the recipe
+                    if (liked == false)
+                    {
+                        nowSelectedWorkout.liked = true;
+
+                        // open database connection
+                        con.Open();
+
+                        // Set Liked in database true
+                        MySqlCommand like = new MySqlCommand($"UPDATE Workout SET Liked = 1 WHERE WorkoutID = {nowSelectedWorkout.id};", con);
+                        like.ExecuteNonQuery();
+
+                        // Close connection
+                        con.Close();
+
+                        // Set filled heart image
+                        imageView_LikeWorkout.Image = UIImage.GetSystemImage("heart.fill");
+                    }
+
+                    // Unlike the recipe
+                    else if (liked == true)
+                    {
+                        nowSelectedWorkout.liked = false;
+
+                        // open database connection
+                        con.Open();
+
+                        // Set Liked in database false
+                        MySqlCommand like = new MySqlCommand($"UPDATE Workout SET Liked = 0 WHERE WorkoutID = {nowSelectedWorkout.id};", con);
+                        like.ExecuteNonQuery();
+
+                        // Close connection
+                        con.Close();
+
+                        // Set heart image
+                        imageView_LikeWorkout.Image = UIImage.GetSystemImage("heart");
+                    }
+
+                };
 
                 // Set general labels
                 lbl_WorkoutName.Text = nowSelectedWorkout.WorkoutName;
