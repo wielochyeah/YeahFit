@@ -23,87 +23,12 @@
 				<integer>9</integer>
 			</dict>
 		</array>
-		<key>6MD-sZ-zel</key>
+		<key>82S-Id-GK0</key>
 		<array>
 			<dict>
 				<key>affected-objects</key>
 				<array>
-					<string>6MD-sZ-zel</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>6ig-2Q-fQ8</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>6ig-2Q-fQ8</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>8ai-Qd-LS8</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>8ai-Qd-LS8</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>8mF-ty-cVu</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>8mF-ty-cVu</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>AJN-Sb-YmM</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>AJN-Sb-YmM</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>BdT-iO-riz</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>BdT-iO-riz</string>
+					<string>82S-Id-GK0</string>
 				</array>
 				<key>message</key>
 				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
@@ -128,6 +53,21 @@
 				<integer>9</integer>
 			</dict>
 		</array>
+		<key>D8X-NA-Tbz</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>D8X-NA-Tbz</string>
+				</array>
+				<key>message</key>
+				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
 		<key>DWH-5m-HOl</key>
 		<array>
 			<dict>
@@ -143,12 +83,12 @@
 				<integer>9</integer>
 			</dict>
 		</array>
-		<key>FjP-gj-xYg</key>
+		<key>Dg8-Kz-WNm</key>
 		<array>
 			<dict>
 				<key>affected-objects</key>
 				<array>
-					<string>FjP-gj-xYg</string>
+					<string>Dg8-Kz-WNm</string>
 				</array>
 				<key>message</key>
 				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
@@ -158,102 +98,12 @@
 				<integer>9</integer>
 			</dict>
 		</array>
-		<key>GKd-Z9-K8g</key>
+		<key>E8P-BG-7cl</key>
 		<array>
 			<dict>
 				<key>affected-objects</key>
 				<array>
-					<string>GKd-Z9-K8g</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>Hqp-6Q-Qb4</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>Hqp-6Q-Qb4</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>KXB-Jg-r2I</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>KXB-Jg-r2I</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>OlS-qa-ana</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>OlS-qa-ana</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>Ox6-Eu-Phr</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>Ox6-Eu-Phr</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>Qfm-cy-IOV</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>Qfm-cy-IOV</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>S8M-Td-cDO</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>S8M-Td-cDO</string>
+					<string>E8P-BG-7cl</string>
 				</array>
 				<key>message</key>
 				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
@@ -278,51 +128,6 @@
 				<integer>9</integer>
 			</dict>
 		</array>
-		<key>VRZ-Va-c9j</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>VRZ-Va-c9j</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>YDu-iX-cMo</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>YDu-iX-cMo</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>ZYE-2K-JoF</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>ZYE-2K-JoF</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
 		<key>c5R-sf-pPE</key>
 		<array>
 			<dict>
@@ -332,51 +137,6 @@
 				</array>
 				<key>message</key>
 				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>cTR-Iv-Wzd</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>cTR-Iv-Wzd</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>dkh-US-7E7</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>dkh-US-7E7</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>epT-Vi-m1v</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>epT-Vi-m1v</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
 				<key>type</key>
 				<string>IBIssueTypeUnsupportedConfiguration</string>
 				<key>type-value</key>
@@ -398,21 +158,6 @@
 				<integer>9</integer>
 			</dict>
 		</array>
-		<key>h8Y-jf-WJL</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>h8Y-jf-WJL</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
 		<key>i1f-Y2-TGr</key>
 		<array>
 			<dict>
@@ -422,126 +167,6 @@
 				</array>
 				<key>message</key>
 				<string>Automatically Adjusts Font requires using a Dynamic Type text style</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>iRp-I8-Q1j</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>iRp-I8-Q1j</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>iXj-mZ-TcS</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>iXj-mZ-TcS</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>kWD-AP-hBJ</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>kWD-AP-hBJ</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>kYs-HJ-07b</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>kYs-HJ-07b</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>m4E-21-N0N</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>m4E-21-N0N</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>mps-hj-QEQ</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>mps-hj-QEQ</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>rUL-ce-KyX</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>rUL-ce-KyX</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>rcw-Xl-I7J</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>rcw-Xl-I7J</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
 				<key>type</key>
 				<string>IBIssueTypeUnsupportedConfiguration</string>
 				<key>type-value</key>

@@ -248,6 +248,16 @@
     <BundleResource Include="Resources\Trophy 5 unreached.png" />
     <BundleResource Include="Resources\Workouts.png" />
     <BundleResource Include="Resources\Workouts2.png" />
+    <BundleResource Include="Resources\RectangleNew.png" />
+    <BundleResource Include="Resources\20min.png" />
+    <BundleResource Include="Resources\Core.png" />
+    <BundleResource Include="Resources\Ganzkörper.png" />
+    <BundleResource Include="Resources\No Equiptment.png" />
+    <BundleResource Include="Resources\Oberkörper.png" />
+    <BundleResource Include="Resources\Pull.png" />
+    <BundleResource Include="Resources\Push.png" />
+    <BundleResource Include="Resources\Unterkörper.png" />
+    <BundleResource Include="Resources\RectangleNewSmall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

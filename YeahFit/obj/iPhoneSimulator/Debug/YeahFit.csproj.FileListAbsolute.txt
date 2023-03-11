@@ -364,3 +364,13 @@
 /Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CopyComplete
 /Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
 /Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/RectangleNew.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/20min.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Core.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Ganzkörper.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/No Equiptment.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Oberkörper.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Pull.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Push.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Unterkörper.png
+/Users/nilswieloch/YeahProjects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/RectangleNewSmall.png

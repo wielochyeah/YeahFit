@@ -143,7 +143,7 @@ namespace YeahFit
 
             // Setting recipes as its source
             tableView_Workouts.Source = new WorkoutTableViewSource(workouts, this, CurrentNavigationController);
-            tableView_Workouts.RowHeight = 425;
+            tableView_Workouts.RowHeight = 360;
 
             // Reload tableView
             tableView_Workouts.ReloadData();
@@ -161,7 +161,7 @@ namespace YeahFit
             workouts = null;
             InitializeWorkouts.Initialize();
             tableView_Workouts.Source = new WorkoutTableViewSource(workouts, this, CurrentNavigationController);
-            tableView_Workouts.RowHeight = 425;
+            tableView_Workouts.RowHeight = 360;
             tableView_Workouts.ReloadData();
         }
 
