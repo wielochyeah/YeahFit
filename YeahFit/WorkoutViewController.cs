@@ -52,6 +52,15 @@ namespace YeahFit
                 internalExercises = nowSelectedWorkout.Exercises;
                 //internalSteps = nowSelectedRecipe.Steps;
 
+                if (nowSelectedWorkout.liked == true)
+                {
+                    imageView_LikeWorkout.Image = UIImage.GetSystemImage("heart.fill");
+                }
+                else
+                {
+                    imageView_LikeWorkout.Image = UIImage.GetSystemImage("heart");
+                }
+
                 // Button click for liking the recipe
                 btn_LikeWorkout.TouchUpInside += (sender, e) =>
                 {

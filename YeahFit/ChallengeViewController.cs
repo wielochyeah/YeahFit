@@ -36,6 +36,15 @@ namespace YeahFit
 
             nowSelectedChallenge = ChallengeTableViewSource.nowSelectedChallenge;
 
+            if (nowSelectedChallenge.liked == true)
+            {
+                imageView_LikeChallenge.Image = UIImage.GetSystemImage("heart.fill");
+            }
+            else
+            {
+                imageView_LikeChallenge.Image = UIImage.GetSystemImage("heart");
+            }
+
             // Button click for liking the recipe
             btn_LikeChallenge.TouchUpInside += (sender, e) =>
             {

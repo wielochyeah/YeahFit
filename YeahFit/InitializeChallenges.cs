@@ -194,7 +194,7 @@ namespace YeahFit
                             int workoutDay = Convert.ToInt32(reader3["Wochentag"].ToString());
 
                             bool workoutLiked;
-                            if (reader3["Liked"].ToString() == "1")
+                            if (reader3["Liked"].ToString() == "True")
                             {
                                 workoutLiked = true;
                             }

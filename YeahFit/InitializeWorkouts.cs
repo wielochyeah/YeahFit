@@ -240,7 +240,7 @@ namespace YeahFit
                         string name = reader["WorkoutName"].ToString();
                         int duration = Convert.ToInt32(reader["WorkoutDauer"].ToString());
                         bool liked;
-                        if (reader["Liked"].ToString() == "1")
+                        if (reader["Liked"].ToString() == "True")
                         {
                             liked = true;
                         }
