@@ -51,7 +51,7 @@ namespace YeahFit
                     con.Open();
 
                     // Set Liked in database true
-                    MySqlCommand like = new MySqlCommand($"UPDATE Workout SET Liked = 1 WHERE WorkoutID = {nowSelectedChallenge.id};", con);
+                    MySqlCommand like = new MySqlCommand($"UPDATE Challenge SET Liked = 1 WHERE ChallengeID = {nowSelectedChallenge.id};", con);
                     like.ExecuteNonQuery();
 
                     // Close connection
@@ -70,7 +70,7 @@ namespace YeahFit
                     con.Open();
 
                     // Set Liked in database false
-                    MySqlCommand like = new MySqlCommand($"UPDATE Workout SET Liked = 0 WHERE WorkoutID = {nowSelectedChallenge.id};", con);
+                    MySqlCommand like = new MySqlCommand($"UPDATE Challenge SET Liked = 0 WHERE ChallengeID = {nowSelectedChallenge.id};", con);
                     like.ExecuteNonQuery();
 
                     // Close connection
