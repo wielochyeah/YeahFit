@@ -519,3 +519,5 @@
 /Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
 /Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb
 /Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Ganzkörper2.png
+/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/ChallengesNEW1.png
+/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/ChallengesNEW2.png

@@ -33,8 +33,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             }
 
             // Initialize firt added button
@@ -44,8 +42,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.Black;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             }
 
             // Initialize alphabetical ascending button
@@ -55,8 +51,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.Black;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             }
 
             // Initialize alphabetical descending button
@@ -66,8 +60,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.Black;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             }
 
             // Initialize duration ascending button
@@ -77,8 +69,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.Black;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             }
 
             // Initialize duration descending button
@@ -88,8 +78,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.Black;
             }
 
             // Initialize difficulty buttons
@@ -121,8 +109,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             };
 
             // First added button click
@@ -134,8 +120,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.Black;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             };
 
             // Alphabetical ascending button click
@@ -147,8 +131,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.Black;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             };
 
             // Alphabetical descending button click
@@ -160,34 +142,6 @@ namespace YeahFit
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.Black;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
-            };
-
-            // Duration ascending button click
-            btn_FilterDurationAsc.TouchUpInside += (sender, e) =>
-            {
-                filter = "DurationAsc";
-
-                btn_FilterLastAdded.TintColor = UIColor.LightGray;
-                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.Black;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
-            };
-
-            // Duration descending button click
-            btn_FilterDurationDesc.TouchUpInside += (sender, e) =>
-            {
-                filter = "DurationDesc";
-
-                btn_FilterLastAdded.TintColor = UIColor.LightGray;
-                btn_FilterFirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.Black;
             };
 
             // Difficulty beginner button click
