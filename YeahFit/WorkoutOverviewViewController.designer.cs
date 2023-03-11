@@ -13,10 +13,18 @@ namespace YeahFit
 	partial class WorkoutOverviewViewController
 	{
 		[Outlet]
+		UIKit.UIButton btn_LikeWorkout { get; set; }
+
+		[Outlet]
 		UIKit.UITableView tableView_Workouts { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (btn_LikeWorkout != null) {
+				btn_LikeWorkout.Dispose ();
+				btn_LikeWorkout = null;
+			}
+
 			if (tableView_Workouts != null) {
 				tableView_Workouts.Dispose ();
 				tableView_Workouts = null;

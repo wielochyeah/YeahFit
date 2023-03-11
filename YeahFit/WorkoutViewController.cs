@@ -249,7 +249,6 @@ namespace YeahFit
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
-<<<<<<< Updated upstream
 
             if (challenge == false)
             {
@@ -260,9 +259,7 @@ namespace YeahFit
                 nowSelectedWorkout = ChallengeWorkoutsTableViewSource.nowSelectedWorkout;
             }
 
-=======
             WorkoutStepViewController.workoutViewController = this;
->>>>>>> Stashed changes
             // Set internal recipe, ingredients list, steps list
             if (WorkoutOverviewViewController.workouts[index] != null)
 

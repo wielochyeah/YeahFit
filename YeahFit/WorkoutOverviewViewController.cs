@@ -134,6 +134,54 @@ namespace YeahFit
                 FilterViewController.firstViewController = this;
             };
             */
+
+            // Button click for liking the recipe
+            /*btn_LikeWorkout.TouchUpInside += (sender, e) =>
+            {
+                // Set liked
+                liked = nowSelectedRecipe.liked;
+
+                // Like the recipe
+                if (liked == false)
+                {
+                    nowSelectedRecipe.liked = true;
+
+                    // open database connection
+                    con.Open();
+
+                    // Set Liked in database true
+                    MySqlCommand like = new MySqlCommand($"UPDATE Rezept SET Liked = 1 WHERE RezeptID = {nowSelectedRecipe.id};", con);
+                    like.ExecuteNonQuery();
+
+                    // Close connection
+                    con.Close();
+
+                    // Set filled heart image
+                    imageView_Like.Image = UIImage.GetSystemImage("heart.fill");
+                }
+
+                // Unlike the recipe
+                else if (liked == true)
+                {
+                    nowSelectedRecipe.liked = false;
+
+                    // open database connection
+                    con.Open();
+
+                    // Set Liked in database false
+                    MySqlCommand like = new MySqlCommand($"UPDATE Rezept SET Liked = 0 WHERE RezeptID = {nowSelectedRecipe.id};", con);
+                    like.ExecuteNonQuery();
+
+                    // Close connection
+                    con.Close();
+
+                    // Set heart image
+                    imageView_Like.Image = UIImage.GetSystemImage("heart");
+                }
+
+            };*/
+
+
             // Loading the tableView
             FilterViewController.workoutOverviewViewController = this;
             WorkoutViewController.firstViewController = this;
@@ -159,6 +207,7 @@ namespace YeahFit
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
+            FilterViewController.workoutOverviewViewController = this;
             WorkoutViewController.challenge = false;
             WorkoutViewController.firstViewController = this;
             workouts = null;

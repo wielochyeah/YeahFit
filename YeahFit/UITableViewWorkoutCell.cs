@@ -217,7 +217,7 @@ namespace YeahFit
                     imageView_LikeWorkout.Image = UIImage.GetSystemImage("heart.fill");
                 }
 
-
+                
                 //
                 // Recipe image
                 //

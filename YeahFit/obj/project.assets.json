@@ -1584,20 +1584,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/maurice/.nuget/packages/": {}
+    "/Users/nilswieloch/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maurice/Downloads/YeahFit/YeahFit/YeahFit.csproj",
+      "projectUniqueName": "/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/YeahFit.csproj",
       "projectName": "YeahFit",
-      "projectPath": "/Users/maurice/Downloads/YeahFit/YeahFit/YeahFit.csproj",
-      "packagesPath": "/Users/maurice/.nuget/packages/",
-      "outputPath": "/Users/maurice/Downloads/YeahFit/YeahFit/obj/",
+      "projectPath": "/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/YeahFit.csproj",
+      "packagesPath": "/Users/nilswieloch/.nuget/packages/",
+      "outputPath": "/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/maurice/.config/NuGet/NuGet.Config"
+        "/Users/nilswieloch/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
