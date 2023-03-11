@@ -441,7 +441,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4G-xA-N72">
-                                <rect key="frame" x="312" y="100" width="48" height="46.333333333333329"/>
+                                <rect key="frame" x="312" y="99.666666666666671" width="48" height="46.333333333333329"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" fixedFrame="YES" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iah-lz-5wL">
                                         <rect key="frame" x="10" y="11" width="29" height="28"/>
@@ -1797,7 +1797,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ganzkörper.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ojh-A3-cmZ">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ganzkörper2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ojh-A3-cmZ">
                                                         <rect key="frame" x="-92" y="0.0" width="291" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="gab-Lw-fws"/>
@@ -1825,7 +1825,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oberkörper.png" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-Tr-qVi">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ganzkörper2.png" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-Tr-qVi">
                                                         <rect key="frame" x="-92" y="0.0" width="291" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="guJ-rg-TyW"/>
@@ -1853,7 +1853,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unterkörper.png" translatesAutoresizingMaskIntoConstraints="NO" id="dxT-JQ-5OP">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ganzkörper2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dxT-JQ-5OP">
                                                         <rect key="frame" x="-92" y="0.0" width="291" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="U4X-iE-WY9"/>
@@ -1881,7 +1881,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Push.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Gi-pw-k7q">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ganzkörper2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Gi-pw-k7q">
                                                         <rect key="frame" x="-92" y="0.0" width="291" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="C0c-jT-g0z"/>
@@ -1909,7 +1909,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pull.png" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-BZ-Pez">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ganzkörper2.png" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-BZ-Pez">
                                                         <rect key="frame" x="-92" y="0.0" width="291" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="L7c-9a-uJB"/>
@@ -2519,19 +2519,15 @@
     <resources>
         <image name="20min.png" width="291" height="302"/>
         <image name="Core.png" width="291" height="302"/>
-        <image name="Ganzkörper.png" width="291" height="302"/>
+        <image name="Ganzkörper2.png" width="291" height="302"/>
         <image name="Medal 1 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="Medal 2 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="No Equiptment.png" width="291" height="302"/>
-        <image name="Oberkörper.png" width="291" height="302"/>
-        <image name="Pull.png" width="291" height="302"/>
-        <image name="Push.png" width="291" height="302"/>
         <image name="RectangleNewSmall.png" width="200" height="170"/>
         <image name="Trophy 1 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="Trophy 2 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="Trophy 4 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="Trophy 5 unreached.png" width="491.51998901367188" height="491.51998901367188"/>
-        <image name="Unterkörper.png" width="291" height="302"/>
         <image name="WeekBig2.png" width="1000" height="250"/>
         <image name="Workouts.png" width="560" height="300"/>
         <image name="Workouts2.png" width="560" height="300"/>
