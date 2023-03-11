@@ -355,7 +355,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="s8F-wn-dvS">
-                                <rect key="frame" x="33" y="177" width="327" height="675"/>
+                                <rect key="frame" x="33" y="177" width="327" height="577"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="250" id="0yU-LQ-YfC" customClass="UITableViewChallengeWorkoutCell">
@@ -445,7 +445,7 @@
                         <constraints>
                             <constraint firstItem="s8F-wn-dvS" firstAttribute="centerX" secondItem="vPg-xH-EMf" secondAttribute="centerX" id="3lg-n1-TFz"/>
                             <constraint firstItem="wUa-lb-diw" firstAttribute="top" secondItem="qnb-sT-c7C" secondAttribute="bottom" constant="41.333333333333314" id="6Gf-bM-eRv"/>
-                            <constraint firstAttribute="bottom" secondItem="s8F-wn-dvS" secondAttribute="bottom" id="6wS-hd-Nmf"/>
+                            <constraint firstAttribute="bottom" secondItem="s8F-wn-dvS" secondAttribute="bottom" constant="98" id="6wS-hd-Nmf"/>
                             <constraint firstItem="vPg-xH-EMf" firstAttribute="bottom" secondItem="wu7-89-n1a" secondAttribute="bottomMargin" id="8im-qH-ATP"/>
                             <constraint firstItem="s8F-wn-dvS" firstAttribute="top" secondItem="wUa-lb-diw" secondAttribute="bottom" constant="31.666666666666686" id="crd-0x-zDS"/>
                             <constraint firstItem="vPg-xH-EMf" firstAttribute="centerX" secondItem="wu7-89-n1a" secondAttribute="centerX" id="jyn-zF-DhT"/>

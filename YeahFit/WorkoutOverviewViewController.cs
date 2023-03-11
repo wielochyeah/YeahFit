@@ -137,6 +137,7 @@ namespace YeahFit
             // Loading the tableView
             WorkoutViewController.firstViewController = this;
             workouts = null;
+            WorkoutViewController.challenge = false;
 
             // Get data from database
             InitializeWorkouts.Initialize();
@@ -157,6 +158,7 @@ namespace YeahFit
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
+            WorkoutViewController.challenge = false;
             WorkoutViewController.firstViewController = this;
             workouts = null;
             InitializeWorkouts.Initialize();

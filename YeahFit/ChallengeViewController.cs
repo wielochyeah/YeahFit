@@ -32,6 +32,8 @@ namespace YeahFit
         /// </summary>
         public override void ViewDidLoad()
         {
+            WorkoutViewController.challenge = true;
+
             nowSelectedChallenge = ChallengeTableViewSource.nowSelectedChallenge;
 
             // If there's a recipe, load
@@ -80,6 +82,8 @@ namespace YeahFit
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
+
+            WorkoutViewController.challenge = true;
 
             // Set internal recipe, ingredients list, steps list
             nowSelectedChallenge = ChallengeOverviewViewController.challenges[index];

@@ -19,6 +19,7 @@ namespace YeahFit
         static UITableView tableView;
         public static int index;
         public static bool liked;
+        public static bool challenge = false;
 
         public static WorkoutOverviewViewController firstViewController;
         public static ChallengeOverviewViewController secondViewController;
@@ -34,7 +35,14 @@ namespace YeahFit
         /// </summary>
 		public override void ViewDidLoad()
         {
-            nowSelectedWorkout = WorkoutTableViewSource.nowSelectedWorkout;
+            if (challenge == false)
+            {
+                nowSelectedWorkout = WorkoutTableViewSource.nowSelectedWorkout;
+            }
+            else
+            {
+                nowSelectedWorkout = ChallengeWorkoutsTableViewSource.nowSelectedWorkout;
+            }
 
             // If there's a recipe, load
             if (nowSelectedWorkout != null)

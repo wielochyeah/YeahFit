@@ -195,7 +195,7 @@ namespace YeahFit
                 TimeSpan duration = TimeSpan.FromSeconds(selectedWorkout.duration);
 
                 // Set Duration as string
-                lbl_duration.Text = duration.ToString(@"hh\:mm");
+                lbl_duration.Text = duration.ToString(@"hh\:mm") + " Stunden";
 
 
                 //
