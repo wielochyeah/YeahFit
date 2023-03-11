@@ -6,8 +6,8 @@ using MySql.Data.MySqlClient;
 
 namespace YeahFit
 {
-	public class InitializeWorkouts
-	{
+    public class InitializeWorkouts
+    {
 
         public static MySqlConnection con;
         public static List<Workout> workouts = new List<Workout>();
@@ -21,8 +21,8 @@ namespace YeahFit
         public static string search;
 
         public InitializeWorkouts()
-		{
-		}
+        {
+        }
 
         /// <summary>
         /// This method initializes the list of workouts with different filtering and ordering options.
@@ -295,23 +295,119 @@ namespace YeahFit
                     }
                 }
 
-                Console.WriteLine(workouts[6].id);
-                Console.WriteLine(workouts[6].WorkoutName);
-
                 // Get every category
-                workouts[0].noEquipment = true;
-                workouts[0].lowerBody = true;
-                workouts[1].noEquipment = true;
-                workouts[1].upperBody = true;
-                workouts[2].noEquipment = true;
-                workouts[2].fullBody = true;
-                workouts[3].lowerBody = true;
-                workouts[3].core = true;
-                workouts[4].pull = true;
-                workouts[4].upperBody = true;
-                workouts[5].push = true;
-                workouts[5].upperBody = true;
-                workouts[6].fullBody = true;
+
+
+                using (MySqlCommand getworkoutcategories = new MySqlCommand($"SELECT * FROM `Workout_Kategorie`;", con))
+                {
+                    using (MySqlDataReader reader3 = getworkoutcategories.ExecuteReader())
+                    {
+                        while (reader3.Read())
+                        {
+                            int id = Convert.ToInt32(reader3["WorkoutID"]);
+
+                            // Breakfast
+                            bool core;
+                            if (reader3["Core"].ToString() == "True")
+                            {
+                                core = true;
+                            }
+                            else
+                            {
+                                core = false;
+                            }
+                            // Lunch
+                            bool upperBody;
+                            if (reader3["Oberkörper"].ToString() == "True")
+                            {
+                                upperBody = true;
+                            }
+                            else
+                            {
+                                upperBody = false;
+                            }
+                            // Dinner
+                            bool fullBody;
+                            if (reader3["Ganzkörper"].ToString() == "True")
+                            {
+                                fullBody = true;
+                            }
+                            else
+                            {
+                                fullBody = false;
+                            }
+                            // Dessert
+                            bool push;
+                            if (reader3["Push"].ToString() == "True")
+                            {
+                                push = true;
+                            }
+                            else
+                            {
+                                push = false;
+                            }
+                            // Snacks
+                            bool pull;
+                            if (reader3["Pull"].ToString() == "True")
+                            {
+                                pull = true;
+                            }
+                            else
+                            {
+                                pull = false;
+                            }
+                            // Vegetarian
+                            bool twentyMinutes;
+                            if (reader3["20min"].ToString() == "True")
+                            {
+                                twentyMinutes = true;
+                            }
+                            else
+                            {
+                                twentyMinutes = false;
+                            }
+                            // Vegan
+                            bool noEquipment;
+                            if (reader3["No Equipment"].ToString() == "True")
+                            {
+                                noEquipment = true;
+                            }
+                            else
+                            {
+                                noEquipment = false;
+                            }
+                            // Drinks
+                            bool lowerBody;
+                            if (reader3["Unterkörper"].ToString() == "True")
+                            {
+                                lowerBody = true;
+                            }
+                            else
+                            {
+                                lowerBody = false;
+                            }
+
+                            // Set category of recipe
+                            for (int j = 0; j < workouts.Count; j++)
+                            {
+                                // For the correct id
+                                if (id == workouts[j].id)
+                                {
+                                    workouts[j].core = core;
+                                    workouts[j].upperBody = upperBody;
+                                    workouts[j].lowerBody = lowerBody;
+                                    workouts[j].fullBody = fullBody;
+                                    workouts[j].push = push;
+                                    workouts[j].pull = pull;
+                                    workouts[j].twentyMinutes = twentyMinutes;
+                                    workouts[j].noEquipment = noEquipment;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
 
 
                 // Select every exercise
