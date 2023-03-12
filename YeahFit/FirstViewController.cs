@@ -27,6 +27,7 @@ namespace YeahFit
             int date = Convert.ToInt32(DateTime.Now.ToString("dd"));
             DateTime dateValue = DateTime.Today;
             string weekDay = dateValue.ToString("ddd").ToUpper();
+            LoginViewController.firstViewController = this;
 
             if (monday == false)
             {
@@ -141,6 +142,15 @@ namespace YeahFit
             }
 
             
+        }
+
+        /// <summary>
+        /// Reload tabeView_Recipes from other Views
+        /// </summary>
+        /// <param name="firstViewController"></param>
+        public static void Refresh(FirstViewController firstViewController)
+        {
+            firstViewController.ViewDidAppear(true);
         }
 
         public override void DidReceiveMemoryWarning ()

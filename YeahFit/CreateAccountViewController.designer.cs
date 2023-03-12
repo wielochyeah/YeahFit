@@ -13,10 +13,19 @@ namespace YeahFit
 	partial class CreateAccountViewController
 	{
 		[Outlet]
+		UIKit.UIButton btn_CreateAccount { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_CreateAccountComment { get; set; }
+
+		[Outlet]
 		UIKit.UIButton txtField_CreateUser { get; set; }
 
 		[Outlet]
 		UIKit.UITextField txtField_Password { get; set; }
+
+		[Outlet]
+		UIKit.UITextField txtField_PasswordFirst { get; set; }
 
 		[Outlet]
 		UIKit.UITextField txtField_PasswordRepeat { get; set; }
@@ -44,6 +53,21 @@ namespace YeahFit
 			if (txtField_CreateUser != null) {
 				txtField_CreateUser.Dispose ();
 				txtField_CreateUser = null;
+			}
+
+			if (txtField_PasswordFirst != null) {
+				txtField_PasswordFirst.Dispose ();
+				txtField_PasswordFirst = null;
+			}
+
+			if (lbl_CreateAccountComment != null) {
+				lbl_CreateAccountComment.Dispose ();
+				lbl_CreateAccountComment = null;
+			}
+
+			if (btn_CreateAccount != null) {
+				btn_CreateAccount.Dispose ();
+				btn_CreateAccount = null;
 			}
 		}
 	}

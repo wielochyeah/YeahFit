@@ -3,14 +3,110 @@
 using System;
 
 using Foundation;
+using MySql.Data.MySqlClient;
 using UIKit;
 
 namespace YeahFit
 {
-	public partial class LoginViewController : UIViewController
-	{
-		public LoginViewController (IntPtr handle) : base (handle)
-		{
-		}
-	}
+    public partial class LoginViewController : UIViewController
+    {
+        public static FirstViewController firstViewController;
+
+        string password = "";
+        string username = "";
+        int id;
+        public static bool loggedin = false;
+        public static int userID;
+
+        public static MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
+
+        public LoginViewController(IntPtr handle) : base(handle)
+        {
+        }
+
+        /// <summary>
+        /// Initialize
+        /// </summary>
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+            con.Open();
+
+            CreateAccountViewController.loginViewController = this;
+
+            if (loggedin == true)
+            {
+                lbl_LoginComment.Text = "Du bist bereits angemeldet.";
+            }
+
+            btn_Login.TouchUpInside += (sender, e) =>
+            {
+                if (txtField_Password.Text != null && txtField_Password.Text != "" 
+                && txtField_Username.Text != null && txtField_Username.Text != "")
+                {
+                    using (MySqlCommand getusername = new MySqlCommand($"SELECT * FROM `Login` " +
+                            $"WHERE username='" + txtField_Username.Text + "';", con))
+                    {
+                        using (MySqlDataReader reader = getusername.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                username = reader["username"].ToString();
+                                password = reader["password"].ToString();
+                                id = Convert.ToInt32(reader["id"]);
+                                if (username == txtField_Username.Text)
+                                {
+                                    if (password == CreateAccountViewController.ToSHA256(txtField_Password.Text))
+                                    {
+                                        lbl_LoginComment.Text = "Angemeldet!";
+                                        userID = id;
+                                        loggedin = true;
+                                        this.DismissViewController(true, () => { FirstViewController.Refresh(firstViewController); });
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        lbl_LoginComment.Text = "Falsches Passwort.";
+                                        break;
+                                    }
+                                }
+                                else
+                                {
+                                    lbl_LoginComment.Text = "Benutzer nicht vorhanden.";
+                                    break;
+                                }
+                            }
+                            if (lbl_LoginComment.Text == "Sei der Beste, der du sein kannst!")
+                            {
+                                lbl_LoginComment.Text = "Benutzer nicht vorhanden.";
+                            }
+
+                        }
+                    }
+
+                    
+                }
+                else
+                {
+                    lbl_LoginComment.Text = "Alle Felder müssen ausgefüllt werden.";
+                }
+            };
+        }
+
+        /// <summary>
+        /// Reload tabeView_Recipes from other Views
+        /// </summary>
+        /// <param name="firstViewController"></param>
+        public static void Refresh(LoginViewController loginViewController)
+        {
+            loginViewController.ViewDidAppear(true);
+        }
+
+        public override void ViewDidDisappear(bool animated)
+        {
+            base.ViewDidDisappear(animated);
+            con.Close();
+        }
+    }
 }
