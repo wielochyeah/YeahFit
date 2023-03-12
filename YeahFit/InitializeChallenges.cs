@@ -1,6 +1,7 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using System.Collections.Generic;
+using HealthKit;
 
 namespace YeahFit
 {
@@ -344,6 +345,34 @@ namespace YeahFit
                 }
 
                 // Get difficutly
+                using (MySqlCommand getworkoutdifficulty = new MySqlCommand($"SELECT * FROM `Workout`, `Schwierigkeit` , `Challenge_Workout` " +
+                    $"WHERE Workout.WorkoutID = Challenge_Workout.WorkoutID " +
+                    $"AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID;", con))
+                {
+                    using (MySqlDataReader reader5 = getworkoutdifficulty.ExecuteReader())
+                    {
+                        while (reader5.Read())
+                        {
+                            int id = Convert.ToInt32(reader5["WorkoutID"]);
+                            int challengeId = Convert.ToInt32(reader5["ChallengeID"].ToString());
+
+                            string difficulty = reader5["Schwierigkeitsbeschreibung"].ToString();
+
+
+                            for (int j = 0; j < workouts.Count; j++)
+                            {
+                                // For the correct id
+                                if (id == workouts[j].id)
+                                {
+                                    workouts[j].difficulty = difficulty;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                // Get difficutly
                 using (MySqlCommand getchallengedifficulty = new MySqlCommand($"SELECT * FROM `Challenge`, `Schwierigkeit` " +
                     $"WHERE Challenge.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID;", con))
                 {
@@ -421,6 +450,8 @@ namespace YeahFit
                         }
                     }
                 }
+
+                
 
                 // close connection
                 con.Close();
