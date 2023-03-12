@@ -453,6 +453,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CJh-K6-I0q"/>
+                    <connections>
+                        <outlet property="btn_Login" destination="XWT-RV-fmd" id="U8b-cg-yOH"/>
+                        <outlet property="lbl_LoginComment" destination="cSJ-YR-XrL" id="naF-2n-5mO"/>
+                        <outlet property="txtField_Password" destination="zTu-rf-rjF" id="uhH-Tx-ldY"/>
+                        <outlet property="txtField_Username" destination="low-T2-cTL" id="XsC-kB-7AC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7u-SC-mGQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -543,6 +549,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XW6-jD-C8b"/>
+                    <connections>
+                        <outlet property="txtField_CreateUser" destination="TaW-xC-1eA" id="9Xc-jR-UjP"/>
+                        <outlet property="txtField_Password" destination="YAM-yL-VKg" id="mBY-mo-xtu"/>
+                        <outlet property="txtField_PasswordRepeat" destination="YAM-yL-VKg" id="HmK-NW-2Xn"/>
+                        <outlet property="txtField_Username" destination="3xj-NJ-R2U" id="MRh-Ma-UE2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8F-py-OCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
