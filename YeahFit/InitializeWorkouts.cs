@@ -217,11 +217,15 @@ namespace YeahFit
             {
                 if (filter == "")
                 {
-                    filter = $" WHERE Workout.WorkoutName LIKE '%{search}%'";
+                    filter = $" WHERE Workout.WorkoutID = Workout_Übung.WorkoutID " +
+                        $"AND Workout_Übung.ÜbungID = Übung.ÜbungID " +
+                        $"AND Übung.ÜbungName LIKE '%{search}%'";
                 }
                 else
                 {
-                    filter = filter + $" AND Workout.WorkoutName LIKE '%{search}%'";
+                    filter = $" AND Workout.WorkoutID = Workout_Übung.WorkoutID " +
+                        $"AND Workout_Übung.ÜbungID = Übung.ÜbungID " +
+                        $"AND Übung.ÜbungName LIKE '%{search}%'";
                 }
             }
 

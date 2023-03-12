@@ -27,7 +27,7 @@ namespace YeahFit
             // Initialize favourite button
             if (favourite == true)
             {
-                btn_FilterFavourite.TintColor = UIColor.Black;
+                btn_FilterFavourite.TintColor = UIColor.Label;
             }
 
             // Initialize last added button
@@ -35,7 +35,7 @@ namespace YeahFit
             {
                 filter = "LastAdded";
 
-                Filter_LastAdded.TintColor = UIColor.Black;
+                Filter_LastAdded.TintColor = UIColor.Label;
                 Filter_FirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
@@ -47,7 +47,7 @@ namespace YeahFit
             else if (filter == "FirstAdded")
             {
                 Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.Black;
+                Filter_FirstAdded.TintColor = UIColor.Label;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
                 btn_FilterDurationAsc.TintColor = UIColor.LightGray;
@@ -59,7 +59,7 @@ namespace YeahFit
             {
                 Filter_LastAdded.TintColor = UIColor.LightGray;
                 Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.Black;
+                btn_FilterAlphAsc.TintColor = UIColor.Label;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
                 btn_FilterDurationAsc.TintColor = UIColor.LightGray;
                 btn_FilterDurationDesc.TintColor = UIColor.LightGray;
@@ -71,7 +71,7 @@ namespace YeahFit
                 Filter_LastAdded.TintColor = UIColor.LightGray;
                 Filter_FirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.Black;
+                btn_FilterAlphDesc.TintColor = UIColor.Label;
                 btn_FilterDurationAsc.TintColor = UIColor.LightGray;
                 btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             }
@@ -83,7 +83,7 @@ namespace YeahFit
                 Filter_FirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.Black;
+                btn_FilterDurationAsc.TintColor = UIColor.Label;
                 btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             }
 
@@ -95,27 +95,27 @@ namespace YeahFit
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
                 btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.Black;
+                btn_FilterDurationDesc.TintColor = UIColor.Label;
             }
 
             // Initialize difficulty buttons
             if (difficulty == "Beginner")
             {
-                btn_FilterDifficultyEasy.TintColor = UIColor.Black;
+                btn_FilterDifficultyEasy.TintColor = UIColor.Label;
                 btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
                 btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
             }
-            else if (difficulty == "Advanced")
+            else if (difficulty == "Fortgeschritten")
             {
                 btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyAdvanced.TintColor = UIColor.Black;
+                btn_FilterDifficultyAdvanced.TintColor = UIColor.Label;
                 btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
             }
-            else if (difficulty == "Professional")
+            else if (difficulty == "Hart")
             {
                 btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
                 btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyHard.TintColor = UIColor.Black;
+                btn_FilterDifficultyHard.TintColor = UIColor.Label;
             }
 
             // Favourite button click
@@ -124,7 +124,7 @@ namespace YeahFit
                 if (favourite == false)
                 {
                     favourite = true;
-                    btn_FilterFavourite.TintColor = UIColor.Black;
+                    btn_FilterFavourite.TintColor = UIColor.Label;
                 }
                 else
                 {
@@ -138,7 +138,7 @@ namespace YeahFit
             {
                 filter = "LastAdded";
 
-                Filter_LastAdded.TintColor = UIColor.Black;
+                Filter_LastAdded.TintColor = UIColor.Label;
                 Filter_FirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
@@ -152,7 +152,7 @@ namespace YeahFit
                 filter = "FirstAdded";
 
                 Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.Black;
+                Filter_FirstAdded.TintColor = UIColor.Label;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
                 btn_FilterDurationAsc.TintColor = UIColor.LightGray;
@@ -166,7 +166,7 @@ namespace YeahFit
 
                 Filter_LastAdded.TintColor = UIColor.LightGray;
                 Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.Black;
+                btn_FilterAlphAsc.TintColor = UIColor.Label;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
                 btn_FilterDurationAsc.TintColor = UIColor.LightGray;
                 btn_FilterDurationDesc.TintColor = UIColor.LightGray;
@@ -180,7 +180,7 @@ namespace YeahFit
                 Filter_LastAdded.TintColor = UIColor.LightGray;
                 Filter_FirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.Black;
+                btn_FilterAlphDesc.TintColor = UIColor.Label;
                 btn_FilterDurationAsc.TintColor = UIColor.LightGray;
                 btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             };
@@ -194,7 +194,7 @@ namespace YeahFit
                 Filter_FirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.Black;
+                btn_FilterDurationAsc.TintColor = UIColor.Label;
                 btn_FilterDurationDesc.TintColor = UIColor.LightGray;
             };
 
@@ -208,7 +208,7 @@ namespace YeahFit
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
                 btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.Black;
+                btn_FilterDurationDesc.TintColor = UIColor.Label;
             };
 
             // Difficulty beginner button click
@@ -218,7 +218,7 @@ namespace YeahFit
                 if (difficulty != "Beginner")
                 {
                     difficulty = "Beginner";
-                    btn_FilterDifficultyEasy.TintColor = UIColor.Black;
+                    btn_FilterDifficultyEasy.TintColor = UIColor.Label;
                 }
                 else
                 {
@@ -234,10 +234,10 @@ namespace YeahFit
             {
 
                 // If user taps on button again, it'll get deselected
-                if (difficulty != "Advanced")
+                if (difficulty != "Fortgeschritten")
                 {
-                    difficulty = "Advanced";
-                    btn_FilterDifficultyAdvanced.TintColor = UIColor.Black;
+                    difficulty = "Fortgeschritten";
+                    btn_FilterDifficultyAdvanced.TintColor = UIColor.Label;
                 }
                 else
                 {
@@ -253,10 +253,10 @@ namespace YeahFit
             {
 
                 // If user taps on button again, it'll get deselected
-                if (difficulty != "Professional")
+                if (difficulty != "Hart")
                 {
-                    difficulty = "Professional";
-                    btn_FilterDifficultyHard.TintColor = UIColor.Black;
+                    difficulty = "Hart";
+                    btn_FilterDifficultyHard.TintColor = UIColor.Label;
                 }
                 else
                 {
@@ -308,13 +308,13 @@ namespace YeahFit
                 {
                     InitializeWorkouts.difficulty = "beginner";
                 }
-                else if (difficulty == "Advanced")
+                else if (difficulty == "Fortgeschritten")
                 {
-                    InitializeWorkouts.difficulty = "advanced";
+                    InitializeWorkouts.difficulty = "Fortgeschritten";
                 }
-                else if (difficulty == "Professional")
+                else if (difficulty == "Hart")
                 {
-                    InitializeWorkouts.difficulty = "professional";
+                    InitializeWorkouts.difficulty = "Hart";
                 }
 
                 // Set seachbar text

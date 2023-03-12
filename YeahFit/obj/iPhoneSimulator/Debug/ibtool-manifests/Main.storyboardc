@@ -128,6 +128,21 @@
 				<integer>9</integer>
 			</dict>
 		</array>
+		<key>QEI-5E-fIj</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>QEI-5E-fIj</string>
+				</array>
+				<key>message</key>
+				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
 		<key>UwS-FP-vi1</key>
 		<array>
 			<dict>

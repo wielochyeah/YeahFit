@@ -129,7 +129,7 @@ namespace YeahFit
                 }
                 else
                 {
-                    filter = filter + $" AND Challenge.WorkoutName LIKE '%{search}%'";
+                    filter = filter + $" AND Challenge.ChallengeName LIKE '%{search}%'";
                 }
             }
 

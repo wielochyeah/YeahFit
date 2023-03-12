@@ -29,7 +29,7 @@ namespace YeahFit
             {
                 filter = "LastAdded";
 
-                btn_FilterLastAdded.TintColor = UIColor.Black;
+                btn_FilterLastAdded.TintColor = UIColor.Label;
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
@@ -39,7 +39,7 @@ namespace YeahFit
             else if (filter == "FirstAdded")
             {
                 btn_FilterLastAdded.TintColor = UIColor.LightGray;
-                btn_FilterFirstAdded.TintColor = UIColor.Black;
+                btn_FilterFirstAdded.TintColor = UIColor.Label;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
             }
@@ -49,7 +49,7 @@ namespace YeahFit
             {
                 btn_FilterLastAdded.TintColor = UIColor.LightGray;
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.Black;
+                btn_FilterAlphAsc.TintColor = UIColor.Label;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
             }
 
@@ -59,7 +59,7 @@ namespace YeahFit
                 btn_FilterLastAdded.TintColor = UIColor.LightGray;
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.Black;
+                btn_FilterAlphDesc.TintColor = UIColor.Label;
             }
 
             // Initialize duration ascending button
@@ -83,21 +83,21 @@ namespace YeahFit
             // Initialize difficulty buttons
             if (difficulty == "Beginner")
             {
-                btn_FilterDifficultyEasy.TintColor = UIColor.Black;
+                btn_FilterDifficultyEasy.TintColor = UIColor.Label;
                 btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
                 btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
             }
-            else if (difficulty == "Advanced")
+            else if (difficulty == "Fortgeschritten")
             {
                 btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyAdvanced.TintColor = UIColor.Black;
+                btn_FilterDifficultyAdvanced.TintColor = UIColor.Label;
                 btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
             }
-            else if (difficulty == "Professional")
+            else if (difficulty == "Hart")
             {
                 btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
                 btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyHard.TintColor = UIColor.Black;
+                btn_FilterDifficultyHard.TintColor = UIColor.Label;
             }
 
             // Last added button click
@@ -105,7 +105,7 @@ namespace YeahFit
             {
                 filter = "LastAdded";
 
-                btn_FilterLastAdded.TintColor = UIColor.Black;
+                btn_FilterLastAdded.TintColor = UIColor.Label;
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
@@ -117,7 +117,7 @@ namespace YeahFit
                 filter = "FirstAdded";
 
                 btn_FilterLastAdded.TintColor = UIColor.LightGray;
-                btn_FilterFirstAdded.TintColor = UIColor.Black;
+                btn_FilterFirstAdded.TintColor = UIColor.Label;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
             };
@@ -129,7 +129,7 @@ namespace YeahFit
 
                 btn_FilterLastAdded.TintColor = UIColor.LightGray;
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.Black;
+                btn_FilterAlphAsc.TintColor = UIColor.Label;
                 btn_FilterAlphDesc.TintColor = UIColor.LightGray;
             };
 
@@ -141,7 +141,7 @@ namespace YeahFit
                 btn_FilterLastAdded.TintColor = UIColor.LightGray;
                 btn_FilterFirstAdded.TintColor = UIColor.LightGray;
                 btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.Black;
+                btn_FilterAlphDesc.TintColor = UIColor.Label;
             };
 
             // Difficulty beginner button click
@@ -151,7 +151,7 @@ namespace YeahFit
                 if (difficulty != "Beginner")
                 {
                     difficulty = "Beginner";
-                    btn_FilterDifficultyEasy.TintColor = UIColor.Black;
+                    btn_FilterDifficultyEasy.TintColor = UIColor.Label;
                 }
                 else
                 {
@@ -167,10 +167,10 @@ namespace YeahFit
             {
 
                 // If user taps on button again, it'll get deselected
-                if (difficulty != "Advanced")
+                if (difficulty != "Fortgeschritte")
                 {
-                    difficulty = "Advanced";
-                    btn_FilterDifficultyAdvanced.TintColor = UIColor.Black;
+                    difficulty = "Fortgeschritten";
+                    btn_FilterDifficultyAdvanced.TintColor = UIColor.Label;
                 }
                 else
                 {
@@ -186,10 +186,10 @@ namespace YeahFit
             {
 
                 // If user taps on button again, it'll get deselected
-                if (difficulty != "Professional")
+                if (difficulty != "Hart")
                 {
-                    difficulty = "Professional";
-                    btn_FilterDifficultyHard.TintColor = UIColor.Black;
+                    difficulty = "Hart";
+                    btn_FilterDifficultyHard.TintColor = UIColor.Label;
                 }
                 else
                 {
@@ -238,13 +238,13 @@ namespace YeahFit
                 {
                     InitializeWorkouts.difficulty = "beginner";
                 }
-                else if (difficulty == "Advanced")
+                else if (difficulty == "Fortgeschritte")
                 {
                     InitializeWorkouts.difficulty = "advanced";
                 }
-                else if (difficulty == "Professional")
+                else if (difficulty == "Hart")
                 {
-                    InitializeWorkouts.difficulty = "professional";
+                    InitializeWorkouts.difficulty = "hard";
                 }
 
                 // Set seachbar text
