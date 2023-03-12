@@ -287,11 +287,11 @@ namespace YeahFit
         public override void ViewDidDisappear(bool animated)
         {
             base.ViewDidDisappear(animated);
-            if (firstViewController != null)
+            if (firstViewController != null && challenge == false)
             {
                 this.DismissViewController(true, () => { WorkoutOverviewViewController.Refresh(firstViewController); });
             }
-            else
+            else if (secondViewController != null && challenge == true)
             {
                 this.DismissViewController(true, () => { ChallengeOverviewViewController.Refresh(secondViewController); });
             }

@@ -161,7 +161,7 @@ namespace YeahFit
         /// </summary>
         /// <param name="recipeViewController"></param>
         /// <param name="image"></param>
-        public static void Refresh(ChallengeViewController challengeViewController, byte[] image)
+        public static void Refresh(ChallengeViewController challengeViewController)
         {
             challengeViewController.ViewDidAppear(true);
         }
