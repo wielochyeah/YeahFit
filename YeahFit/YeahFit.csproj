@@ -138,6 +138,14 @@
       <DependentUpon>Filter2ViewController.cs</DependentUpon>
     </Compile>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <Compile Include="YeahFitTabBarController.cs" />
+    <Compile Include="YeahFitTabBarController.designer.cs">
+      <DependentUpon>YeahFitTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginViewController.cs" />
+    <Compile Include="LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

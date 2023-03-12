@@ -55,6 +55,9 @@ namespace YeahFit
 		UIKit.UILabel lbl_SundayDate { get; set; }
 
 		[Outlet]
+		UIKit.UILabel lbl_thursday { get; set; }
+
+		[Outlet]
 		UIKit.UILabel lbl_Thursday { get; set; }
 
 		[Outlet]
@@ -80,9 +83,9 @@ namespace YeahFit
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (WeekCollectionView != null) {
-				WeekCollectionView.Dispose ();
-				WeekCollectionView = null;
+			if (imageView_FridayCircle != null) {
+				imageView_FridayCircle.Dispose ();
+				imageView_FridayCircle = null;
 			}
 
 			if (imageView_MondayCircle != null) {
@@ -90,34 +93,9 @@ namespace YeahFit
 				imageView_MondayCircle = null;
 			}
 
-			if (lbl_MondayDate != null) {
-				lbl_MondayDate.Dispose ();
-				lbl_MondayDate = null;
-			}
-
-			if (lbl_Monday != null) {
-				lbl_Monday.Dispose ();
-				lbl_Monday = null;
-			}
-
 			if (imageView_TuesdayCircle != null) {
 				imageView_TuesdayCircle.Dispose ();
 				imageView_TuesdayCircle = null;
-			}
-
-			if (lbl_TuesdayDate != null) {
-				lbl_TuesdayDate.Dispose ();
-				lbl_TuesdayDate = null;
-			}
-
-			if (lbl_Tuesday != null) {
-				lbl_Tuesday.Dispose ();
-				lbl_Tuesday = null;
-			}
-
-			if (lbl_WednesdayDate != null) {
-				lbl_WednesdayDate.Dispose ();
-				lbl_WednesdayDate = null;
 			}
 
 			if (imageView_WednesdayCircle != null) {
@@ -125,29 +103,9 @@ namespace YeahFit
 				imageView_WednesdayCircle = null;
 			}
 
-			if (lbl_Wednesday != null) {
-				lbl_Wednesday.Dispose ();
-				lbl_Wednesday = null;
-			}
-
-			if (lbl_ThursdayDate != null) {
-				lbl_ThursdayDate.Dispose ();
-				lbl_ThursdayDate = null;
-			}
-
-			if (lbl_ThursdayCircle != null) {
-				lbl_ThursdayCircle.Dispose ();
-				lbl_ThursdayCircle = null;
-			}
-
-			if (lbl_Thursday != null) {
-				lbl_Thursday.Dispose ();
-				lbl_Thursday = null;
-			}
-
-			if (imageView_FridayCircle != null) {
-				imageView_FridayCircle.Dispose ();
-				imageView_FridayCircle = null;
+			if (lbl_Friday != null) {
+				lbl_Friday.Dispose ();
+				lbl_Friday = null;
 			}
 
 			if (lbl_FridayDate != null) {
@@ -155,14 +113,14 @@ namespace YeahFit
 				lbl_FridayDate = null;
 			}
 
-			if (lbl_Friday != null) {
-				lbl_Friday.Dispose ();
-				lbl_Friday = null;
+			if (lbl_Monday != null) {
+				lbl_Monday.Dispose ();
+				lbl_Monday = null;
 			}
 
-			if (lbl_SaturdayDate != null) {
-				lbl_SaturdayDate.Dispose ();
-				lbl_SaturdayDate = null;
+			if (lbl_MondayDate != null) {
+				lbl_MondayDate.Dispose ();
+				lbl_MondayDate = null;
 			}
 
 			if (lbl_Saturday != null) {
@@ -175,9 +133,14 @@ namespace YeahFit
 				lbl_SaturdayCircle = null;
 			}
 
-			if (lbl_SundayDate != null) {
-				lbl_SundayDate.Dispose ();
-				lbl_SundayDate = null;
+			if (lbl_SaturdayDate != null) {
+				lbl_SaturdayDate.Dispose ();
+				lbl_SaturdayDate = null;
+			}
+
+			if (lbl_Sunday != null) {
+				lbl_Sunday.Dispose ();
+				lbl_Sunday = null;
 			}
 
 			if (lbl_SundayCircle != null) {
@@ -185,9 +148,54 @@ namespace YeahFit
 				lbl_SundayCircle = null;
 			}
 
-			if (lbl_Sunday != null) {
-				lbl_Sunday.Dispose ();
-				lbl_Sunday = null;
+			if (lbl_SundayDate != null) {
+				lbl_SundayDate.Dispose ();
+				lbl_SundayDate = null;
+			}
+
+			if (lbl_Thursday != null) {
+				lbl_Thursday.Dispose ();
+				lbl_Thursday = null;
+			}
+
+			if (lbl_thursday != null) {
+				lbl_thursday.Dispose ();
+				lbl_thursday = null;
+			}
+
+			if (lbl_ThursdayCircle != null) {
+				lbl_ThursdayCircle.Dispose ();
+				lbl_ThursdayCircle = null;
+			}
+
+			if (lbl_ThursdayDate != null) {
+				lbl_ThursdayDate.Dispose ();
+				lbl_ThursdayDate = null;
+			}
+
+			if (lbl_Tuesday != null) {
+				lbl_Tuesday.Dispose ();
+				lbl_Tuesday = null;
+			}
+
+			if (lbl_TuesdayDate != null) {
+				lbl_TuesdayDate.Dispose ();
+				lbl_TuesdayDate = null;
+			}
+
+			if (lbl_Wednesday != null) {
+				lbl_Wednesday.Dispose ();
+				lbl_Wednesday = null;
+			}
+
+			if (lbl_WednesdayDate != null) {
+				lbl_WednesdayDate.Dispose ();
+				lbl_WednesdayDate = null;
+			}
+
+			if (WeekCollectionView != null) {
+				WeekCollectionView.Dispose ();
+				WeekCollectionView = null;
 			}
 		}
 	}

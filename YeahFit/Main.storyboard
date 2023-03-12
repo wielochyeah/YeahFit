@@ -11,7 +11,7 @@
         <!--YeahFit-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController title="YeahFit" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController title="YeahFit" id="49e-Tb-3d3" customClass="YeahFitTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="519" width="320" height="49"/>
@@ -351,6 +351,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsg-Dg-3eZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2319.8473282442746" y="-61.267605633802823"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Axg-m8-spV">
+            <objects>
+                <viewController id="tij-Wh-9dG" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tie-f7-KsW"/>
+                        <viewControllerLayoutGuide type="bottom" id="pDh-gp-jYN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KSp-dz-FhM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-6E-ePp">
+                                <rect key="frame" x="83" y="119" width="227" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="5Ba-h4-GsY"/>
+                                    <constraint firstAttribute="width" constant="227" id="7x2-lJ-kge"/>
+                                    <constraint firstAttribute="width" secondItem="YVV-6E-ePp" secondAttribute="height" multiplier="227:45" id="BfL-gv-DSE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YVV-6E-ePp" firstAttribute="centerX" secondItem="KSp-dz-FhM" secondAttribute="centerX" id="Jvo-8t-vqS"/>
+                            <constraint firstItem="YVV-6E-ePp" firstAttribute="width" secondItem="YVV-6E-ePp" secondAttribute="height" multiplier="227:45" id="he7-QA-iw4"/>
+                            <constraint firstItem="YVV-6E-ePp" firstAttribute="top" secondItem="Tie-f7-KsW" secondAttribute="bottom" constant="60" id="wsl-xi-1r2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CJh-K6-I0q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7u-SC-mGQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543" y="-2028"/>
         </scene>
         <!--Week Settings View Controller-->
         <scene sceneID="DdU-qF-IJH">
@@ -2095,6 +2132,39 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t61-LH-voY">
+                                <rect key="frame" x="261" y="191" width="48" height="46.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xT-DH-Ir5">
+                                        <rect key="frame" x="6" y="13" width="37" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <segue destination="tij-Wh-9dG" kind="show" id="M6m-xm-WfG"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BMO-T5-QON">
+                                        <rect key="frame" x="10" y="7" width="29" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46.329999999999998" id="XT9-OP-VHW"/>
+                                    <constraint firstAttribute="width" constant="48" id="tDr-UC-CT2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChallengesNEW2.png" translatesAutoresizingMaskIntoConstraints="NO" id="xLH-5j-4gD">
                                 <rect key="frame" x="2" y="307" width="392" height="277"/>
                             </imageView>
@@ -2429,7 +2499,9 @@
                             <constraint firstItem="xLH-5j-4gD" firstAttribute="centerX" secondItem="0ZO-jR-xnS" secondAttribute="centerX" id="0Xh-XF-PWq"/>
                             <constraint firstAttribute="bottomMargin" secondItem="0ZO-jR-xnS" secondAttribute="bottom" constant="-26" id="4VX-I4-Bhs"/>
                             <constraint firstItem="apm-cw-Khr" firstAttribute="centerX" secondItem="xLH-5j-4gD" secondAttribute="centerX" constant="-1.5" id="60D-Vc-j42"/>
+                            <constraint firstItem="mEt-Se-Ums" firstAttribute="leading" secondItem="t61-LH-voY" secondAttribute="trailing" constant="6" id="6Ls-fD-uYw"/>
                             <constraint firstItem="Kei-L0-LOZ" firstAttribute="top" secondItem="61A-fF-iYh" secondAttribute="bottom" constant="38" id="76G-Lh-BMH"/>
+                            <constraint firstItem="t61-LH-voY" firstAttribute="centerY" secondItem="mEt-Se-Ums" secondAttribute="centerY" id="7FH-nl-z6m"/>
                             <constraint firstItem="Pu3-Xw-tS0" firstAttribute="top" secondItem="apm-cw-Khr" secondAttribute="bottom" constant="-18.333333333333314" id="9DV-eT-jGD"/>
                             <constraint firstItem="xLH-5j-4gD" firstAttribute="top" secondItem="ebI-Y2-ZLK" secondAttribute="bottom" constant="70" id="9Ug-f4-ctT"/>
                             <constraint firstItem="xLH-5j-4gD" firstAttribute="top" secondItem="61A-fF-iYh" secondAttribute="bottom" constant="-12" id="CiA-oV-2FE"/>
@@ -2490,6 +2562,7 @@
                         <outlet property="lbl_TuesdayDate" destination="hsv-FL-0U9" id="iIR-aP-ne4"/>
                         <outlet property="lbl_Wednesday" destination="cBm-US-ceF" id="b6y-gO-DbT"/>
                         <outlet property="lbl_WednesdayDate" destination="xrz-dO-wWQ" id="H24-S2-wOg"/>
+                        <outlet property="lbl_thursday" destination="AX1-6c-H4N" id="4oD-W4-ueR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zr-vS-QEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2812,6 +2885,7 @@
         <image name="figure.strengthtraining.traditional" catalog="system" width="128" height="119"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="medal.fill" catalog="system" width="121" height="128"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="record.circle.fill" catalog="system" width="128" height="123"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
         <image name="star" catalog="system" width="128" height="116"/>
