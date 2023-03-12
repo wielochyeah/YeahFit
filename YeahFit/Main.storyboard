@@ -2278,6 +2278,14 @@
                     <tabBarItem key="tabBarItem" systemItem="search" id="6se-ET-VNO"/>
                     <navigationItem key="navigationItem" id="tPh-MU-pX6"/>
                     <connections>
+                        <outlet property="btn_Core" destination="9Nd-wI-TP9" id="aPP-hr-del"/>
+                        <outlet property="btn_FullBody" destination="R53-py-gvP" id="oWQ-EL-P7w"/>
+                        <outlet property="btn_LowerBody" destination="9Nq-Dy-iaj" id="Rw2-ZG-YOD"/>
+                        <outlet property="btn_NoEquipment" destination="lPE-eT-r2P" id="9VF-0y-jF6"/>
+                        <outlet property="btn_Pull" destination="Awk-me-WED" id="KRq-SY-iVc"/>
+                        <outlet property="btn_Push" destination="vEL-gm-PgB" id="dp2-rt-hCY"/>
+                        <outlet property="btn_TwentyMinutes" destination="unb-Dn-lHd" id="028-6S-Tet"/>
+                        <outlet property="btn_UpperBody" destination="asi-Gv-KyL" id="BM0-U1-K0c"/>
                         <outlet property="tableView_Workouts" destination="lfu-I4-erF" id="Z6e-qS-Q1T"/>
                     </connections>
                 </viewController>

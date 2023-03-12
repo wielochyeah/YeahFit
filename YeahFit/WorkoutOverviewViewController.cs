@@ -31,109 +31,103 @@ namespace YeahFit
             // Perform any additional setup after loading the view, typically from a nib.
 
             // Buttons for setting categories
-            /*btn_Breakfast.TouchUpInside += (sender, e) =>
+            btn_FullBody.TouchUpInside += (sender, e) =>
             {
-                if (InitializeRecipes.category == "breakfast")
+                if (InitializeWorkouts.category == "fullBody")
                 {
-                    InitializeRecipes.category = "";
+                    InitializeWorkouts.category = "";
                 }
                 else
                 {
-                    InitializeRecipes.category = "breakfast";
+                    InitializeWorkouts.category = "fullBody";
                 }
                 ViewDidAppear(true);
             };
-            btn_Lunch.TouchUpInside += (sender, e) =>
+            btn_UpperBody.TouchUpInside += (sender, e) =>
             {
-                if (InitializeRecipes.category == "lunch")
+                if (InitializeWorkouts.category == "upperBody")
                 {
-                    InitializeRecipes.category = "";
+                    InitializeWorkouts.category = "";
                 }
                 else
                 {
-                    InitializeRecipes.category = "lunch";
+                    InitializeWorkouts.category = "upperBody";
                 }
                 ViewDidAppear(true);
             };
-            btn_Dinner.TouchUpInside += (sender, e) =>
+            btn_LowerBody.TouchUpInside += (sender, e) =>
             {
-                if (InitializeRecipes.category == "dinner")
+                if (InitializeWorkouts.category == "lowerBody")
                 {
-                    InitializeRecipes.category = "";
+                    InitializeWorkouts.category = "";
                 }
                 else
                 {
-                    InitializeRecipes.category = "dinner";
+                    InitializeWorkouts.category = "lowerBody";
                 }
                 ViewDidAppear(true);
             };
-            btn_Dessert.TouchUpInside += (sender, e) =>
+            btn_Push.TouchUpInside += (sender, e) =>
             {
-                if (InitializeRecipes.category == "dessert")
+                if (InitializeWorkouts.category == "push")
                 {
-                    InitializeRecipes.category = "";
+                    InitializeWorkouts.category = "";
                 }
                 else
                 {
-                    InitializeRecipes.category = "dessert";
+                    InitializeWorkouts.category = "push";
                 }
                 ViewDidAppear(true);
             };
-            btn_Snacks.TouchUpInside += (sender, e) =>
+            btn_Pull.TouchUpInside += (sender, e) =>
             {
-                if (InitializeRecipes.category == "snacks")
+                if (InitializeWorkouts.category == "pull")
                 {
-                    InitializeRecipes.category = "";
+                    InitializeWorkouts.category = "";
                 }
                 else
                 {
-                    InitializeRecipes.category = "snacks";
+                    InitializeWorkouts.category = "pull";
                 }
                 ViewDidAppear(true);
             };
-            btn_Vegan.TouchUpInside += (sender, e) =>
+            btn_Core.TouchUpInside += (sender, e) =>
             {
-                if (InitializeRecipes.category == "vegan")
+                if (InitializeWorkouts.category == "core")
                 {
-                    InitializeRecipes.category = "";
+                    InitializeWorkouts.category = "";
                 }
                 else
                 {
-                    InitializeRecipes.category = "vegan";
+                    InitializeWorkouts.category = "core";
                 }
                 ViewDidAppear(true);
             };
-            btn_Vegetarian.TouchUpInside += (sender, e) =>
+            btn_TwentyMinutes.TouchUpInside += (sender, e) =>
             {
-                if (InitializeRecipes.category == "vegetarian")
+                if (InitializeWorkouts.category == "twentyMinutes")
                 {
-                    InitializeRecipes.category = "";
+                    InitializeWorkouts.category = "";
                 }
                 else
                 {
-                    InitializeRecipes.category = "vegetarian";
+                    InitializeWorkouts.category = "twentyMinutes";
                 }
                 ViewDidAppear(true);
             };
-            btn_Drinks.TouchUpInside += (sender, e) =>
+            btn_NoEquipment.TouchUpInside += (sender, e) =>
             {
-                if (InitializeRecipes.category == "drinks")
+                if (InitializeWorkouts.category == "noEquipment")
                 {
-                    InitializeRecipes.category = "";
+                    InitializeWorkouts.category = "";
                 }
                 else
                 {
-                    InitializeRecipes.category = "drinks";
+                    InitializeWorkouts.category = "noEquipment";
                 }
                 ViewDidAppear(true);
             };
-
-            // Button for showing the FilterView
-            btn_Filter.TouchUpInside += (sender, e) =>
-            {
-                FilterViewController.firstViewController = this;
-            };
-            */
+            
 
 
             // Loading the tableView

@@ -238,7 +238,7 @@ namespace YeahFit
                 {
                     InitializeWorkouts.difficulty = "beginner";
                 }
-                else if (difficulty == "Fortgeschritte")
+                else if (difficulty == "Fortgeschritten")
                 {
                     InitializeWorkouts.difficulty = "advanced";
                 }
