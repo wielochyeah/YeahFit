@@ -310,11 +310,11 @@ namespace YeahFit
                 }
                 else if (difficulty == "Fortgeschritten")
                 {
-                    InitializeWorkouts.difficulty = "Fortgeschritten";
+                    InitializeWorkouts.difficulty = "advanced";
                 }
                 else if (difficulty == "Hart")
                 {
-                    InitializeWorkouts.difficulty = "Hart";
+                    InitializeWorkouts.difficulty = "hard";
                 }
 
                 // Set seachbar text

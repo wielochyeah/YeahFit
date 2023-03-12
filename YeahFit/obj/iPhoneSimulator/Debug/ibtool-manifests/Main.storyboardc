@@ -53,6 +53,21 @@
 				<integer>9</integer>
 			</dict>
 		</array>
+		<key>Aml-GX-gZZ</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>Aml-GX-gZZ</string>
+				</array>
+				<key>message</key>
+				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
 		<key>CHo-69-kwA</key>
 		<array>
 			<dict>
@@ -119,21 +134,6 @@
 				<key>affected-objects</key>
 				<array>
 					<string>E8P-BG-7cl</string>
-				</array>
-				<key>message</key>
-				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
-		<key>QEI-5E-fIj</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>QEI-5E-fIj</string>
 				</array>
 				<key>message</key>
 				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
