@@ -9,9 +9,9 @@ namespace YeahFit
     public partial class FirstViewController : UIViewController
     {
         public static bool monday = true;
-        public static bool tuesday = false;
+        public static bool tuesday = true;
         public static bool wednesday = true;
-        public static bool thursday = false;
+        public static bool thursday = true;
         public static bool friday = true;
         public static bool saturday = true;
         public static bool sunday = true;

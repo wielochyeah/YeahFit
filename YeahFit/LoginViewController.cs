@@ -77,7 +77,7 @@ namespace YeahFit
                                     break;
                                 }
                             }
-                            if (lbl_LoginComment.Text == "Sei der Beste, der du sein kannst!")
+                            if (lbl_LoginComment.Text == "Du bist noch nicht eingeloggt.")
                             {
                                 lbl_LoginComment.Text = "Benutzer nicht vorhanden.";
                             }
