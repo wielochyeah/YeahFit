@@ -302,6 +302,21 @@
                         <imageReference key="image" image="medal.fill" catalog="system" symbolScale="default"/>
                         <color key="badgeColor" systemColor="tintColor"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="imageView_AdvancedWorkout" destination="erv-zg-KMA" id="Zdr-ft-kti"/>
+                        <outlet property="imageView_Challenge" destination="LFl-tu-2Vb" id="ICg-Kg-4Az"/>
+                        <outlet property="imageView_HardWorkout" destination="hSN-6x-oSx" id="ddb-PI-kRT"/>
+                        <outlet property="imageView_PerfectMonth" destination="cJP-dQ-i3W" id="ebs-4J-7GL"/>
+                        <outlet property="imageView_PerfectWeek" destination="5DU-lN-eli" id="B4u-Sp-ZgE"/>
+                        <outlet property="imageView_PerfectYear" destination="gMh-1q-pSX" id="iQE-Hd-eGw"/>
+                        <outlet property="lbl_AdvancedWorkoutCounter" destination="tiB-wf-JpZ" id="TR3-aL-cog"/>
+                        <outlet property="lbl_ChallengeCounter" destination="KZP-en-iCu" id="iL4-Vs-a4W"/>
+                        <outlet property="lbl_HardWorkoutCounter" destination="lmu-lU-dbN" id="Wi3-8O-mXh"/>
+                        <outlet property="lbl_PerfectMonthCounter" destination="Sg0-TB-CWg" id="sJg-dx-lG3"/>
+                        <outlet property="lbl_PerfectWeekCounter" destination="F16-RU-Az9" id="Uho-GC-zUb"/>
+                        <outlet property="lbl_PerfectYearCounter" destination="PNS-Ae-YO7" id="732-ti-SlP"/>
+                        <outlet property="lbl_StartChallenge" destination="KZP-en-iCu" id="ClX-X6-hiX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Gv-Vg-dqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2720,6 +2735,29 @@
                         <imageReference key="image" image="figure.strengthtraining.traditional" catalog="system" symbolScale="default"/>
                         <color key="badgeColor" systemColor="tintColor"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="imageView_FridayCircle" destination="1d8-Z4-gq6" id="lKU-fM-ppR"/>
+                        <outlet property="imageView_MondayCircle" destination="inP-ta-S4u" id="hk0-1g-84i"/>
+                        <outlet property="imageView_TuesdayCircle" destination="ERw-eS-ZLC" id="2Vu-KM-4hx"/>
+                        <outlet property="imageView_WednesdayCircle" destination="ezq-pg-OQ7" id="xG2-8o-qut"/>
+                        <outlet property="lbl_Friday" destination="1fe-JM-PF4" id="S1Z-fh-mmd"/>
+                        <outlet property="lbl_FridayDate" destination="lky-tq-reR" id="HFZ-OM-poH"/>
+                        <outlet property="lbl_Monday" destination="ieX-Cf-Q9a" id="96w-4B-7mU"/>
+                        <outlet property="lbl_MondayDate" destination="uaE-RO-2vz" id="fff-E9-He2"/>
+                        <outlet property="lbl_Saturday" destination="UpI-bP-pEu" id="fbo-0O-TPz"/>
+                        <outlet property="lbl_SaturdayCircle" destination="AY1-dv-HUt" id="1L8-db-nAk"/>
+                        <outlet property="lbl_SaturdayDate" destination="FEa-vf-Xvs" id="H8D-9a-M3p"/>
+                        <outlet property="lbl_Sunday" destination="gVH-in-WuH" id="4h2-Oi-ELC"/>
+                        <outlet property="lbl_SundayCircle" destination="JyG-xJ-3G4" id="Oox-fo-c5A"/>
+                        <outlet property="lbl_SundayDate" destination="37M-Rs-Yli" id="FXd-ue-sP4"/>
+                        <outlet property="lbl_Thursday" destination="lky-tq-reR" id="pqs-28-tJo"/>
+                        <outlet property="lbl_ThursdayCircle" destination="5Ot-Af-bdc" id="aD7-ZX-wSe"/>
+                        <outlet property="lbl_ThursdayDate" destination="6b3-it-5Ve" id="kc8-iq-4a9"/>
+                        <outlet property="lbl_Tuesday" destination="4Gl-tK-DJL" id="HFC-EI-jI1"/>
+                        <outlet property="lbl_TuesdayDate" destination="hsv-FL-0U9" id="iIR-aP-ne4"/>
+                        <outlet property="lbl_Wednesday" destination="cBm-US-ceF" id="b6y-gO-DbT"/>
+                        <outlet property="lbl_WednesdayDate" destination="xrz-dO-wWQ" id="H24-S2-wOg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zr-vS-QEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
