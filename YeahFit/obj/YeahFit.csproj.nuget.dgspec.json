@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/YeahFit.csproj": {}
+    "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/YeahFit.csproj": {}
   },
   "projects": {
-    "/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/YeahFit.csproj": {
+    "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/YeahFit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/YeahFit.csproj",
+        "projectUniqueName": "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/YeahFit.csproj",
         "projectName": "YeahFit",
-        "projectPath": "/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/YeahFit.csproj",
+        "projectPath": "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/YeahFit.csproj",
         "packagesPath": "/Users/nilswieloch/.nuget/packages/",
-        "outputPath": "/Users/nilswieloch/YeahProjects/YeahFit77/YeahFit/YeahFit/obj/",
+        "outputPath": "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [

@@ -2112,7 +2112,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="inP-ta-S4u">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaE-RO-2vz">
@@ -2150,7 +2150,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ERw-eS-ZLC">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsv-FL-0U9">
@@ -2188,7 +2188,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ezq-pg-OQ7">
-                                                        <rect key="frame" x="11.999999999999988" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="11.999999999999988" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrz-dO-wWQ">
@@ -2226,7 +2226,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-Af-bdc">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-it-5Ve">
@@ -2264,7 +2264,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1d8-Z4-gq6">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lky-tq-reR">
@@ -2302,7 +2302,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AY1-dv-HUt">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEa-vf-Xvs">
@@ -2340,7 +2340,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JyG-xJ-3G4">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37M-Rs-Yli">
@@ -2763,20 +2763,18 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="xUo-6v-Hma"/>
                     <connections>
-                        <outlet property="imageView_AdvancedWorkout" destination="1eW-iY-96x" id="m7a-iB-jzJ"/>
-                        <outlet property="imageView_AdvancedWorkoutCounter" destination="1eW-iY-96x" id="LpP-7B-yGV"/>
+                        <outlet property="imageView_AdvancedMidWorkout" destination="1eW-iY-96x" id="6uU-0T-1aY"/>
                         <outlet property="imageView_Challenge" destination="uQv-cf-Mpo" id="zhV-Rh-kgn"/>
                         <outlet property="imageView_HardWorkout" destination="TGh-t0-NZi" id="ZnN-Fz-Wvv"/>
                         <outlet property="imageView_PerfectMonth" destination="2SJ-nK-PwM" id="iau-Fr-asl"/>
                         <outlet property="imageView_PerfectWeek" destination="c1V-hs-blJ" id="Ne6-Up-QXl"/>
                         <outlet property="imageView_PerfectYear" destination="I5I-QD-jln" id="FK8-A0-uMf"/>
-                        <outlet property="lbl_AdvancedWorkoutCounter" destination="QPf-y4-8Fn" id="VHb-xe-UHu"/>
+                        <outlet property="lbl_AdvancedMidWorkoutCounter" destination="QPf-y4-8Fn" id="dv0-ac-8CS"/>
                         <outlet property="lbl_ChallengeCounter" destination="cBf-Rz-a27" id="HiP-5a-YRt"/>
                         <outlet property="lbl_HardWorkoutCounter" destination="NgW-KE-LCp" id="phB-eu-9hw"/>
                         <outlet property="lbl_PerfectMonthCounter" destination="LsW-nN-jcH" id="K7a-Gh-lvZ"/>
                         <outlet property="lbl_PerfectWeekCounter" destination="2Bh-4e-XhB" id="FyG-9p-a7x"/>
                         <outlet property="lbl_PerfectYearCounter" destination="HRX-Kh-dhb" id="dru-LW-WwK"/>
-                        <outlet property="lbl_StartChallenge" destination="cBf-Rz-a27" id="GzW-w4-Ijk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ue-5U-RAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
