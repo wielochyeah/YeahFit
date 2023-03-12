@@ -261,6 +261,7 @@
     <BundleResource Include="Resources\Ganzkörper2.png" />
     <BundleResource Include="Resources\ChallengesNEW1.png" />
     <BundleResource Include="Resources\ChallengesNEW2.png" />
+    <BundleResource Include="Resources\concentrated-young-woman-boxing-with-her-sparring-2022-12-16-14-06-08-utc.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

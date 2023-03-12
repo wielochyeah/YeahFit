@@ -31,15 +31,8 @@ namespace YeahFit
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
 
-
-
-            /*
-            // Button for showing the FilterView
-            btn_Filter.TouchUpInside += (sender, e) =>
-            {
-                FilterViewController.firstViewController = this;
-            };
-            */
+            Filter2ViewController.challengeOverviewViewController = this;
+            
             // Loading the tableView
             ChallengeViewController.firstViewController = this;
             WorkoutViewController.secondViewController = this;
@@ -66,6 +59,7 @@ namespace YeahFit
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
+            Filter2ViewController.challengeOverviewViewController = this;
             ChallengeViewController.firstViewController = this;
             challenges = null;
             InitializeChallenges.Initialize();
