@@ -137,6 +137,7 @@
     <Compile Include="Filter2ViewController.designer.cs">
       <DependentUpon>Filter2ViewController.cs</DependentUpon>
     </Compile>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

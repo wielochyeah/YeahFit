@@ -1075,7 +1075,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Suche nach einzelnen Übungen" translatesAutoresizingMaskIntoConstraints="NO" id="IJg-cm-FwI">
+                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Suche nach Übungen in Workouts" translatesAutoresizingMaskIntoConstraints="NO" id="IJg-cm-FwI">
                                 <rect key="frame" x="28" y="115" width="332" height="51"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
