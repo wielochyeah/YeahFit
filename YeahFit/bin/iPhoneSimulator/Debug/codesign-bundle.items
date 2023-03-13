@@ -12,7 +12,7 @@
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit</SourceProjectPath>
+      <SourceProjectPath>/Users/nilswieloch/YeahFit/YeahFit/YeahFit</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>

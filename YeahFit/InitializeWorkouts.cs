@@ -19,6 +19,7 @@ namespace YeahFit
         public static bool favourite;
         public static string difficulty;
         public static string search;
+        public static string userid = "";
 
         public InitializeWorkouts()
         {
@@ -227,7 +228,7 @@ namespace YeahFit
             // Read every workout
             //  + filter
             //  + orderby
-            using (MySqlCommand getmainworkout = new MySqlCommand($"SELECT * FROM `Workout` {filter} {orderby}", con))
+            using (MySqlCommand getmainworkout = new MySqlCommand($"SELECT * FROM `Workout` {userid}{filter} {orderby}", con))
             {
                 using (MySqlDataReader reader = getmainworkout.ExecuteReader())
                 {

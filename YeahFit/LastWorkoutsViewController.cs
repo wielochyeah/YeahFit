@@ -12,9 +12,9 @@ namespace YeahFit
         public UINavigationController CurrentNavigationController;
 
         static UITableView tableView;
-        public static List<Workout> workouts;
-        public static List<LastWorkout> lastWorkouts;
-        public static List<Workout> internalWorkouts;
+        public static List<Workout> workouts = new List<Workout>();
+        public static List<LastWorkout> lastWorkouts = new List<LastWorkout>();
+        public static List<Workout> internalWorkouts = new List<Workout>();
 
         public LastWorkoutsViewController (IntPtr handle) : base (handle)
 		{
@@ -30,15 +30,18 @@ namespace YeahFit
 
             if (LoginViewController.loggedin == true)
             {
+                internalWorkouts = new List<Workout>();
                 WorkoutViewController.lastWorkouts = true;
+                InitializeWorkouts.userid = $" , `Benutzer_Workout_Woche` WHERE Workout.WorkoutID = Benutzer_Workout_Woche.WorkoutID " +
+                    $"AND Benutzer_Workout_Woche.BenutzerID='{LoginViewController.userID}'";
                 InitializeWorkouts.Initialize();
 
                 for (int i = 0; i < workouts.Count; i++)
                 {
-                    if (workouts[i].id == LoginViewController.userID)
-                    {
+                    //if (workouts[i].id == LoginViewController.userID)
+                    //{
                         internalWorkouts.Add(workouts[i]);
-                    }
+                    //}
                 }
 
                 // Set source for ingredient tableView
@@ -47,6 +50,8 @@ namespace YeahFit
 
                 // Reload ingredient tableView
                 lastWorkoutsTableView.ReloadData();
+
+                InitializeWorkouts.filter = "";
             }
         }
 
@@ -62,15 +67,19 @@ namespace YeahFit
 
             if (LoginViewController.loggedin == true)
             {
+                internalWorkouts = new List<Workout>();
                 WorkoutViewController.lastWorkouts = true;
+
+                InitializeWorkouts.userid = $" , `Benutzer_Workout_Woche` WHERE Workout.WorkoutID = Benutzer_Workout_Woche.WorkoutID " +
+                    $"AND Benutzer_Workout_Woche.BenutzerID='{LoginViewController.userID}'";
                 InitializeWorkouts.Initialize();
 
                 for (int i = 0; i < workouts.Count; i++)
                 {
-                    if (workouts[i].id == LoginViewController.userID)
-                    {
+                    //if (workouts[i].id == LoginViewController.userID)
+                    //{
                         internalWorkouts.Add(workouts[i]);
-                    }
+                    //}
                 }
 
 
@@ -82,6 +91,7 @@ namespace YeahFit
 
                 // Reload ingredient tableView
                 lastWorkoutsTableView.ReloadData();
+                InitializeWorkouts.filter = "";
             }
         }
 
