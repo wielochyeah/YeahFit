@@ -167,6 +167,8 @@
       <DependentUpon>UITableViewLastWorkoutCell.cs</DependentUpon>
     </Compile>
     <Compile Include="LastWorkoutsTableViewSource.cs" />
+    <Compile Include="InitializeLastWorkouts.cs" />
+    <Compile Include="LastWorkout.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

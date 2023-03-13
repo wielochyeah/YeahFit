@@ -12,9 +12,11 @@ namespace YeahFit
         public UINavigationController CurrentNavigationController;
 
         static UITableView tableView;
+        public static List<Workout> workouts;
+        public static List<LastWorkout> lastWorkouts;
         public static List<Workout> internalWorkouts;
 
-		public LastWorkoutsViewController (IntPtr handle) : base (handle)
+        public LastWorkoutsViewController (IntPtr handle) : base (handle)
 		{
 		}
 
@@ -26,14 +28,30 @@ namespace YeahFit
         {
             base.ViewDidLoad();
 
-            WorkoutViewController.lastWorkouts = true;
-            InitializeWorkouts.Initialize();
-            // Set source for ingredient tableView
-            lastWorkoutsTableView.Source = new LastWorkoutsTableViewSource(internalWorkouts, this, CurrentNavigationController);
-            lastWorkoutsTableView.RowHeight = 71;
+            //if (LoginViewController.loggedin == true)
+            //{
+                WorkoutViewController.lastWorkouts = true;
+                InitializeWorkouts.Initialize();
 
-            // Reload ingredient tableView
-            lastWorkoutsTableView.ReloadData();
+                /*for (int i = 0; i < workouts.Count; i++)
+                {
+                    if (workouts[i].id == LoginViewController.userID)
+                    {
+                        internalWorkouts.Add(workouts[i]);
+                    }
+                }*/
+
+
+
+                internalWorkouts = workouts;
+
+                // Set source for ingredient tableView
+                lastWorkoutsTableView.Source = new LastWorkoutsTableViewSource(internalWorkouts, this, CurrentNavigationController);
+                lastWorkoutsTableView.RowHeight = 71;
+
+                // Reload ingredient tableView
+                lastWorkoutsTableView.ReloadData();
+            //}
         }
 
         /// <summary>
@@ -46,14 +64,30 @@ namespace YeahFit
 
             Alert();
 
-            WorkoutViewController.lastWorkouts = true;
+            //if (LoginViewController.loggedin == true)
+            //{
+                WorkoutViewController.lastWorkouts = true;
+                InitializeWorkouts.Initialize();
 
-            // Set source for ingredient tableView
-            lastWorkoutsTableView.Source = new LastWorkoutsTableViewSource(internalWorkouts, this, CurrentNavigationController);
-            lastWorkoutsTableView.RowHeight = 71;
+                /*for (int i = 0; i < workouts.Count; i++)
+                {
+                    if (workouts[i].id == LoginViewController.userID)
+                    {
+                        internalWorkouts.Add(workouts[i]);
+                    }
+                }*/
 
-            // Reload ingredient tableView
-            lastWorkoutsTableView.ReloadData();
+
+
+                internalWorkouts = workouts;
+
+                // Set source for ingredient tableView
+                lastWorkoutsTableView.Source = new LastWorkoutsTableViewSource(internalWorkouts, this, CurrentNavigationController);
+                lastWorkoutsTableView.RowHeight = 71;
+
+                // Reload ingredient tableView
+                lastWorkoutsTableView.ReloadData();
+            //}
         }
 
         /// <summary>
@@ -73,7 +107,7 @@ namespace YeahFit
             if (LoginViewController.loggedin == false)
             {
                 //Create Alert
-                var okAlertController = UIAlertController.Create("Melde dich an", "Melde dich an, um deine ausgeführten Workouts zu tracken.", UIAlertControllerStyle.Alert);
+                var okAlertController = UIAlertController.Create("Melde dich an", "Melde dich an, um deine zuletzt ausgeführten Workouts zu sehen.", UIAlertControllerStyle.Alert);
 
                 //Add Action
                 okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
