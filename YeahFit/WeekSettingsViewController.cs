@@ -136,7 +136,7 @@ namespace YeahFit
             };
             btn_SaveWeek.TouchUpInside += (sender, e) =>
             {
-                SetWeek.SelectSetWeek(internalMonday, internalTuesday, internalWednesday, internalTuesday, internalFriday, internalSaturday, internalSunday);
+                //SetWeek.SelectSetWeek(internalMonday, internalTuesday, internalWednesday, internalTuesday, internalFriday, internalSaturday, internalSunday);
 
                 /*if (LoginViewController.loggedin == true)
                 {
@@ -200,7 +200,7 @@ namespace YeahFit
 
 
                     this.DismissViewController(true, () => { FirstViewController.Refresh(firstViewController); });
-                }
+                //}
                 Alert();
             };
         }
@@ -218,7 +218,20 @@ namespace YeahFit
                 // Present Alert
                 PresentViewController(okAlertController, true, null);
             }
+            else
+            {
+                //Create Alert
+                var okCancelAlertController = UIAlertController.Create("Achtung", "Wenn du deine Woche änderst, geht der bisherige Fortschritt dieser Woche verloren.", UIAlertControllerStyle.Alert);
+
+                //Add Actions
+                okCancelAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, alert => SetWeek.SelectSetWeek(internalMonday, internalTuesday, internalWednesday, internalTuesday, internalFriday, internalSaturday, internalSunday)));
+                okCancelAlertController.AddAction(UIAlertAction.Create("Cancel", UIAlertActionStyle.Cancel, alert => Console.WriteLine("Abbrechen")));
+
+                //Present Alert
+                PresentViewController(okCancelAlertController, true, null);
+            }
         }
+
 
         /// <summary>
         /// View reappears

@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using Foundation;
 using MySql.Data.MySqlClient;
 using UIKit;
@@ -20,6 +21,14 @@ namespace YeahFit
         public static int index;
         public static bool liked;
 
+        bool internalMonday;
+        bool internalTuesday;
+        bool internalWednesday;
+        bool internalThursday;
+        bool internalFriday;
+        bool internalSaturday;
+        bool internalSunday;
+
         public static ChallengeOverviewViewController firstViewController;
 
 
@@ -32,6 +41,7 @@ namespace YeahFit
         /// </summary>
         public override void ViewDidLoad()
         {
+
             WorkoutViewController.challenge = true;
             WorkoutViewController.lastWorkouts = false;
 
@@ -118,7 +128,78 @@ namespace YeahFit
                 
             }
 
+            btn_Apply.TouchUpInside += (sender, e) =>
+            {
+                internalMonday = false;
+                internalTuesday = false;
+                internalWednesday = false;
+                internalThursday = false;
+                internalFriday = false;
+                internalSaturday = false;
+                internalSunday = false;
+
+                for (int i = 0; i < internalWorkouts.Count; i++)
+                {
+                    switch (internalWorkouts[i].day)
+                    {
+                        case 1:
+                            internalMonday = true;
+                            break;
+                        case 2:
+                            internalTuesday = true;
+                            break;
+                        case 3:
+                            internalWednesday = true;
+                            break;
+                        case 4:
+                            internalThursday = true;
+                            break;
+                        case 5:
+                            internalFriday = true;
+                            break;
+                        case 6:
+                            internalSaturday = true;
+                            break;
+                        case 7:
+                            internalSunday = true;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                Alert();
+            };
+
         }
+
+        void Alert()
+        {
+            if (LoginViewController.loggedin == false)
+            {
+                //Create Alert
+                var okAlertController = UIAlertController.Create("Melde dich an", "Melde dich an, um deine Woche einstellen zu können.", UIAlertControllerStyle.Alert);
+
+                //Add Action
+                okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+
+                // Present Alert
+                PresentViewController(okAlertController, true, null);
+            }
+            else
+            {
+                //Create Alert
+                var okCancelAlertController = UIAlertController.Create("Achtung", "Wenn du deine Woche änderst, geht der bisherige Fortschritt dieser Woche verloren.", UIAlertControllerStyle.Alert);
+
+                //Add Actions
+                okCancelAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, alert => SetWeek.SelectSetWeek(internalMonday, internalTuesday, internalWednesday, internalTuesday, internalFriday, internalSaturday, internalSunday)));
+                okCancelAlertController.AddAction(UIAlertAction.Create("Cancel", UIAlertActionStyle.Cancel, alert => Console.WriteLine("Abbrechen")));
+
+                //Present Alert
+                PresentViewController(okCancelAlertController, true, null);
+            }
+        }
+
 
         /// <summary>
         /// Reload FirstView if user swipes down the View
