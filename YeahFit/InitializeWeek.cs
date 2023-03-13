@@ -1,8 +1,11 @@
 ﻿using System;
+using MySql.Data.MySqlClient;
+
 namespace YeahFit
 {
-	public class InitializeWeek
-	{
+    public class InitializeWeek
+    {
+        MySqlConnection con;
         public static bool monday = false;
         public static bool tuesday = false;
         public static bool wednesday = false;
@@ -13,8 +16,19 @@ namespace YeahFit
         public static int wochenid = 1;
 
         public InitializeWeek()
-		{
-		}
+        {
+            //select all
+            //alles in werte
+
+        }
+
+        public void Inizialize()
+        {
+            con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
+            con.Open();
+
+            
+        }
 	}
 }
 

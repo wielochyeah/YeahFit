@@ -16,6 +16,7 @@ namespace YeahFit
         public static MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
         string username;
         string createUsername = "";
+        int id;
 
         public CreateAccountViewController(IntPtr handle) : base(handle)
         {
@@ -73,11 +74,28 @@ namespace YeahFit
                         lbl_CreateAccountComment.Text = "Passwörter stimmen nicht überein.";
                     }
 
+
+
                     if (createUsername != "")
                     {
                         lbl_CreateAccountComment.Text = "Profil erstellt!";
                         MySqlCommand insert = new MySqlCommand($"INSERT INTO Login (password, username) VALUES ('{Encryption.ToSHA256(txtField_Password.Text)}', '{createUsername}');", con);
                         insert.ExecuteNonQuery();
+
+                        using (MySqlCommand getusername = new MySqlCommand($"SELECT * FROM `Login` " +
+                            $"WHERE username='" + createUsername + "';", con))
+                        {
+                            using (MySqlDataReader reader = getusername.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    id = Convert.ToInt32(reader["id"]);
+                                }
+                            }
+                        }
+
+                        MySqlCommand insert2 = new MySqlCommand($"INSERT INTO Benutzer_Woche (BenutzerID, WochenID) VALUES ('{id}', '1');", con);
+                        insert2.ExecuteNonQuery();
 
                         // View Schließen
                         this.DismissViewController(true, () => { LoginViewController.Refresh(loginViewController); });
