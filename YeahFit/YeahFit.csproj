@@ -151,6 +151,8 @@
       <DependentUpon>CreateAccountViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="InitializeWeek.cs" />
+    <Compile Include="SelectButtonColor.cs" />
+    <Compile Include="Encryption.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

@@ -76,7 +76,7 @@ namespace YeahFit
                     if (createUsername != "")
                     {
                         lbl_CreateAccountComment.Text = "Profil erstellt!";
-                        MySqlCommand insert = new MySqlCommand($"INSERT INTO Login (password, username) VALUES ('{ToSHA256(txtField_Password.Text)}', '{createUsername}');", con);
+                        MySqlCommand insert = new MySqlCommand($"INSERT INTO Login (password, username) VALUES ('{Encryption.ToSHA256(txtField_Password.Text)}', '{createUsername}');", con);
                         insert.ExecuteNonQuery();
 
                         // View Schließen
@@ -92,21 +92,6 @@ namespace YeahFit
                     lbl_CreateAccountComment.Text = "Alle Felder müssen ausgefüllt werden.";
                 }
             };
-        }
-
-        public static string ToSHA256(string value)
-        {
-            SHA256 sha256 = SHA256.Create();
-
-            byte[] hashData = sha256.ComputeHash(Encoding.Default.GetBytes(value));
-            StringBuilder returnValue = new StringBuilder();
-
-            for (int i = 0; i < hashData.Length; i++)
-            {
-                returnValue.Append(hashData[i].ToString());
-            }
-
-            return returnValue.ToString();
         }
 
         public override void ViewDidDisappear(bool animated)

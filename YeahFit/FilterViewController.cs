@@ -27,7 +27,7 @@ namespace YeahFit
             // Initialize favourite button
             if (favourite == true)
             {
-                btn_FilterFavourite.TintColor = UIColor.Label;
+                SelectButtonColor.SelectButton(btn_FilterFavourite, true);
             }
 
             // Initialize last added button
@@ -35,87 +35,87 @@ namespace YeahFit
             {
                 filter = "LastAdded";
 
-                Filter_LastAdded.TintColor = UIColor.Label;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, true);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             }
 
             // Initialize firt added button
             else if (filter == "FirstAdded")
             {
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.Label;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, true);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             }
 
             // Initialize alphabetical ascending button
             if (filter == "AlphAsc")
             {
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.Label;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, true);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             }
 
             // Initialize alphabetical descending button
             else if (filter == "AlphDesc")
             {
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.Label;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, true);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             }
 
             // Initialize duration ascending button
             if (filter == "DurationAsc")
             {
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.Label;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, true);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             }
 
             // Initialize duration descending button
             else if (filter == "DurationDesc")
             {
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.Label;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, true);
             }
 
             // Initialize difficulty buttons
             if (difficulty == "Beginner")
             {
-                btn_FilterDifficultyEasy.TintColor = UIColor.Label;
-                btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(btn_FilterDifficultyEasy, true);
+                SelectButtonColor.SelectButton(btn_FilterDifficultyAdvanced, false);
+                SelectButtonColor.SelectButton(btn_FilterDifficultyHard, false);
             }
             else if (difficulty == "Fortgeschritten")
             {
-                btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyAdvanced.TintColor = UIColor.Label;
-                btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(btn_FilterDifficultyEasy, false);
+                SelectButtonColor.SelectButton(btn_FilterDifficultyAdvanced, true);
+                SelectButtonColor.SelectButton(btn_FilterDifficultyHard, false);
             }
             else if (difficulty == "Hart")
             {
-                btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyHard.TintColor = UIColor.Label;
+                SelectButtonColor.SelectButton(btn_FilterDifficultyEasy, false);
+                SelectButtonColor.SelectButton(btn_FilterDifficultyAdvanced, false);
+                SelectButtonColor.SelectButton(btn_FilterDifficultyHard, true);
             }
 
             // Favourite button click
@@ -124,12 +124,12 @@ namespace YeahFit
                 if (favourite == false)
                 {
                     favourite = true;
-                    btn_FilterFavourite.TintColor = UIColor.Label;
+                    SelectButtonColor.SelectButton(btn_FilterFavourite, true);
                 }
                 else
                 {
                     favourite = false;
-                    btn_FilterFavourite.TintColor = UIColor.LightGray;
+                    SelectButtonColor.SelectButton(btn_FilterFavourite, false);
                 }
             };
 
@@ -138,12 +138,12 @@ namespace YeahFit
             {
                 filter = "LastAdded";
 
-                Filter_LastAdded.TintColor = UIColor.Label;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, true);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             };
 
             // First added button click
@@ -151,12 +151,12 @@ namespace YeahFit
             {
                 filter = "FirstAdded";
 
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.Label;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, true);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             };
 
             // Alphabetical ascending button click
@@ -164,12 +164,12 @@ namespace YeahFit
             {
                 filter = "AlphAsc";
 
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.Label;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, true);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             };
 
             // Alphabetical descending button click
@@ -177,12 +177,12 @@ namespace YeahFit
             {
                 filter = "AlphDesc";
 
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.Label;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, true);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             };
 
             // Duration ascending button click
@@ -190,12 +190,12 @@ namespace YeahFit
             {
                 filter = "DurationAsc";
 
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.Label;
-                btn_FilterDurationDesc.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, true);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, false);
             };
 
             // Duration descending button click
@@ -203,12 +203,12 @@ namespace YeahFit
             {
                 filter = "DurationDesc";
 
-                Filter_LastAdded.TintColor = UIColor.LightGray;
-                Filter_FirstAdded.TintColor = UIColor.LightGray;
-                btn_FilterAlphAsc.TintColor = UIColor.LightGray;
-                btn_FilterAlphDesc.TintColor = UIColor.LightGray;
-                btn_FilterDurationAsc.TintColor = UIColor.LightGray;
-                btn_FilterDurationDesc.TintColor = UIColor.Label;
+                SelectButtonColor.SelectButton(Filter_LastAdded, false);
+                SelectButtonColor.SelectButton(Filter_FirstAdded, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterAlphDesc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationAsc, false);
+                SelectButtonColor.SelectButton(btn_FilterDurationDesc, true);
             };
 
             // Difficulty beginner button click
@@ -218,15 +218,15 @@ namespace YeahFit
                 if (difficulty != "Beginner")
                 {
                     difficulty = "Beginner";
-                    btn_FilterDifficultyEasy.TintColor = UIColor.Label;
+                    SelectButtonColor.SelectButton(btn_FilterDifficultyEasy, true);
                 }
                 else
                 {
                     difficulty = "";
-                    btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
+                    SelectButtonColor.SelectButton(btn_FilterDifficultyEasy, false);
                 }
-                btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(btn_FilterDifficultyAdvanced, false);
+                SelectButtonColor.SelectButton(btn_FilterDifficultyHard, false);
             };
 
             // Difficulty advanced button click
@@ -237,15 +237,15 @@ namespace YeahFit
                 if (difficulty != "Fortgeschritten")
                 {
                     difficulty = "Fortgeschritten";
-                    btn_FilterDifficultyAdvanced.TintColor = UIColor.Label;
+                    SelectButtonColor.SelectButton(btn_FilterDifficultyAdvanced, true);
                 }
                 else
                 {
                     difficulty = "";
-                    btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
+                    SelectButtonColor.SelectButton(btn_FilterDifficultyAdvanced, false);
                 }
-                btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(btn_FilterDifficultyEasy, false);
+                SelectButtonColor.SelectButton(btn_FilterDifficultyHard, false);
             };
 
             // Difficulty professional button click
@@ -256,15 +256,15 @@ namespace YeahFit
                 if (difficulty != "Hart")
                 {
                     difficulty = "Hart";
-                    btn_FilterDifficultyHard.TintColor = UIColor.Label;
+                    SelectButtonColor.SelectButton(btn_FilterDifficultyHard, true);
                 }
                 else
                 {
                     difficulty = "";
-                    btn_FilterDifficultyHard.TintColor = UIColor.LightGray;
+                    SelectButtonColor.SelectButton(btn_FilterDifficultyHard, false);
                 }
-                btn_FilterDifficultyEasy.TintColor = UIColor.LightGray;
-                btn_FilterDifficultyAdvanced.TintColor = UIColor.LightGray;
+                SelectButtonColor.SelectButton(btn_FilterDifficultyEasy, false);
+                SelectButtonColor.SelectButton(btn_FilterDifficultyAdvanced, false);
             };
 
             // Filter confirm button click

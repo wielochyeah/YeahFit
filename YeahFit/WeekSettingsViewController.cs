@@ -11,6 +11,13 @@ namespace YeahFit
     {
         public static FirstViewController firstViewController;
 
+        bool internalMonday = false;
+        bool internalTuesday = false;
+        bool internalWednesday = false;
+        bool internalThursday = false;
+        bool internalFriday = false;
+        bool internalSaturday = false;
+        bool internalSunday = false;
 
         public WeekSettingsViewController(IntPtr handle) : base(handle)
         {
@@ -23,17 +30,25 @@ namespace YeahFit
         {
             base.ViewDidLoad();
 
-            this.DismissViewController(true, () => { FirstViewController.Refresh(firstViewController); });
+            internalMonday = InitializeWeek.monday;
+            internalTuesday = InitializeWeek.tuesday;
+            internalWednesday = InitializeWeek.wednesday;
+            internalThursday = InitializeWeek.thursday;
+            internalFriday = InitializeWeek.friday;
+            internalSaturday = InitializeWeek.saturday;
+            internalSunday = InitializeWeek.sunday;
 
             btn_Monday.TouchUpInside += (sender, e) =>
             {
-                if (InitializeWeek.monday == true)
+                if (internalMonday == true)
                 {
-                    SelectButton(btn_Monday, false);
+                    SelectButtonColor.SelectButton(btn_Monday, false);
+                    internalMonday = false;
                 }
                 else
                 {
-                    SelectButton(btn_Monday, true);
+                    SelectButtonColor.SelectButton(btn_Monday, true);
+                    internalMonday = true;
                 }
             };
             btn_Tuesday.TouchUpInside += (sender, e) =>
@@ -65,6 +80,7 @@ namespace YeahFit
                 if (LoginViewController.loggedin == true)
                 {
 
+                    this.DismissViewController(true, () => { FirstViewController.Refresh(firstViewController); });
                 }
                 else
                 {
@@ -79,22 +95,6 @@ namespace YeahFit
                 }
             };
         }
-
-        public void SelectButton(UIButton button, bool selected)
-        {
-            if (selected)
-            {
-                button.BackgroundColor = UIColor.Black;
-                button.TintColor = UIColor.White;
-                //button.SetTitle("Training", UIControlState.);
-            }
-            else
-            {
-                button.BackgroundColor = default;
-                button.TintColor = UIColor.Label;
-                button.SetTitle("Pause", UIControlState.Normal);
-            }
-        } 
 
         /// <summary>
         /// Reload FirstView if user swipes down the View

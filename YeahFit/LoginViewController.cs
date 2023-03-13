@@ -57,7 +57,7 @@ namespace YeahFit
                                 id = Convert.ToInt32(reader["id"]);
                                 if (username == txtField_Username.Text)
                                 {
-                                    if (password == CreateAccountViewController.ToSHA256(txtField_Password.Text))
+                                    if (password == Encryption.ToSHA256(txtField_Password.Text))
                                     {
                                         lbl_LoginComment.Text = "Angemeldet!";
                                         userID = id;

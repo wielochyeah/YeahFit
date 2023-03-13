@@ -617,8 +617,14 @@
                                     <constraint firstAttribute="height" constant="46" id="BSG-nj-jnh"/>
                                     <constraint firstAttribute="width" constant="128" id="SLe-do-nXn"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Training">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Training">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" title="Training">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
@@ -627,9 +633,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="N6h-hR-dAr"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Training">
+                                <buttonConfiguration key="configuration" style="tinted" title="Training">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
@@ -674,9 +680,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="R4P-K2-4Wh"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Training">
+                                <buttonConfiguration key="configuration" style="tinted" title="Training">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
@@ -685,9 +691,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="ASV-S4-6fI"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Training">
+                                <buttonConfiguration key="configuration" style="tinted" title="Training">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
@@ -696,25 +702,25 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Gs9-o9-lvI"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Training">
+                                <buttonConfiguration key="configuration" style="tinted" title="Training">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzt-PM-L0p">
                                 <rect key="frame" x="216" y="555" width="128" height="46"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Training">
+                                <buttonConfiguration key="configuration" style="tinted" title="Training">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTq-gd-KU8">
                                 <rect key="frame" x="216" y="609" width="128" height="45"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Training">
+                                <buttonConfiguration key="configuration" style="tinted" title="Training">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
@@ -724,7 +730,7 @@
                                     <constraint firstAttribute="height" constant="59" id="jA2-Lq-9mS"/>
                                     <constraint firstAttribute="width" constant="231" id="w4J-H1-lge"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Woche bestätigen">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
