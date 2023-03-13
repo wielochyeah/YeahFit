@@ -17,17 +17,85 @@ namespace YeahFit
 
         public InitializeWeek()
         {
-            //select all
-            //alles in werte
 
         }
 
-        public void Inizialize()
+        public void Initialize()
         {
             con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
             con.Open();
 
-            
+
+            MySqlCommand initialize = new MySqlCommand($"SELECT * From Woche w, Benutzer_Woche b WHERE w.WochenID = b.WochenID AND BenutzerID = {LoginViewController.userID}", con);
+
+            using (MySqlDataReader reader = initialize.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    if (reader["Montag"].ToString() == "True")
+                    {
+                        monday = true;
+                    }
+                    else
+                    {
+                        monday = false;
+                    }
+
+                    if (reader["Dienstag"].ToString() == "True")
+                    {
+                        tuesday = true;
+                    }
+                    else
+                    {
+                        monday = false;
+                    }
+
+                    if (reader["Mittwoch"].ToString() == "True")
+                    {
+                        wednesday = true;
+                    }
+                    else
+                    {
+                        wednesday = false;
+                    }
+
+                    if (reader["Donnerstag"].ToString() == "True")
+                    {
+                        thursday = true;
+                    }
+                    else
+                    {
+                        thursday = false;
+                    }
+
+                    if (reader["Freitag"].ToString() == "True")
+                    {
+                        friday = true;
+                    }
+                    else
+                    {
+                        friday = false;
+                    }
+
+                    if (reader["Samstag"].ToString() == "True")
+                    {
+                        saturday = true;
+                    }
+                    else
+                    {
+                        saturday = false;
+                    }
+
+                    if (reader["Sonntag"].ToString() == "True")
+                    {
+                        sunday = true;
+                    }
+                    else
+                    {
+                        sunday = false;
+                    }
+                }
+            }
         }
 	}
 }

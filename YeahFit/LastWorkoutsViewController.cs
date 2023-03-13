@@ -41,10 +41,6 @@ namespace YeahFit
                     }
                 }
 
-
-
-                internalWorkouts = workouts;
-
                 // Set source for ingredient tableView
                 lastWorkoutsTableView.Source = new LastWorkoutsTableViewSource(internalWorkouts, this, CurrentNavigationController);
                 lastWorkoutsTableView.RowHeight = 71;
