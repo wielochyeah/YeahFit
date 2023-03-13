@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using CarPlay;
@@ -116,15 +117,34 @@ namespace YeahFit
                     {
                         string query = $"INSERT INTO Benutzer_Workout_Woche (BenutzerID, WochenID, WorkoutID, WorkoutDatum) " +
                         $"VALUES ({LoginViewController.userID}, {InitializeWeek.wochenid}, {selectedWorkout.id}, {DateTime.Now})";
-                    }
+                        MySqlCommand cmd = new MySqlCommand(query, con);
+                        cmd.ExecuteNonQuery();
 
-                    //WorkoutID + DateTime + WochenID standardmäßig 1 in Benutzer_Workout_... + BenutzerID
+
+                        /*
+
+                        if (Convert.ToInt32(selectedWorkout.difficulty) == 3)
+                        {
+                            string completeHardWorkout = $"INSERT INTO Benutzer_Awards (BenutzerID, AwardID, AwardZähler) " +
+                            $"VALUES ({LoginViewController.userID},{6}, )";
+                        }
+
+                        if (Convert.ToInt32(selectedWorkout.difficulty) == 2)
+                        {
+                            string completeAdvancedWorkout = $"INSERT INTO Benutzer_Awards (BenutzerID, AwardID, AwardZähler) " +
+                            $"VALUES ({LoginViewController.userID}, , )";
+                        }
+                        */
+
+
+
+                    }
                 }
             };
 
             btn_Break.TouchUpInside += (sender, e) =>
             {
-
+                ResetTimer();
             };
         }
 
