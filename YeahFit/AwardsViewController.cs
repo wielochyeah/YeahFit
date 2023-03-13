@@ -12,5 +12,52 @@ namespace YeahFit
 		public AwardsViewController (IntPtr handle) : base (handle)
 		{
 		}
-	}
+
+        /// <summary>
+        /// Initialize
+        /// </summary>
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+        }
+
+        /// <summary>
+        /// View reappears
+        /// </summary>
+        /// <param name="animated"></param>
+        public override void ViewDidAppear(bool animated)
+        {
+            base.ViewDidAppear(animated);
+
+            Alert();
+        }
+
+        /// <summary>
+        /// Reload FirstView if user swipes down the View
+        /// + Set edit in SecondView false
+        /// </summary>
+        /// <param name="animated"></param>
+        public override void ViewDidDisappear(bool animated)
+        {
+            base.ViewDidDisappear(animated);
+
+
+        }
+
+        void Alert()
+        {
+            if (LoginViewController.loggedin == false)
+            {
+                //Create Alert
+                var okAlertController = UIAlertController.Create("Melde dich an", "Melde dich an, um Awards freischalten zu können.", UIAlertControllerStyle.Alert);
+
+                //Add Action
+                okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+
+                // Present Alert
+                PresentViewController(okAlertController, true, null);
+            }
+        }
+    }
 }
