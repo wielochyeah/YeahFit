@@ -77,7 +77,8 @@ namespace YeahFit
                                     break;
                                 }
                             }
-                            if (lbl_LoginComment.Text == "Du bist noch nicht eingeloggt.")
+                            if (lbl_LoginComment.Text == "Du bist noch nicht eingeloggt." ||
+                            lbl_LoginComment.Text == "Alle Felder müssen ausgefüllt werden.")
                             {
                                 lbl_LoginComment.Text = "Benutzer nicht vorhanden.";
                             }

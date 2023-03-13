@@ -50,7 +50,7 @@ namespace YeahFit
             if (LoginViewController.loggedin == false)
             {
                 //Create Alert
-                var okAlertController = UIAlertController.Create("Melde dich an", "Melde dich an, um Awards freischalten zu können.", UIAlertControllerStyle.Alert);
+                var okAlertController = UIAlertController.Create("Melde dich an", "Melde dich an, um Awards freischalten und sammeln zu können.", UIAlertControllerStyle.Alert);
 
                 //Add Action
                 okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));

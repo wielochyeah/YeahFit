@@ -32,8 +32,8 @@ namespace YeahFit
 
             btn_CreateAccount.TouchUpInside += (sender, e) =>
             {
-                if (txtField_Username.Text != null && txtField_Username.Text != "" && 
-                txtField_PasswordFirst.Text != null && txtField_PasswordFirst.Text != "" && 
+                if (txtField_Username.Text != null && txtField_Username.Text != "" &&
+                txtField_PasswordFirst.Text != null && txtField_PasswordFirst.Text != "" &&
                 txtField_Password.Text != null && txtField_Password.Text != "")
                 {
                     if (txtField_Password.Text == txtField_PasswordFirst.Text)
@@ -85,6 +85,11 @@ namespace YeahFit
                     else
                     {
                         lbl_CreateAccountComment.Text = "Benutzername bereits vergeben.";
+
+                        if (txtField_Password.Text != txtField_PasswordFirst.Text)
+                        {
+                            lbl_CreateAccountComment.Text = "Passwörter stimmen nicht überein.";
+                        }
                     }
                 }
                 else
