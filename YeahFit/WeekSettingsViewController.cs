@@ -7,10 +7,105 @@ using UIKit;
 
 namespace YeahFit
 {
-	public partial class WeekSettingsViewController : UIViewController
-	{
-		public WeekSettingsViewController (IntPtr handle) : base (handle)
-		{
-		}
-	}
+    public partial class WeekSettingsViewController : UIViewController
+    {
+        public static FirstViewController firstViewController;
+
+
+        public WeekSettingsViewController(IntPtr handle) : base(handle)
+        {
+        }
+
+        /// <summary>
+        /// Initialize
+        /// </summary>
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+            this.DismissViewController(true, () => { FirstViewController.Refresh(firstViewController); });
+
+            btn_Monday.TouchUpInside += (sender, e) =>
+            {
+                if (InitializeWeek.monday == true)
+                {
+                    SelectButton(btn_Monday, false);
+                }
+                else
+                {
+                    SelectButton(btn_Monday, true);
+                }
+            };
+            btn_Tuesday.TouchUpInside += (sender, e) =>
+            {
+
+            };
+            btn_Wednesday.TouchUpInside += (sender, e) =>
+            {
+
+            };
+            btn_Thursday.TouchUpInside += (sender, e) =>
+            {
+
+            };
+            btn_Friday.TouchUpInside += (sender, e) =>
+            {
+
+            };
+            btn_Saturday.TouchUpInside += (sender, e) =>
+            {
+
+            };
+            btn_Sunday.TouchUpInside += (sender, e) =>
+            {
+
+            };
+            btn_SaveWeek.TouchUpInside += (sender, e) =>
+            {
+                if (LoginViewController.loggedin == true)
+                {
+
+                }
+                else
+                {
+                    //Create Alert
+                    var okAlertController = UIAlertController.Create("Melde dich an", "Melde dich an, um deine Woche einzustellen.", UIAlertControllerStyle.Alert);
+
+                    //Add Action
+                    okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+
+                    // Present Alert
+                    PresentViewController(okAlertController, true, null);
+                }
+            };
+        }
+
+        public void SelectButton(UIButton button, bool selected)
+        {
+            if (selected)
+            {
+                button.BackgroundColor = UIColor.Black;
+                button.TintColor = UIColor.White;
+                //button.SetTitle("Training", UIControlState.);
+            }
+            else
+            {
+                button.BackgroundColor = default;
+                button.TintColor = UIColor.Label;
+                button.SetTitle("Pause", UIControlState.Normal);
+            }
+        } 
+
+        /// <summary>
+        /// Reload FirstView if user swipes down the View
+        /// + Set edit in SecondView false
+        /// </summary>
+        /// <param name="animated"></param>
+        public override void ViewDidDisappear(bool animated)
+        {
+            base.ViewDidDisappear(animated);
+
+
+        }
+    }
 }

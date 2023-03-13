@@ -150,6 +150,7 @@
     <Compile Include="CreateAccountViewController.designer.cs">
       <DependentUpon>CreateAccountViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="InitializeWeek.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

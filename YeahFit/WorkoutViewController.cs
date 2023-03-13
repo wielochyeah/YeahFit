@@ -35,6 +35,8 @@ namespace YeahFit
         /// </summary>
 		public override void ViewDidLoad()
         {
+            base.ViewDidLoad();
+
             WorkoutStepViewController.workoutViewController = this;
             if (challenge == false)
             {

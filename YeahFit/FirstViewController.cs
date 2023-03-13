@@ -28,6 +28,7 @@ namespace YeahFit
             DateTime dateValue = DateTime.Today;
             string weekDay = dateValue.ToString("ddd").ToUpper();
             LoginViewController.firstViewController = this;
+            WeekSettingsViewController.firstViewController = this;
 
             if (monday == false)
             {
