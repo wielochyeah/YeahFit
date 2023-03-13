@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/YeahFit.csproj": {}
+    "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/YeahFit.csproj": {}
   },
   "projects": {
-    "/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/YeahFit.csproj": {
+    "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/YeahFit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/YeahFit.csproj",
+        "projectUniqueName": "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/YeahFit.csproj",
         "projectName": "YeahFit",
-        "projectPath": "/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/YeahFit.csproj",
-        "packagesPath": "/Users/maurice/.nuget/packages/",
-        "outputPath": "/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/",
+        "projectPath": "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/YeahFit.csproj",
+        "packagesPath": "/Users/nilswieloch/.nuget/packages/",
+        "outputPath": "/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/maurice/.config/NuGet/NuGet.Config"
+          "/Users/nilswieloch/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"

@@ -169,6 +169,7 @@
     <Compile Include="LastWorkoutsTableViewSource.cs" />
     <Compile Include="InitializeLastWorkouts.cs" />
     <Compile Include="LastWorkout.cs" />
+    <Compile Include="SetWeek.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />
