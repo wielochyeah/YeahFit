@@ -460,6 +460,8 @@ namespace YeahFit
                 // Set FirstView's recipe to the recipes from database
                 WorkoutOverviewViewController.workouts = null;
                 WorkoutOverviewViewController.workouts = workouts;
+                LastWorkoutsViewController.internalWorkouts = null;
+                LastWorkoutsViewController.internalWorkouts = workouts;
                 //ChallengeOverviewViewController.workouts = null;
                 //ChallengeOverviewViewController.workouts = workouts;
             }

@@ -20,6 +20,7 @@ namespace YeahFit
         public static int index;
         public static bool liked;
         public static bool challenge = false;
+        public static bool lastWorkouts = false;
 
         public static WorkoutOverviewViewController firstViewController;
         public static ChallengeOverviewViewController secondViewController;
@@ -45,6 +46,10 @@ namespace YeahFit
             else
             {
                 nowSelectedWorkout = ChallengeWorkoutsTableViewSource.nowSelectedWorkout;
+            }
+            if (lastWorkouts == true)
+            {
+                nowSelectedWorkout = LastWorkoutsTableViewSource.nowSelectedWorkout;
             }
 
             // If there's a recipe, load
@@ -314,6 +319,10 @@ namespace YeahFit
             else
             {
                 nowSelectedWorkout = ChallengeWorkoutsTableViewSource.nowSelectedWorkout;
+            }
+            if (lastWorkouts == true)
+            {
+                nowSelectedWorkout = LastWorkoutsTableViewSource.nowSelectedWorkout;
             }
 
             WorkoutStepViewController.workoutViewController = this;

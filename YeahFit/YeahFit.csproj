@@ -162,6 +162,11 @@
     <Compile Include="LastWorkoutTableView.designer.cs">
       <DependentUpon>LastWorkoutTableView.cs</DependentUpon>
     </Compile>
+    <Compile Include="UITableViewLastWorkoutCell.cs" />
+    <Compile Include="UITableViewLastWorkoutCell.designer.cs">
+      <DependentUpon>UITableViewLastWorkoutCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LastWorkoutsTableViewSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

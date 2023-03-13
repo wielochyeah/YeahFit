@@ -12,9 +12,23 @@ namespace YeahFit
 	[Register ("LastWorkoutsViewController")]
 	partial class LastWorkoutsViewController
 	{
+		[Outlet]
+		YeahFit.LastWorkoutTableView lastWorkoutsTableView { get; set; }
+
+		[Outlet]
+		YeahFit.LastWorkoutTableView LastWorkoutTableView { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (LastWorkoutTableView != null) {
+				LastWorkoutTableView.Dispose ();
+				LastWorkoutTableView = null;
+			}
+
+			if (lastWorkoutsTableView != null) {
+				lastWorkoutsTableView.Dispose ();
+				lastWorkoutsTableView = null;
+			}
 		}
 	}
 }

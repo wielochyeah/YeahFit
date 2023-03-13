@@ -134,6 +134,7 @@ namespace YeahFit
             FilterViewController.workoutOverviewViewController = this;
             WorkoutViewController.firstViewController = this;
             workouts = null;
+            WorkoutViewController.lastWorkouts = false;
             WorkoutViewController.challenge = false;
 
             // Get data from database
@@ -156,6 +157,7 @@ namespace YeahFit
         {
             base.ViewDidAppear(animated);
             FilterViewController.workoutOverviewViewController = this;
+            WorkoutViewController.lastWorkouts = false;
             WorkoutViewController.challenge = false;
             WorkoutViewController.firstViewController = this;
             workouts = null;

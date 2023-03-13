@@ -218,21 +218,6 @@
 				<integer>9</integer>
 			</dict>
 		</array>
-		<key>oCv-wb-Hfc</key>
-		<array>
-			<dict>
-				<key>affected-objects</key>
-				<array>
-					<string>oCv-wb-Hfc</string>
-				</array>
-				<key>message</key>
-				<string>Prototype table cells must have reuse identifiers</string>
-				<key>type</key>
-				<string>IBIssueTypeUnsupportedConfiguration</string>
-				<key>type-value</key>
-				<integer>9</integer>
-			</dict>
-		</array>
 		<key>xsf-Cd-EVb</key>
 		<array>
 			<dict>
