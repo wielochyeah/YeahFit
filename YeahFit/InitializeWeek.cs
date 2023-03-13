@@ -10,6 +10,7 @@ namespace YeahFit
         public static bool friday = false;
         public static bool saturday = false;
         public static bool sunday = false;
+        public static int wochenid = 1;
 
         public InitializeWeek()
 		{

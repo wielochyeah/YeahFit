@@ -111,6 +111,14 @@ namespace YeahFit
                 else
                 {
                     this.DismissViewController(true, () => { WorkoutViewController.Refresh(workoutViewController); });
+
+                    if (LoginViewController.loggedin == true)
+                    {
+                        string query = $"INSERT INTO Benutzer_Workout_Woche (BenutzerID, WochenID, WorkoutID, WorkoutDatum) " +
+                        $"VALUES ({LoginViewController.userID}, {InitializeWeek.wochenid}, {selectedWorkout.id}, {DateTime.Now})";
+                    }
+
+                    //WorkoutID + DateTime + WochenID standardmäßig 1 in Benutzer_Workout_... + BenutzerID
                 }
             };
 
