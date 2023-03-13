@@ -28,18 +28,18 @@ namespace YeahFit
         {
             base.ViewDidLoad();
 
-            //if (LoginViewController.loggedin == true)
-            //{
+            if (LoginViewController.loggedin == true)
+            {
                 WorkoutViewController.lastWorkouts = true;
                 InitializeWorkouts.Initialize();
 
-                /*for (int i = 0; i < workouts.Count; i++)
+                for (int i = 0; i < workouts.Count; i++)
                 {
                     if (workouts[i].id == LoginViewController.userID)
                     {
                         internalWorkouts.Add(workouts[i]);
                     }
-                }*/
+                }
 
 
 
@@ -51,7 +51,7 @@ namespace YeahFit
 
                 // Reload ingredient tableView
                 lastWorkoutsTableView.ReloadData();
-            //}
+            }
         }
 
         /// <summary>
@@ -64,22 +64,21 @@ namespace YeahFit
 
             Alert();
 
-            //if (LoginViewController.loggedin == true)
-            //{
+            if (LoginViewController.loggedin == true)
+            {
                 WorkoutViewController.lastWorkouts = true;
                 InitializeWorkouts.Initialize();
 
-                /*for (int i = 0; i < workouts.Count; i++)
+                for (int i = 0; i < workouts.Count; i++)
                 {
                     if (workouts[i].id == LoginViewController.userID)
                     {
                         internalWorkouts.Add(workouts[i]);
                     }
-                }*/
+                }
 
 
 
-                internalWorkouts = workouts;
 
                 // Set source for ingredient tableView
                 lastWorkoutsTableView.Source = new LastWorkoutsTableViewSource(internalWorkouts, this, CurrentNavigationController);
@@ -87,7 +86,7 @@ namespace YeahFit
 
                 // Reload ingredient tableView
                 lastWorkoutsTableView.ReloadData();
-            //}
+            }
         }
 
         /// <summary>
