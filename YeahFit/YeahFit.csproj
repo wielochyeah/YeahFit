@@ -201,6 +201,7 @@
     <Compile Include="AddExerciseTableViewSource.cs" />
     <Compile Include="AddWorkoutTableViewSource.cs" />
     <Compile Include="InitializeExercises.cs" />
+    <Compile Include="InternalExercise.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

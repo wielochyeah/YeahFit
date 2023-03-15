@@ -8,16 +8,16 @@ namespace YeahFit
 	{
 
         public static MySqlConnection con;
-        public static List<Exercise> exercises = new List<Exercise>();
+        public static List<InternalExercise> exercises = new List<InternalExercise>();
 
 		public InitializeExercises()
 		{
 		}
 
-		public void Initialize()
+		public static void Initialize()
 		{
             // Create an empty list of workouts.
-            exercises = new List<Exercise>();
+            exercises = new List<InternalExercise>();
 
             // Open a connection to the YeahFit database on the local server with the root user and empty password.
             con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
@@ -35,18 +35,16 @@ namespace YeahFit
                         // Extract the exercise name from the current row
                         string name = reader["ÜbungName"].ToString();
 
-                        string sets = reader["Sätze"].ToString();
-                        string reps = reader["Wiederholungen"].ToString();
+                        int id = Convert.ToInt32(reader["ÜbungID"]);
 
                         // Extract the exercise image from the current row
                         byte[] imgg = (byte[])(reader["ÜbungGIF"]);
 
                         // Create a new Exercise object with the extracted information
-                        Exercise exercise = new Exercise
+                        InternalExercise exercise = new InternalExercise
                         {
                             ExerciseName = name,
-                            ExerciseReps = reps,
-                            ExerciseSets = sets,
+                            ExerciseID = id,
                             ExerciseImage = imgg,
                         };
 
