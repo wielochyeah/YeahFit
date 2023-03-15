@@ -202,6 +202,10 @@
     <Compile Include="AddWorkoutTableViewSource.cs" />
     <Compile Include="InitializeExercises.cs" />
     <Compile Include="InternalExercise.cs" />
+    <Compile Include="AddWorkoutGenerlInformationViewController.cs" />
+    <Compile Include="AddWorkoutGenerlInformationViewController.designer.cs">
+      <DependentUpon>AddWorkoutGenerlInformationViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

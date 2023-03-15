@@ -16,6 +16,9 @@ namespace YeahFit
 		UIKit.UIButton btn_AddWorkout { get; set; }
 
 		[Outlet]
+		UIKit.UIButton btn_takePhoto { get; set; }
+
+		[Outlet]
 		UIKit.UITextField lbl_workoutName { get; set; }
 
 		[Outlet]
@@ -44,6 +47,11 @@ namespace YeahFit
 			if (tableView_AddWorkouts != null) {
 				tableView_AddWorkouts.Dispose ();
 				tableView_AddWorkouts = null;
+			}
+
+			if (btn_takePhoto != null) {
+				btn_takePhoto.Dispose ();
+				btn_takePhoto = null;
 			}
 		}
 	}

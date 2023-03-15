@@ -2,13 +2,17 @@
 
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using Foundation;
+using MySql.Data.MySqlClient;
 using UIKit;
 
 namespace YeahFit
 {
 	public partial class AddExerciseViewController : UIViewController
 	{
+        public static MySqlConnection con;
+
         public UINavigationController CurrentNavigationController;
 
         static UITableView tableView;
@@ -17,6 +21,12 @@ namespace YeahFit
         public static AddWorkoutViewController addWorkoutViewController;
 
         public static int index;
+
+        int reps = 1;
+        int sets = 1;
+
+        public static InternalExercise internalExercise;
+        Exercise exercise;
 
         public AddExerciseViewController(IntPtr handle) : base(handle)
         {
@@ -29,6 +39,13 @@ namespace YeahFit
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+
+            // Open a connection to the YeahFit database on the local server with the root user and empty password.
+            con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
+            con.Open();
+
+
             InitializeExercises.Initialize();
             internalExercises = new List<InternalExercise>();
             internalExercises = InitializeExercises.exercises;
@@ -39,6 +56,38 @@ namespace YeahFit
 
             // Reload ingredient tableView
             tableView_AddExercise.ReloadData();
+
+            btn_AddExercise.TouchUpInside += (sender, e) =>
+            {
+                Exercise exercise = new Exercise
+                {
+                    ExerciseName = internalExercise.ExerciseName,
+                    ExerciseReps = reps.ToString(),
+                    ExerciseSets = sets.ToString(),
+                    ExerciseImage = internalExercise.ExerciseImage,
+                };
+
+                // Add the exercise to the current workout's list of exercises
+                AddWorkoutViewController.exercises.RemoveAt(index);
+                AddWorkoutViewController.exercises.Add(exercise);
+                AddWorkoutViewController.internalExercises.Add(internalExercise);
+
+                // Go back to SecondView
+                this.DismissViewController(true, () => { AddWorkoutViewController.RefreshExercises(addWorkoutViewController); });
+            };
+
+            Stepper_Reps.ValueChanged += (sender, e) => {
+                reps = (Convert.ToInt32(Stepper_Reps.Value));
+                lbl_Reps.Text = "Wiederholungen: " + (reps + 1);
+            };
+
+            Stepper_Sets.ValueChanged += (sender, e) => {
+                sets = (Convert.ToInt32(Stepper_Sets.Value));
+                lbl_Sets.Text = "Sätze: " + (sets + 1);
+            };
+
+            
+            
         }
 
         /// <summary>
@@ -59,6 +108,8 @@ namespace YeahFit
 
             // Reload ingredient tableView
             tableView_AddExercise.ReloadData();
+
+            
         }
 
         /// <summary>

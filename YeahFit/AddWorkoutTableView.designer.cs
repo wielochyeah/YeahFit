@@ -12,6 +12,8 @@ namespace YeahFit
 	[Register ("AddWorkoutTableView")]
 	partial class AddWorkoutTableView
 	{
+		[Action ("btn_takePhoto:")]
+		partial void btn_takePhoto (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{

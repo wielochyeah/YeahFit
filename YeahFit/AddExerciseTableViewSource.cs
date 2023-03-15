@@ -60,7 +60,7 @@ namespace YeahFit
             // Update ingredient cell
             cell.SelectionStyle = UITableViewCellSelectionStyle.Gray;
 
-            UIStoryboard board = UIStoryboard.FromName("Main", null);
+            AddExerciseViewController.internalExercise = nowSelectedExercise;
 
             // Show RecipeView and set index
             /*WorkoutViewController ctrl = (WorkoutViewController)board.InstantiateViewController("WorkoutViewController");

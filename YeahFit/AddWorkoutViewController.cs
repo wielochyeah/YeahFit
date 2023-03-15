@@ -18,6 +18,7 @@ namespace YeahFit
         UIImagePickerController picker;
 
         internal static List<Exercise> exercises;
+        public static List<InternalExercise> internalExercises;
 
         public static int index;
 
@@ -35,6 +36,7 @@ namespace YeahFit
         {
             base.ViewDidLoad();
 
+            internalExercises = new List<InternalExercise>{ };
             exercises = new List<Exercise>
             {
                 new Exercise
@@ -51,6 +53,93 @@ namespace YeahFit
 
             // Reload
             tableView_AddWorkouts.ReloadData();
+
+            // Button click for choosen an image from gallery
+            btn_takePhoto.TouchUpInside += (sender, e) =>
+            {
+                picker = new UIImagePickerController();
+                picker.SourceType = UIImagePickerControllerSourceType.PhotoLibrary;
+                picker.MediaTypes = UIImagePickerController.AvailableMediaTypes(UIImagePickerControllerSourceType.PhotoLibrary);
+                picker.FinishedPickingMedia += Finished;
+                picker.Canceled += Canceled;
+                PresentViewController(picker, animated: true, completionHandler: null);
+            };
+
+            btn_AddWorkout.TouchUpInside += (sender, e) =>
+            {
+                new Workout
+                {
+                    WorkoutImage = null,
+                    WorkoutName = lbl_workoutName.Text,
+                    Exercises = exercises,
+
+                };
+            };
+        }
+
+        /// <summary>
+        /// If view reappears
+        /// </summary>
+        /// <param name="animated"></param>
+        public override void ViewDidAppear(bool animated)
+        {
+            base.ViewDidAppear(animated);
+
+            // Reload TableViews
+            tableView_AddWorkouts.ReloadData();
+        }
+
+        /// <summary>
+        /// Refreshes staps table view on SecondView
+        /// </summary>
+        /// <param name="secondViewController"></param>
+        /// <param name="StepInfo"></param>
+        public static void RefreshExercises(AddWorkoutViewController addWorkoutViewController)
+        {
+            addWorkoutViewController.ViewDidAppear(true);
+        }
+
+        /// <summary>
+        /// Set image
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Finished(object sender, UIImagePickerMediaPickedEventArgs e)
+        {
+            bool isImage = false;
+            switch (e.Info[UIImagePickerController.MediaType].ToString())
+            {
+                case "public.image":
+                    isImage = true;
+                    break;
+                case "public.video":
+                    break;
+            }
+            NSUrl referenceURL = e.Info[new NSString("UIImagePickerControllerReferenceUrl")] as NSUrl;
+            if (referenceURL != null) Console.WriteLine("Url:" + referenceURL.ToString());
+            if (isImage)
+            {
+                UIImage originalImage = e.Info[UIImagePickerController.OriginalImage] as UIImage;
+            }
+            else
+            {
+                NSUrl mediaURL = e.Info[UIImagePickerController.MediaURL] as NSUrl;
+                if (mediaURL != null)
+                {
+                    Console.WriteLine(mediaURL.ToString());
+                }
+            }
+            picker.DismissModalViewController(true);
+        }
+
+        /// <summary>
+        /// If user doesn't select an image from image picker
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void Canceled(object sender, EventArgs e)
+        {
+            picker.DismissModalViewController(true);
         }
     }
 }

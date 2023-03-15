@@ -27,6 +27,21 @@ namespace YeahFit
                 {
                     lbl_ExerciseName.Text = selectedExercise.ExerciseName;
                     lbl_SetsReps.Text = selectedExercise.ExerciseSets + "x" + selectedExercise.ExerciseReps;
+                    //
+                    // Recipe image
+                    //
+
+                    // Get recipe image from byte array
+                    var data = NSData.FromArray(selectedExercise.ExerciseImage);
+
+                    // Convert to UIImage
+                    UIImage image = UIImage.LoadFromData(data);
+
+                    // Set as image
+                    imageView_Exercise.Image = image;
+
+                    // AspectFill
+                    imageView_Exercise.ContentMode = UIViewContentMode.ScaleAspectFill;
                 }
             }
         }
