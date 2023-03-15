@@ -50,6 +50,7 @@ namespace YeahFit
 
             // AspectFill
             imageView_Exercise.ContentMode = UIViewContentMode.ScaleAspectFill;
+
         }
     }
 }

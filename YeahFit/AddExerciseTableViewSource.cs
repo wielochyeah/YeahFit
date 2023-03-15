@@ -32,6 +32,7 @@ namespace YeahFit
 
             // Update ingredient cell
             cell.UpdateCell(selectedExercise, indexPath.Row);
+            cell.SelectionStyle = UITableViewCellSelectionStyle.Blue;
 
             return cell;
         }
@@ -57,7 +58,7 @@ namespace YeahFit
             selectedExercise = internalExercises[indexPath.Row];
 
             // Update ingredient cell
-            cell.ChangeColor(selectedExercise, indexPath.Row);
+            cell.SelectionStyle = UITableViewCellSelectionStyle.Gray;
 
             UIStoryboard board = UIStoryboard.FromName("Main", null);
 
