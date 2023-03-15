@@ -12,5 +12,23 @@ namespace YeahFit
 		public UITableViewAddWorkoutCell (IntPtr handle) : base (handle)
 		{
 		}
-	}
+
+        /// <summary>
+        /// Update each cell content
+        /// </summary>
+        /// <param name="selectedStep"></param>
+        /// <param name="indexPath"></param>
+        internal void UpdateCell(Exercise selectedExercise, int indexPath)
+        {
+            // Set Preview
+            if (selectedExercise != null)
+            {
+                if (selectedExercise.ExerciseName != "")
+                {
+                    lbl_ExerciseName.Text = selectedExercise.ExerciseName;
+                    lbl_SetsReps.Text = selectedExercise.ExerciseSets + "x" + selectedExercise.ExerciseReps;
+                }
+            }
+        }
+    }
 }

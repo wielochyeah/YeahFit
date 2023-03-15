@@ -12,5 +12,24 @@ namespace YeahFit
 		public UITableViewAddWorkoutExerciseCell (IntPtr handle) : base (handle)
 		{
 		}
-	}
+
+        /// <summary>
+        /// Update each cell content
+        /// </summary>
+        /// <param name="selectedStep"></param>
+        /// <param name="indexPath"></param>
+        /// <param name="tableView"></param>
+        internal void UpdateCell(Exercise selectedExercise, int indexPath, UITableView tableView)
+        {
+            // Button for adding new steps
+            btn_AddWorkoutExercise.TouchUpInside += (sender, e) =>
+            {
+                // Add new empty step
+                AddWorkoutViewController.exercises.Add(new Exercise { ExerciseName = "" });
+                
+                // Reload tableView
+                tableView.ReloadData();
+            };
+        }
+    }
 }

@@ -20,9 +20,17 @@ namespace YeahFit
 
 		[Outlet]
 		Foundation.NSObject tableView_AddWorkout { get; set; }
+
+		[Outlet]
+		YeahFit.AddWorkoutTableView tableView_AddWorkouts { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (btn_AddWorkout != null) {
+				btn_AddWorkout.Dispose ();
+				btn_AddWorkout = null;
+			}
+
 			if (lbl_workoutName != null) {
 				lbl_workoutName.Dispose ();
 				lbl_workoutName = null;
@@ -33,9 +41,9 @@ namespace YeahFit
 				tableView_AddWorkout = null;
 			}
 
-			if (btn_AddWorkout != null) {
-				btn_AddWorkout.Dispose ();
-				btn_AddWorkout = null;
+			if (tableView_AddWorkouts != null) {
+				tableView_AddWorkouts.Dispose ();
+				tableView_AddWorkouts = null;
 			}
 		}
 	}

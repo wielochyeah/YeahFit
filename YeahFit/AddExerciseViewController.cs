@@ -14,6 +14,10 @@ namespace YeahFit
         static UITableView tableView;
         public static List<InternalExercise> internalExercises = new List<InternalExercise>();
 
+        public static AddWorkoutViewController addWorkoutViewController;
+
+        public static int index;
+
         public AddExerciseViewController(IntPtr handle) : base(handle)
         {
         }
