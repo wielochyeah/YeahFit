@@ -170,6 +170,22 @@
     <Compile Include="InitializeLastWorkouts.cs" />
     <Compile Include="LastWorkout.cs" />
     <Compile Include="SetWeek.cs" />
+    <Compile Include="AddWorkoutViewController.cs" />
+    <Compile Include="AddWorkoutViewController.designer.cs">
+      <DependentUpon>AddWorkoutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWorkoutTableView.cs" />
+    <Compile Include="AddWorkoutTableView.designer.cs">
+      <DependentUpon>AddWorkoutTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddExerciseViewController.cs" />
+    <Compile Include="AddExerciseViewController.designer.cs">
+      <DependentUpon>AddExerciseViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddExerciseTableView.cs" />
+    <Compile Include="AddExerciseTableView.designer.cs">
+      <DependentUpon>AddExerciseTableView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />
