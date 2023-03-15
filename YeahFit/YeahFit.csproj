@@ -186,6 +186,24 @@
     <Compile Include="AddExerciseTableView.designer.cs">
       <DependentUpon>AddExerciseTableView.cs</DependentUpon>
     </Compile>
+    <Compile Include="UITableViewAddWorkoutCell.cs" />
+    <Compile Include="UITableViewAddWorkoutCell.designer.cs">
+      <DependentUpon>UITableViewAddWorkoutCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITableViewAddIngredientCell.cs" />
+    <Compile Include="UITableViewAddIngredientCell.designer.cs">
+      <DependentUpon>UITableViewAddIngredientCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITableViewAddWorkoutExerciseCell.cs" />
+    <Compile Include="UITableViewAddWorkoutExerciseCell.designer.cs">
+      <DependentUpon>UITableViewAddWorkoutExerciseCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITableViewAddExerciseCell.cs" />
+    <Compile Include="UITableViewAddExerciseCell.designer.cs">
+      <DependentUpon>UITableViewAddExerciseCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddExerciseTableViewSource.cs" />
+    <Compile Include="AddWorkoutTableViewSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />
