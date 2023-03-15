@@ -48,12 +48,8 @@ namespace YeahFit
                             ExerciseImage = imgg,
                         };
 
-                        // Iterate through each workout in the list of workouts
-                        for (int j = 0; j < exercises.Count; j++)
-                        {
                             // Add the exercise to the current workout's list of exercises
                             exercises.Add(exercise);
-                        }
 
                     }
                 }

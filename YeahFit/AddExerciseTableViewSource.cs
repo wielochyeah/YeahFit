@@ -51,6 +51,14 @@ namespace YeahFit
             // Get selected recipe
             nowSelectedExercise = internalExercises[indexPath.Row];
 
+            // Set cells in the TableView
+            var cell = (UITableViewAddExerciseCell)tableView.DequeueReusableCell("cell", indexPath);
+
+            selectedExercise = internalExercises[indexPath.Row];
+
+            // Update ingredient cell
+            cell.ChangeColor(selectedExercise, indexPath.Row);
+
             UIStoryboard board = UIStoryboard.FromName("Main", null);
 
             // Show RecipeView and set index

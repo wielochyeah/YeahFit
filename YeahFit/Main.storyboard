@@ -2535,7 +2535,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="inP-ta-S4u">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaE-RO-2vz">
@@ -2573,7 +2573,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ERw-eS-ZLC">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsv-FL-0U9">
@@ -2611,7 +2611,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ezq-pg-OQ7">
-                                                        <rect key="frame" x="11.999999999999988" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="11.999999999999988" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrz-dO-wWQ">
@@ -2649,7 +2649,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-Af-bdc">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-it-5Ve">
@@ -2687,7 +2687,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1d8-Z4-gq6">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lky-tq-reR">
@@ -2725,7 +2725,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AY1-dv-HUt">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEa-vf-Xvs">
@@ -2763,7 +2763,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JyG-xJ-3G4">
-                                                        <rect key="frame" x="12.000000000000002" y="16" width="23.666666666666671" height="19.666666666666664"/>
+                                                        <rect key="frame" x="12.000000000000002" y="15.999999999999998" width="23.666666666666671" height="19.666666666666664"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37M-Rs-Yli">
@@ -3347,9 +3347,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageView_Exercise" destination="L9u-nY-xW8" id="krT-eT-vA1"/>
-                                            <outlet property="lbl_ExerciseName" destination="3Yo-4y-NXG" id="ac5-3k-MBH"/>
-                                            <outlet property="lbl_SetsReps" destination="F1e-UL-Fmr" id="QDc-JT-sA0"/>
+                                            <outlet property="imageView_Exercise" destination="L9u-nY-xW8" id="FYe-Q5-c9I"/>
+                                            <outlet property="lbl_ExerciseName" destination="3Yo-4y-NXG" id="lLr-eG-xTJ"/>
+                                            <outlet property="lbl_SetsReps" destination="F1e-UL-Fmr" id="pSW-Ko-h6e"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addCell" rowHeight="60" id="3J9-EV-WG8" customClass="UITableViewAddWorkoutExerciseCell">
@@ -3409,7 +3409,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="btn_AddWorkoutExercise" destination="Hks-KU-Jnf" id="O4d-Eb-lWY"/>
+                                            <outlet property="btn_AddWorkoutExercise" destination="Hks-KU-Jnf" id="4aO-9c-5AT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -3535,7 +3535,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Z0i-4G-1Ex" customClass="AddExerciseTableView">
-                                <rect key="frame" x="39" y="354" width="315" height="336"/>
+                                <rect key="frame" x="39" y="388" width="315" height="302"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="68" id="dGW-6t-IyA" customClass="UITableViewAddExerciseCell">
@@ -3593,8 +3593,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageView_Exercise" destination="NUL-d5-Xun" id="JOT-Fi-3BJ"/>
-                                            <outlet property="lbl_ExerciseName" destination="2wf-zG-BDE" id="NFG-Nb-h2V"/>
+                                            <outlet property="imageView_Exercise" destination="NUL-d5-Xun" id="ssf-AQ-0Wi"/>
+                                            <outlet property="lbl_ExerciseName" destination="2wf-zG-BDE" id="cNZ-OA-BRa"/>
+                                            <outlet property="view_background" destination="vaB-ha-8uU" id="yFW-ZZ-6Vg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -3607,7 +3608,7 @@
                             <constraint firstItem="CBb-EL-FCP" firstAttribute="top" secondItem="OTz-tz-eqS" secondAttribute="bottom" constant="8" id="2Je-dA-7X9"/>
                             <constraint firstItem="cHV-Ry-SJk" firstAttribute="top" secondItem="6Px-Ul-zap" secondAttribute="bottom" constant="64" id="2vM-f7-LFI"/>
                             <constraint firstItem="6Px-Ul-zap" firstAttribute="top" secondItem="Z0i-4G-1Ex" secondAttribute="bottom" constant="8" id="3el-e5-8HV"/>
-                            <constraint firstItem="Z0i-4G-1Ex" firstAttribute="top" secondItem="CBb-EL-FCP" secondAttribute="bottom" constant="25" id="8BA-k6-mD7"/>
+                            <constraint firstItem="Z0i-4G-1Ex" firstAttribute="top" secondItem="CBb-EL-FCP" secondAttribute="bottom" constant="59" id="8BA-k6-mD7"/>
                             <constraint firstItem="fk9-9E-05e" firstAttribute="leading" secondItem="74u-Ar-kUB" secondAttribute="leadingMargin" constant="23" id="Eac-DQ-heq"/>
                             <constraint firstItem="RoM-B8-0Cq" firstAttribute="leading" secondItem="OTz-tz-eqS" secondAttribute="trailing" constant="3" id="FuM-96-2gc"/>
                             <constraint firstItem="6Px-Ul-zap" firstAttribute="leading" secondItem="74u-Ar-kUB" secondAttribute="leadingMargin" constant="77" id="GCl-jT-3a8"/>

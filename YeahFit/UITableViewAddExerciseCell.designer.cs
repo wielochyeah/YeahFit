@@ -17,9 +17,17 @@ namespace YeahFit
 
 		[Outlet]
 		UIKit.UILabel lbl_ExerciseName { get; set; }
+
+		[Outlet]
+		UIKit.UIView view_background { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (view_background != null) {
+				view_background.Dispose ();
+				view_background = null;
+			}
+
 			if (lbl_ExerciseName != null) {
 				lbl_ExerciseName.Dispose ();
 				lbl_ExerciseName = null;
