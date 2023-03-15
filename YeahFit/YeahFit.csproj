@@ -190,10 +190,6 @@
     <Compile Include="UITableViewAddWorkoutCell.designer.cs">
       <DependentUpon>UITableViewAddWorkoutCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="UITableViewAddIngredientCell.cs" />
-    <Compile Include="UITableViewAddIngredientCell.designer.cs">
-      <DependentUpon>UITableViewAddIngredientCell.cs</DependentUpon>
-    </Compile>
     <Compile Include="UITableViewAddWorkoutExerciseCell.cs" />
     <Compile Include="UITableViewAddWorkoutExerciseCell.designer.cs">
       <DependentUpon>UITableViewAddWorkoutExerciseCell.cs</DependentUpon>
@@ -204,6 +200,7 @@
     </Compile>
     <Compile Include="AddExerciseTableViewSource.cs" />
     <Compile Include="AddWorkoutTableViewSource.cs" />
+    <Compile Include="InitializeExercises.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstViewController.cs" />

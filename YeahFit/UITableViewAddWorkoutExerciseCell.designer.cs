@@ -12,9 +12,15 @@ namespace YeahFit
 	[Register ("UITableViewAddWorkoutExerciseCell")]
 	partial class UITableViewAddWorkoutExerciseCell
 	{
+		[Outlet]
+		UIKit.UIButton btn_AddWorkoutExercise { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (btn_AddWorkoutExercise != null) {
+				btn_AddWorkoutExercise.Dispose ();
+				btn_AddWorkoutExercise = null;
+			}
 		}
 	}
 }

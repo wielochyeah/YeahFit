@@ -12,9 +12,23 @@ namespace YeahFit
 	[Register ("UITableViewAddExerciseCell")]
 	partial class UITableViewAddExerciseCell
 	{
+		[Outlet]
+		UIKit.UIImageView imageView_Exercise { get; set; }
+
+		[Outlet]
+		UIKit.UILabel lbl_ExerciseName { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (lbl_ExerciseName != null) {
+				lbl_ExerciseName.Dispose ();
+				lbl_ExerciseName = null;
+			}
+
+			if (imageView_Exercise != null) {
+				imageView_Exercise.Dispose ();
+				imageView_Exercise = null;
+			}
 		}
 	}
 }
