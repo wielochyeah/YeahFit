@@ -3479,7 +3479,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Hinzufügen" selectedImage="plus.circle" catalog="system" id="aQ0-DA-ZS8">
                         <imageReference key="image" image="plus.circle" catalog="system" symbolScale="default"/>
-                        <color key="badgeColor" systemColor="tintColor"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="btn_AddWorkout" destination="GD7-oS-XQZ" id="pRc-bF-pca"/>
@@ -3541,6 +3541,9 @@
                                     <segment title="Fortgeschritten"/>
                                     <segment title="Hart"/>
                                 </segments>
+                                <connections>
+                                    <action selector="SegmenteControl_ValueChanged:" destination="hgs-ln-kW9" eventType="valueChanged" id="dev-iK-RhC"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Dauer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gK-9z-1bZ">
                                 <rect key="frame" x="42" y="316" width="73" height="32"/>
@@ -3554,7 +3557,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXK-tr-n3b">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXK-tr-n3b">
                                 <rect key="frame" x="42" y="349" width="182" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="182" id="GON-ih-Urb"/>

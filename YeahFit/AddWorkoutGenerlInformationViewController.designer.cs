@@ -44,6 +44,9 @@ namespace YeahFit
 
 		[Outlet]
 		UIKit.UITextField txtField_WorkoutName { get; set; }
+
+		[Action ("SegmenteControl_ValueChanged:")]
+		partial void SegmenteControl_ValueChanged (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{

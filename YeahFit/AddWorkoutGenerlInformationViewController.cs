@@ -9,8 +9,93 @@ namespace YeahFit
 {
 	public partial class AddWorkoutGenerlInformationViewController : UIViewController
 	{
-		public AddWorkoutGenerlInformationViewController (IntPtr handle) : base (handle)
+
+		public AddWorkoutGenerlInformationViewController(IntPtr handle) : base(handle)
 		{
 		}
-	}
+
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
+
+			txtField_WorkoutName.Text = AddWorkoutViewController.workoutName;
+
+            if (AddWorkoutViewController.workoutDifficulty == "Beginner")
+            {
+                segmentedControl_WorkoutDifficulty.SelectedSegment = 0;
+
+            }
+            if (AddWorkoutViewController.workoutDifficulty == "Fortgeschritten")
+            {
+                segmentedControl_WorkoutDifficulty.SelectedSegment = 1;
+            }
+            if (AddWorkoutViewController.workoutDifficulty == "Hart")
+            {
+                segmentedControl_WorkoutDifficulty.SelectedSegment = 2;
+            }
+
+            datePicker_WorkoutDuration.CountDownDuration = AddWorkoutViewController.workoutDuration;
+
+            switch_FullBody.On = AddWorkoutViewController.fullBody;
+            switch_UpperBody.On = AddWorkoutViewController.upperBody;
+            switch_LowerBody.On = AddWorkoutViewController.lowerBody;
+            switch_Push.On = AddWorkoutViewController.push;
+            switch_Pull.On = AddWorkoutViewController.pull;
+            switch_Core.On = AddWorkoutViewController.core;
+            switch_NoEquipment.On = AddWorkoutViewController.noEquipment;
+
+
+            btn_ConfirmWorkoutGeneralInformation.TouchUpInside += (sender, e) =>
+			{
+				AddWorkoutViewController.workoutName = txtField_WorkoutName.Text;
+
+				if (segmentedControl_WorkoutDifficulty.SelectedSegment == 0)
+				{
+					AddWorkoutViewController.workoutDifficulty = 1;
+
+                }
+                if (segmentedControl_WorkoutDifficulty.SelectedSegment == 1)
+                {
+					AddWorkoutViewController.workoutDifficulty = 2;
+                }
+                if (segmentedControl_WorkoutDifficulty.SelectedSegment == 2)
+                {
+					AddWorkoutViewController.workoutDifficulty = 3;
+                }
+
+                AddWorkoutViewController.workoutDuration = Convert.ToInt32(datePicker_WorkoutDuration.CountDownDuration);
+
+				AddWorkoutViewController.fullBody = switch_FullBody.On;
+                AddWorkoutViewController.upperBody = switch_UpperBody.On;
+                AddWorkoutViewController.lowerBody = switch_LowerBody.On;
+                AddWorkoutViewController.push = switch_Push.On;
+                AddWorkoutViewController.pull = switch_Pull.On;
+                AddWorkoutViewController.core = switch_Core.On;
+				if (Convert.ToInt32(datePicker_WorkoutDuration.CountDownDuration) > 1200)
+				{
+					AddWorkoutViewController.twentyMinutes = true;
+				}
+				else
+				{
+                    AddWorkoutViewController.twentyMinutes = false;
+                }
+                AddWorkoutViewController.noEquipment = switch_NoEquipment.On;
+
+                this.DismissViewController(true, () => { });
+            };
+
+            switch_Core.ValueChanged += (sender, e) => {
+                Console.WriteLine(switch_Core.On);
+            };
+        }
+
+		/// <summary>
+		/// View reappears
+		/// </summary>
+		/// <param name="animated"></param>
+		public override void ViewDidAppear(bool animated)
+		{
+			base.ViewDidAppear(animated);
+		}
+    }
 }

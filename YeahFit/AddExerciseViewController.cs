@@ -11,7 +11,6 @@ namespace YeahFit
 {
 	public partial class AddExerciseViewController : UIViewController
 	{
-        public static MySqlConnection con;
 
         public UINavigationController CurrentNavigationController;
 
@@ -41,9 +40,7 @@ namespace YeahFit
             base.ViewDidLoad();
 
 
-            // Open a connection to the YeahFit database on the local server with the root user and empty password.
-            con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
-            con.Open();
+            
 
 
             InitializeExercises.Initialize();

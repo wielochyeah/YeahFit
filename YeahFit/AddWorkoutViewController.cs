@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using Foundation;
 using MySql.Data.MySqlClient;
@@ -11,6 +12,9 @@ namespace YeahFit
 {
 	public partial class AddWorkoutViewController : UIViewController
 	{
+
+        public static MySqlConnection con;
+
         MySqlCommand cmd;
         MemoryStream fs;
         BinaryReader br;
@@ -27,6 +31,22 @@ namespace YeahFit
         public static Workout selectedWorkout;
 
         public static bool edit;
+
+        UIImage originalImage;
+
+        int id;
+
+        public static string workoutName = "";
+        public static int workoutDifficulty = 1;
+        public static int workoutDuration = 0;
+        public static bool fullBody = false;
+        public static bool upperBody = false;
+        public static bool lowerBody = false;
+        public static bool push = false;
+        public static bool pull = false;
+        public static bool core = false;
+        public static bool noEquipment = false;
+        public static bool twentyMinutes = false;
 
         public AddWorkoutViewController (IntPtr handle) : base (handle)
 		{
@@ -67,13 +87,65 @@ namespace YeahFit
 
             btn_AddWorkout.TouchUpInside += (sender, e) =>
             {
-                new Workout
-                {
-                    WorkoutImage = null,
-                    WorkoutName = lbl_workoutName.Text,
-                    Exercises = exercises,
+                // Open a connection to the YeahFit database on the local server with the root user and empty password.
+                con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
+                con.Open();
 
-                };
+
+                Byte[] myByteArray = null;
+                if (originalImage != null)
+                {
+                    using (NSData imageData = originalImage.AsPNG())
+                    {
+                        myByteArray = new Byte[imageData.Length];
+                        System.Runtime.InteropServices.Marshal.Copy(imageData.Bytes, myByteArray, 0, Convert.ToInt32(imageData.Length));
+
+                        var data = NSData.FromArray(myByteArray);
+                        UIImage image = UIImage.LoadFromData(data);
+                        originalImage = image;
+                    }
+                }
+
+                MySqlCommand insert1 = con.CreateCommand();
+                MySqlParameter byteData = insert1.Parameters.Add("@imgData", MySqlDbType.Binary);
+                byteData.Value = myByteArray;
+
+                insert1.CommandText = $"INSERT INTO Workout (WorkoutName, WorkoutBild, WorkoutDauer, SchwierigkeitsID, Liked) " +
+                        $"VALUES ('{workoutName}', '@imgData', '{workoutDuration}', '{workoutDifficulty}', '{0}');";
+                insert1.ExecuteNonQuery();
+
+
+                
+                using (MySqlCommand getworkoutdifficulty = new MySqlCommand($"SELECT WorkoutID FROM `Workout`" +
+                    $" WHERE WorkoutName='{workoutName}'" +
+                    $" AND SchwierigkeitsID='{workoutDifficulty}'" +
+                    $" AND WorkoutBild='@imgData'", con))
+                {
+                    using (MySqlDataReader reader2 = getworkoutdifficulty.ExecuteReader())
+                    {
+                        while (reader2.Read())
+                        {
+                            id = Convert.ToInt32(reader2["WorkoutID"]);
+                        }
+                    }
+                }
+
+                MySqlCommand insert2 = con.CreateCommand();
+                insert2.CommandText = $"INSERT INTO Workout_Kategorie (WorkoutID, Core, Oberkörper, Unterkörper, Ganzkörper, Push, Pull, 20min, No Equipment) " +
+                        $"VALUES ('{id}', '{core}', '{upperBody}', '{lowerBody}', '{fullBody}', '{push}', '{pull}', '{twentyMinutes}', '{noEquipment}');";
+                insert2.ExecuteNonQuery();
+
+                MySqlCommand insert3 = con.CreateCommand();
+                insert3.CommandText = $"INSERT INTO Workout_Übung (WorkoutID, ÜbungID, Reihenfolge, Sätze, Wiederholungen) " +
+                        $"VALUES ('{id}', '{0}', '{0}', '{0}', '{0}', '{0}');";
+                insert3.ExecuteNonQuery();
+
+                MySqlCommand insert4 = con.CreateCommand();
+                insert4.CommandText = $"INSERT INTO Benutzer_Workout (WorkoutID, BenutzerID) " +
+                        $"VALUES ('{workoutName}', '@imgData', '{workoutDuration}', '{workoutDifficulty}', '{0}');";
+                insert4.ExecuteNonQuery();
+
+                con.Close();
             };
         }
 
@@ -119,7 +191,7 @@ namespace YeahFit
             if (referenceURL != null) Console.WriteLine("Url:" + referenceURL.ToString());
             if (isImage)
             {
-                UIImage originalImage = e.Info[UIImagePickerController.OriginalImage] as UIImage;
+                originalImage = e.Info[UIImagePickerController.OriginalImage] as UIImage;
             }
             else
             {
