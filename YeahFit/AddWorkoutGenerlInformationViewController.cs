@@ -20,16 +20,16 @@ namespace YeahFit
 
 			txtField_WorkoutName.Text = AddWorkoutViewController.workoutName;
 
-            if (AddWorkoutViewController.workoutDifficulty == "Beginner")
+            if (AddWorkoutViewController.workoutDifficulty == 1)
             {
                 segmentedControl_WorkoutDifficulty.SelectedSegment = 0;
 
             }
-            if (AddWorkoutViewController.workoutDifficulty == "Fortgeschritten")
+            if (AddWorkoutViewController.workoutDifficulty == 2)
             {
                 segmentedControl_WorkoutDifficulty.SelectedSegment = 1;
             }
-            if (AddWorkoutViewController.workoutDifficulty == "Hart")
+            if (AddWorkoutViewController.workoutDifficulty == 3)
             {
                 segmentedControl_WorkoutDifficulty.SelectedSegment = 2;
             }

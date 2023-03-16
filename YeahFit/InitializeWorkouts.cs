@@ -43,74 +43,76 @@ namespace YeahFit
             // Generate a filter string based on the user's category selection
             //
 
+            if (LoginViewController.loggedin == true)
+            {
+                filter = $", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
+                    $"LEFT JOIN `Benutzer_Workout` ON WorkoutID = `Benutzer_Workout`.WorkoutID " +
+                    $"WHERE Benutzer_Workout.WorkoutID IS NULL " +
+                    $"OR Benutzer_Workout.BenutzerID = '{LoginViewController.userID}' ";
+            }
+            else
+            {
+                filter = $", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
+                    $"LEFT JOIN `Benutzer_Workout` ON WorkoutID = `Benutzer_Workout`.WorkoutID " +
+                    $"WHERE Benutzer_Workout.WorkoutID IS NULL ";
+            }
+
             // Categories
             // Core
             if (category == "core")
             {
-                filter = ", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Workout_Kategorie.`Core` = 1";
             }
             // UpperBody
             else if (category == "upperBody")
             {
-                filter = ", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Workout_Kategorie.`Oberkörper` = 1";
             }
             // LowerBody
             else if (category == "lowerBody")
             {
-                filter = ", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Workout_Kategorie.`Unterkörper` = 1";
             }
             // FullBody
             else if (category == "fullBody")
             {
-                filter = ", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Workout_Kategorie.`Ganzkörper` = 1";
             }
             // Push
             else if (category == "push")
             {
-                filter = ", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Workout_Kategorie.`Push` = 1";
             }
             // Pull
             else if (category == "pull")
             {
-                filter = ", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Workout_Kategorie.`Pull` = 1";
             }
             // TwentyMinutes
             else if (category == "twentyMinutes")
             {
-                filter = ", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Workout_Kategorie.`20min` = 1";
             }
             // NoEquipment
             else if (category == "noEquipment")
             {
-                filter = ", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    "WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
                     "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
                     "AND Workout_Kategorie.`NoEquipment` = 1";
-            }
-            else
-            {
-                filter = "";
             }
 
 
@@ -151,84 +153,41 @@ namespace YeahFit
             // Favourite/Liked
             if (favourite == true)
             {
-                if (filter == "")
-                {
-                    filter = ", `Workout_Übung`, `Übung` WHERE Workout.Liked = 1";
-                }
-                else
-                {
                     filter = filter + " AND Workout.Liked = 1";
-                }
             }
 
             // Difficulty
             // Beginner
             if (difficulty == "beginner")
             {
-                if (filter == "")
-                {
-                    filter = ", Schwierigkeit, `Workout_Übung`, `Übung` " +
-                        "WHERE Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Beginner'";
-                }
-                else
-                {
-                    filter = filter + " AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Beginner'";
-                }
+                filter = filter + " AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Beginner'";
             }
             // Advanced
             else if (difficulty == "advanced")
             {
-                if (filter == "")
-                {
-                    filter = ", Schwierigkeit, `Workout_Übung`, `Übung` " +
-                        "WHERE Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
-                }
-                else
-                {
-                    filter = filter + " AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
-                }
+                filter = filter + " AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
             }
             // Hard
             else if (difficulty == "hard")
             {
-                if (filter == "")
-                {
-                    filter = ", Schwierigkeit, `Workout_Übung`, `Übung` " +
-                        "WHERE Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Hart'";
-                }
-                else
-                {
-                    filter = filter + " AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                        "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Hart'";
-                }
+                filter = filter + " AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
+                    "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Hart'";
             }
 
             // Searchbar
             if (search != "" && search != null)
             {
-                if (filter == "")
-                {
-                    filter = $", `Workout_Übung`, `Übung` WHERE Workout.WorkoutID = Workout_Übung.WorkoutID " +
-                        $"AND Workout_Übung.ÜbungID = Übung.ÜbungID " +
-                        $"AND Übung.ÜbungName LIKE '%{search}%'";
-                }
-                else
-                {
-                    filter = $" AND Workout.WorkoutID = Workout_Übung.WorkoutID " +
-                        $"AND Workout_Übung.ÜbungID = Übung.ÜbungID " +
-                        $"AND Übung.ÜbungName LIKE '%{search}%'";
-                }
+                filter = $" AND Workout.WorkoutID = Workout_Übung.WorkoutID " +
+                    $"AND Workout_Übung.ÜbungID = Übung.ÜbungID " +
+                    $"AND Übung.ÜbungName LIKE '%{search}%'";
             }
 
             // Read every workout
             //  + filter
             //  + orderby
-            using (MySqlCommand getmainworkout = new MySqlCommand($"SELECT * FROM `Workout` {userid}{filter} {orderby}", con))
+            using (MySqlCommand getmainworkout = new MySqlCommand($"SELECT * FROM `Workout` {userid}{filter} GROUP BY `Workout`.WorkoutID {orderby};", con))
             {
                 using (MySqlDataReader reader = getmainworkout.ExecuteReader())
                 {

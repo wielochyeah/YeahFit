@@ -135,14 +135,17 @@ namespace YeahFit
                         $"VALUES ('{id}', '{core}', '{upperBody}', '{lowerBody}', '{fullBody}', '{push}', '{pull}', '{twentyMinutes}', '{noEquipment}');";
                 insert2.ExecuteNonQuery();
 
-                MySqlCommand insert3 = con.CreateCommand();
-                insert3.CommandText = $"INSERT INTO Workout_Übung (WorkoutID, ÜbungID, Reihenfolge, Sätze, Wiederholungen) " +
-                        $"VALUES ('{id}', '{0}', '{0}', '{0}', '{0}', '{0}');";
-                insert3.ExecuteNonQuery();
+                for (int i = 1; i <= exercises.Count; i++)
+                {
+                    MySqlCommand insert3 = con.CreateCommand();
+                    insert3.CommandText = $"INSERT INTO Workout_Übung (WorkoutID, ÜbungID, Reihenfolge, Sätze, Wiederholungen) " +
+                            $"VALUES ('{id}', '{internalExercises[i-1].ExerciseID}', '{i}', '{exercises[id - 1].ExerciseSets}', '{exercises[id - 1].ExerciseReps}');";
+                    insert3.ExecuteNonQuery();
+                }
 
                 MySqlCommand insert4 = con.CreateCommand();
                 insert4.CommandText = $"INSERT INTO Benutzer_Workout (WorkoutID, BenutzerID) " +
-                        $"VALUES ('{workoutName}', '@imgData', '{workoutDuration}', '{workoutDifficulty}', '{0}');";
+                        $"VALUES ('{id}', '{LoginViewController.userID}');";
                 insert4.ExecuteNonQuery();
 
                 con.Close();
