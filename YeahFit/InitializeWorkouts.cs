@@ -166,7 +166,7 @@ namespace YeahFit
             // Searchbar
             if (search != "" && search != null)
             {
-                filter = $" AND Workout.WorkoutID = Workout_Übung.WorkoutID " +
+                filter = filter + $" AND Workout.WorkoutID = Workout_Übung.WorkoutID " +
                     $"AND Workout_Übung.ÜbungID = Übung.ÜbungID " +
                     $"AND Übung.ÜbungName LIKE '%{search}%'";
             }
