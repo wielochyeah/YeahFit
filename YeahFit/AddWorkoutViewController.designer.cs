@@ -13,6 +13,9 @@ namespace YeahFit
 	partial class AddWorkoutViewController
 	{
 		[Outlet]
+		UIKit.UIButton btn_AddGeneral { get; set; }
+
+		[Outlet]
 		UIKit.UIButton btn_AddWorkout { get; set; }
 
 		[Outlet]
@@ -34,6 +37,11 @@ namespace YeahFit
 				btn_AddWorkout = null;
 			}
 
+			if (btn_takePhoto != null) {
+				btn_takePhoto.Dispose ();
+				btn_takePhoto = null;
+			}
+
 			if (lbl_workoutName != null) {
 				lbl_workoutName.Dispose ();
 				lbl_workoutName = null;
@@ -49,9 +57,9 @@ namespace YeahFit
 				tableView_AddWorkouts = null;
 			}
 
-			if (btn_takePhoto != null) {
-				btn_takePhoto.Dispose ();
-				btn_takePhoto = null;
+			if (btn_AddGeneral != null) {
+				btn_AddGeneral.Dispose ();
+				btn_AddGeneral = null;
 			}
 		}
 	}
