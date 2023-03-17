@@ -45,9 +45,9 @@ namespace YeahFit
                 if (weekID == 0)
                 {
                     MySqlCommand insert = new MySqlCommand($"INSERT INTO Woche (Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag) " +
-                        $"VALUES ('{internalMonday}', '{internalTuesday}', '{internalWednesday}', '{internalThursday}', '{internalFriday}', '{internalSaturday}', '{internalSunday}');", con);
+                        $"VALUES ({internalMonday}, {internalTuesday}, {internalWednesday}, {internalThursday}, {internalFriday}, {internalSaturday}, {internalSunday});", con);
                     insert.ExecuteNonQuery();
-                    using (MySqlCommand getNewWeek = new MySqlCommand($"SELECT WochenID FROM `Woche`, `Benutzer_Woche` " +
+                    using (MySqlCommand getNewWeek = new MySqlCommand($"SELECT Woche.WochenID FROM `Woche`, `Benutzer_Woche` " +
                         $"WHERE Woche.WochenID = Benutzer_Woche.WochenID " +
                         $"AND Benutzer_Woche.BenutzerID = {LoginViewController.userID}", con))
                     {
