@@ -32,7 +32,10 @@ namespace YeahFit
             {
                 internalWorkouts = new List<Workout>();
                 WorkoutViewController.lastWorkouts = true;
-                InitializeWorkouts.userid = $" , `Benutzer_Workout_Woche` WHERE Workout.WorkoutID = Benutzer_Workout_Woche.WorkoutID " +
+                InitializeWorkouts.userid = $" AND Workout.WorkoutID = (" +
+                    $"SELECT Workout.WorkoutID " +
+                    $"FROM Workout, Benutzer_Workout_Woche " +
+                    $"WHERE Workout.WorkoutID = Benutzer_Workout_Woche.WorkoutID " +
                     $"AND Benutzer_Workout_Woche.BenutzerID='{LoginViewController.userID}'";
                 InitializeWorkouts.Initialize();
 
@@ -70,7 +73,10 @@ namespace YeahFit
                 internalWorkouts = new List<Workout>();
                 WorkoutViewController.lastWorkouts = true;
 
-                InitializeWorkouts.userid = $" , `Benutzer_Workout_Woche` WHERE Workout.WorkoutID = Benutzer_Workout_Woche.WorkoutID " +
+                InitializeWorkouts.userid = $" AND Workout.WorkoutID = (" +
+                    $"SELECT Workout.WorkoutID " +
+                    $"FROM Workout, Benutzer_Workout_Woche " +
+                    $"WHERE Workout.WorkoutID = Benutzer_Workout_Woche.WorkoutID " +
                     $"AND Benutzer_Workout_Woche.BenutzerID='{LoginViewController.userID}'";
                 InitializeWorkouts.Initialize();
 

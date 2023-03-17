@@ -46,73 +46,63 @@ namespace YeahFit
             if (LoginViewController.loggedin == true)
             {
                 filter = $", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    $"LEFT JOIN `Benutzer_Workout` ON WorkoutID = `Benutzer_Workout`.WorkoutID " +
-                    $"WHERE Benutzer_Workout.WorkoutID IS NULL " +
-                    $"OR Benutzer_Workout.BenutzerID = '{LoginViewController.userID}' ";
+                    $"LEFT JOIN `Benutzer_Workout` " +
+                    $"ON WorkoutID = `Benutzer_Workout`.WorkoutID " +
+                    $"AND Benutzer_Workout.WorkoutID IS NULL " +
+                    $"OR Benutzer_Workout.BenutzerID = '{LoginViewController.userID}' " +
+                    $"WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    $"AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID ";
             }
             else
             {
                 filter = $", `Workout_Kategorie`, `Schwierigkeit`, `Workout_Übung`, `Übung` " +
-                    $"LEFT JOIN `Benutzer_Workout` ON WorkoutID = `Benutzer_Workout`.WorkoutID " +
-                    $"WHERE Benutzer_Workout.WorkoutID IS NULL ";
+                    $"LEFT JOIN `Benutzer_Workout` " +
+                    $"ON WorkoutID = `Benutzer_Workout`.WorkoutID " +
+                    $"AND Benutzer_Workout.WorkoutID IS NULL " +
+                    $"WHERE Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
+                    $"AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID ";
             }
 
             // Categories
             // Core
             if (category == "core")
             {
-                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
-                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Workout_Kategorie.`Core` = 1";
+                filter = filter + "AND Workout_Kategorie.`Core` = 1";
             }
             // UpperBody
             else if (category == "upperBody")
             {
-                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
-                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Workout_Kategorie.`Oberkörper` = 1";
+                filter = filter + "AND Workout_Kategorie.`Oberkörper` = 1";
             }
             // LowerBody
             else if (category == "lowerBody")
             {
-                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
-                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Workout_Kategorie.`Unterkörper` = 1";
+                filter = filter + "AND Workout_Kategorie.`Unterkörper` = 1";
             }
             // FullBody
             else if (category == "fullBody")
             {
-                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
-                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Workout_Kategorie.`Ganzkörper` = 1";
+                filter = filter + "AND Workout_Kategorie.`Ganzkörper` = 1";
             }
             // Push
             else if (category == "push")
             {
-                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
-                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Workout_Kategorie.`Push` = 1";
+                filter = filter + "AND Workout_Kategorie.`Push` = 1";
             }
             // Pull
             else if (category == "pull")
             {
-                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
-                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Workout_Kategorie.`Pull` = 1";
+                filter = filter + "AND Workout_Kategorie.`Pull` = 1";
             }
             // TwentyMinutes
             else if (category == "twentyMinutes")
             {
-                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
-                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Workout_Kategorie.`20min` = 1";
+                filter = filter + "AND Workout_Kategorie.`20min` = 1";
             }
             // NoEquipment
             else if (category == "noEquipment")
             {
-                filter = filter + " AND Workout.`WorkoutID` = Workout_Kategorie.`WorkoutID` " +
-                    "AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Workout_Kategorie.`NoEquipment` = 1";
+                filter = filter + "AND Workout_Kategorie.`NoEquipment` = 1";
             }
 
 
@@ -160,20 +150,17 @@ namespace YeahFit
             // Beginner
             if (difficulty == "beginner")
             {
-                filter = filter + " AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Beginner'";
+                filter = filter + " AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Beginner'";
             }
             // Advanced
             else if (difficulty == "advanced")
             {
-                filter = filter + " AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
+                filter = filter + " AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Fortgeschritten'";
             }
             // Hard
             else if (difficulty == "hard")
             {
-                filter = filter + " AND Workout.SchwierigkeitsID = Schwierigkeit.SchwierigkeitsID " +
-                    "AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Hart'";
+                filter = filter + " AND Schwierigkeit.Schwierigkeitsbeschreibung = 'Hart'";
             }
 
             // Searchbar
