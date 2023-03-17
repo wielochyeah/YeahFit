@@ -153,7 +153,6 @@
     <Compile Include="InitializeWeek.cs" />
     <Compile Include="SelectButtonColor.cs" />
     <Compile Include="Encryption.cs" />
-    <Compile Include="InitializeAwards.cs" />
     <Compile Include="LastWorkoutsViewController.cs" />
     <Compile Include="LastWorkoutsViewController.designer.cs">
       <DependentUpon>LastWorkoutsViewController.cs</DependentUpon>

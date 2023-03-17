@@ -9,8 +9,8 @@ using UIKit;
 
 namespace YeahFit
 {
-	public partial class ChallengeViewController : UIViewController
-	{
+    public partial class ChallengeViewController : UIViewController
+    {
         public static MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
 
         public UINavigationController CurrentNavigationController;
@@ -125,11 +125,17 @@ namespace YeahFit
                 tableView_Challenges.ReloadData();
 
 
-                
+
             }
 
             btn_Apply.TouchUpInside += (sender, e) =>
             {
+                con.Open();
+                string completeHardWorkout = $"UPDATE `Benutzer_Awards` SET `Starte eine Challenge` = `Starte eine Challenge` + 1 WHERE `BenutzerID` = {LoginViewController.userID};";
+                MySqlCommand cmd = new MySqlCommand(completeHardWorkout, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
                 internalMonday = false;
                 internalTuesday = false;
                 internalWednesday = false;
@@ -229,7 +235,7 @@ namespace YeahFit
 
             // Set general information
             lbl_ChallengeName.Text = nowSelectedChallenge.ChallengeName;
-            
+
 
             // Set source for ingredient tableView
             tableView_Challenges.Source = new ChallengeWorkoutsTableViewSource(internalWorkouts, this, CurrentNavigationController);

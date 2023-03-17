@@ -3,15 +3,18 @@
 using System;
 
 using Foundation;
+using MySql.Data.MySqlClient;
 using UIKit;
 
 namespace YeahFit
 {
-	public partial class AwardsViewController : UIViewController
-	{
-		public AwardsViewController (IntPtr handle) : base (handle)
-		{
-		}
+    public partial class AwardsViewController : UIViewController
+    {
+        public static MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
+
+        public AwardsViewController(IntPtr handle) : base(handle)
+        {
+        }
 
         /// <summary>
         /// Initialize
@@ -19,7 +22,6 @@ namespace YeahFit
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
         }
 
         /// <summary>
@@ -31,6 +33,27 @@ namespace YeahFit
             base.ViewDidAppear(animated);
 
             Alert();
+
+            if (LoginViewController.loggedin == true)
+            {
+                con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
+                con.Open();
+
+                MySqlCommand initialize = new MySqlCommand($"SELECT * From Benutzer_Awards WHERE BenutzerID = {LoginViewController.userID}", con);
+
+                using (MySqlDataReader reader = initialize.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        lbl_PerfectWeekCounter.Text = Convert.ToString(reader["Perfekte Woche"]);
+                        lbl_PerfectMonthCounter.Text = Convert.ToString(reader["Perfekter Monat"]);
+                        lbl_PerfectYearCounter.Text = Convert.ToString(reader["Perfektes Jahr"]);
+                        lbl_ChallengeCounter.Text = Convert.ToString(reader["Starte eine Challenge"]);
+                        lbl_AdvancedMidWorkoutCounter.Text = Convert.ToString(reader["Absolviere ein mittleres Workout"]);
+                        lbl_HardWorkoutCounter.Text = Convert.ToString(reader["Absolviere ein hartes Workout"]);
+                    }
+                }
+            }
         }
 
         /// <summary>

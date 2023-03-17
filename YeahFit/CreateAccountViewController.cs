@@ -9,8 +9,8 @@ using UIKit;
 
 namespace YeahFit
 {
-	public partial class CreateAccountViewController : UIViewController
-	{
+    public partial class CreateAccountViewController : UIViewController
+    {
         public static LoginViewController loginViewController;
 
         public static MySqlConnection con = new MySqlConnection(@"Server=localhost;Database=YeahFit;User Id=root;Password=; CharSet = utf8");
@@ -96,6 +96,10 @@ namespace YeahFit
 
                         MySqlCommand insert2 = new MySqlCommand($"INSERT INTO Benutzer_Woche (BenutzerID, WochenID) VALUES ('{id}', '1');", con);
                         insert2.ExecuteNonQuery();
+
+                        MySqlCommand insertEmptyAwards = new MySqlCommand($"INSERT INTO `Benutzer_Awards` (`BenutzerID`, `Perfekte Woche`, `Perfekter Monat`, `Perfektes Jahr`, `Starte eine Challenge`, `Absolviere ein mittleres Workout`, `Absolviere ein hartes Workout`) VALUES ('{id}', '0', '0', '0', '0', '0', '0');", con);
+                        insertEmptyAwards.ExecuteNonQuery();
+
 
                         // View Schließen
                         this.DismissViewController(true, () => { LoginViewController.Refresh(loginViewController); });

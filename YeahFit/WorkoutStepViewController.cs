@@ -22,6 +22,7 @@ namespace YeahFit
         public static Workout selectedWorkout;
         int i = 0;
 
+
         public static WorkoutViewController workoutViewController;
 
         MySqlConnection con;
@@ -82,7 +83,7 @@ namespace YeahFit
                 {
                     lbl_ExerciseName.Text = selectedWorkout.Exercises[i].ExerciseName;
                     lbl_SetsReps.Text = selectedWorkout.Exercises[i].ExerciseSets + "x" + selectedWorkout.Exercises[i].ExerciseReps;
-                    
+
                     gifData = selectedWorkout.Exercises[i].ExerciseImage;
                     imageData = NSData.FromArray(gifData);
                     imageView = new FLAnimatedImageView();
@@ -97,54 +98,52 @@ namespace YeahFit
                     // Set the animatedImage property of the FLAnimatedImageView
                     imageView.AnimatedImage = animatedImage;
 
-                    if (selectedWorkout.Exercises.Count <= i+1)
+                    if (selectedWorkout.Exercises.Count <= i + 1)
                     {
                         lbl_NextExercise.Text = "Letzte Übung";
                         btn_NextExercise.SetTitle("Workout beenden", UIControlState.Normal);
-                        
+
                     }
                     else
                     {
-                        lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[i+1].ExerciseName;
+                        lbl_NextExercise.Text = "Nächste Übung: " + selectedWorkout.Exercises[i + 1].ExerciseName;
                         ResetTimer();
                     }
                 }
                 else
                 {
-                    this.DismissViewController(true, () => { WorkoutViewController.Refresh(workoutViewController); });
-
                     if (LoginViewController.loggedin == true)
                     {
                         string query = $"INSERT INTO Benutzer_Workout_Woche (BenutzerID, WochenID, WorkoutID, WorkoutDatum) " +
-                        $"VALUES ({LoginViewController.userID}, {InitializeWeek.wochenid}, {selectedWorkout.id}, {DateTime.Now})";
+                        $"VALUES ({Convert.ToInt32(LoginViewController.userID)}, {Convert.ToInt32(InitializeWeek.wochenid)}, {Convert.ToInt32(selectedWorkout.id)}, @value)";
                         MySqlCommand cmd = new MySqlCommand(query, con);
+                        cmd.Parameters.AddWithValue("@value", DateTime.Now);
                         cmd.ExecuteNonQuery();
 
-
-                        /*
-
-                        if (Convert.ToInt32(selectedWorkout.difficulty) == 3)
+                        if (selectedWorkout.difficulty == "Hart")
                         {
-                            string completeHardWorkout = $"INSERT INTO Benutzer_Awards (BenutzerID, AwardID, AwardZähler) " +
-                            $"VALUES ({LoginViewController.userID},{6}, )";
+                            string completeHardWorkout = $"UPDATE `Benutzer_Awards` SET `Absolviere ein hartes Workout` = `Absolviere ein hartes Workout` + 1 WHERE `BenutzerID` = {LoginViewController.userID};";
+                            MySqlCommand command2 = new MySqlCommand(completeHardWorkout, con);
+                            command2.ExecuteNonQuery();
                         }
 
-                        if (Convert.ToInt32(selectedWorkout.difficulty) == 2)
+                        /*
+                        if (selectedWorkout.difficulty == "Fortgeschritten")
                         {
-                            string completeAdvancedWorkout = $"INSERT INTO Benutzer_Awards (BenutzerID, AwardID, AwardZähler) " +
-                            $"VALUES ({LoginViewController.userID}, , )";
+                            string completeHardWorkout = $"UPDATE `Benutzer_Awards` SET `Absolviere ein hartes Workout` = `Absolviere ein hartes Workout` + 1 WHERE `BenutzerID` = {LoginViewController.userID};";
+                            MySqlCommand command2 = new MySqlCommand(completeHardWorkout, con);
+                            command2.ExecuteNonQuery();
                         }
                         */
 
-
-
+                        this.DismissViewController(true, () => { WorkoutViewController.Refresh(workoutViewController); });
                     }
                 }
             };
 
             btn_Break.TouchUpInside += (sender, e) =>
             {
-                ResetTimer();
+
             };
         }
 

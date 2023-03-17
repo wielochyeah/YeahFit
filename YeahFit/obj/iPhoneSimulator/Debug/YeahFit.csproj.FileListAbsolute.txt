@@ -1,150 +1,75 @@
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.exe
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.pdb
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/BouncyCastle.Crypto.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.pdb
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.Streams.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Hash.xxHash.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/MySql.Data.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Ubiety.Dns.Core.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/ZstdNet.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/SDWebImage.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Configuration.ConfigurationManager.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Security.Permissions.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Text.Encoding.CodePages.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_ProcessedImageAssetsPath.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/ibtool/_ProcessedInterfaceDefinitionsPath.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_PartialAppManifest.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_BundleResourceWithLogicalName.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_ProcessedCoreMLModelsPath.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/_ProcessedBundleResourcesPath.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/_ProcessedContentPath.items
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle 1178-3.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Challenges 1.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle small.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite2.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite3.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite4.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite5.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekBig1.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekBig2.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Bsp.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 reached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 reached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 reached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 reached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 reached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 reached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Tropy 3 reached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 unreached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 unreached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 unreached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 unreached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 3 unreached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 unreached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 unreached.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts2.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/RectangleNew.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/20min.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Core.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Ganzkörper.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/No Equiptment.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Oberkörper.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Pull.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Push.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Unterkörper.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/RectangleNewSmall.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Ganzkörper2.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/ChallengesNEW1.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/ChallengesNEW2.png
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Entitlements.plist
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.AssemblyReference.cache
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CoreCompileInputs.cache
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CopyComplete
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
-/Users/nilswieloch/YeahFit/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.exe
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.pdb
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/BouncyCastle.Crypto.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.pdb
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.Streams.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Hash.xxHash.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/MySql.Data.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Ubiety.Dns.Core.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/ZstdNet.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/SDWebImage.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Configuration.ConfigurationManager.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Security.Permissions.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Text.Encoding.CodePages.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_ProcessedImageAssetsPath.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/ibtool/_ProcessedInterfaceDefinitionsPath.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_PartialAppManifest.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_BundleResourceWithLogicalName.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_ProcessedCoreMLModelsPath.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/_ProcessedBundleResourcesPath.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/_ProcessedContentPath.items
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle 1178-3.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Challenges 1.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle small.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite2.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite3.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite4.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite5.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekBig1.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekBig2.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Bsp.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 reached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 reached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 reached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 reached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 reached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 reached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Tropy 3 reached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 unreached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 unreached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 unreached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 unreached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 3 unreached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 unreached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 unreached.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts2.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/RectangleNew.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/20min.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Core.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Ganzkörper.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/No Equiptment.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Oberkörper.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Pull.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Push.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Unterkörper.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/RectangleNewSmall.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Ganzkörper2.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/ChallengesNEW1.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/ChallengesNEW2.png
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Entitlements.plist
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.AssemblyReference.cache
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CoreCompileInputs.cache
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CopyComplete
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
-/Users/maurice/Downloads/wetransfer_yeahfit-zip_2023-03-13_1329-2/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.exe
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/YeahFit.pdb
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/BouncyCastle.Crypto.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Google.Protobuf.pdb
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Compression.LZ4.Streams.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/K4os.Hash.xxHash.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/MySql.Data.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Ubiety.Dns.Core.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/ZstdNet.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/SDWebImage.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Configuration.ConfigurationManager.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Security.Permissions.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/System.Text.Encoding.CodePages.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
+/Users/maurice/Projects/YeahFit/YeahFit/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/actool/_ProcessedImageAssetsPath.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/ibtool/_ProcessedInterfaceDefinitionsPath.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_PartialAppManifest.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_BundleResourceWithLogicalName.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/_ProcessedBundleResourcesPath.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/_ProcessedContentPath.items
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle 1178-3.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Challenges 1.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Rectangle small.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite2.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite3.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite4.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekWhite5.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekBig1.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/WeekBig2.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Bsp.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 reached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 reached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 reached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 reached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 reached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 reached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Tropy 3 reached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 1 unreached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Medal 2 unreached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 1 unreached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 2 unreached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 3 unreached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 4 unreached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Trophy 5 unreached.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Workouts2.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/RectangleNew.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/20min.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Core.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Ganzkörper.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/No Equiptment.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Oberkörper.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Pull.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Push.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Unterkörper.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/RectangleNewSmall.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Ganzkörper2.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/ChallengesNEW1.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/ChallengesNEW2.png
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/Entitlements.plist
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/optimized/
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.AssemblyReference.cache
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CoreCompileInputs.cache
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.csproj.CopyComplete
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.exe
+/Users/maurice/Projects/YeahFit/YeahFit/obj/iPhoneSimulator/Debug/YeahFit.pdb
